@@ -4,7 +4,7 @@
 code.py
 =============================
 :Summary:
-    Code elements for TBS htmlframework
+    Code elements for khufu
 
 :Author:
     David Young

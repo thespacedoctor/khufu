@@ -26,10 +26,9 @@ import sys
 import os
 import datetime
 import numpy as np
+import khufu
 from docopt import docopt
-from dryxPython import logs as dl
 from dryxPython import commonutils as dcu
-from dryxPython.projectsetup import setup_main_clutil
 from ..__init__ import *
 from . import modal
 
@@ -62,17 +61,27 @@ class modalForm():
         title,
         postToScriptUrl,
         reloadToUrl,
+        formClassName=False
     ):
         self.log = log
         self.title = title
         self.postToScriptUrl = postToScriptUrl
         self.reloadToUrl = reloadToUrl
+        self.formClass = formClassName
         # xt-self-arg-tmpx
 
         # Variable Data Atrributes
         self.formContent = u""
         self.randNum = int(np.random.rand() * 10000)
         self.hiddenParameterList = []
+        # add required icon if needed
+        self.requredIcon = khufu.coloredText(
+            text="*",
+            color="red",
+            size=5,  # 1-10
+            pull=False,  # "left" | "right",
+            addBackgroundColor=False
+        )
 
         # 3. @flagged: what variable attrributes need overriden in any baseclass(es) used
         # Override Variable Data Atrributes
@@ -112,6 +121,7 @@ class modalForm():
             navBarPull=False,  # [ false | right | left ],
             postToScript=self.postToScriptUrl,
             htmlId=formId,
+            htmlClass=self.formClass,
             postInBackground=True,
             redirectUrl=self.reloadToUrl,
             span=12,
@@ -128,10 +138,16 @@ class modalForm():
             onDesktop=True
         )
 
+        # The required input footnote
+        requredIcon = self.requredIcon
+        requredAlert = '%(requredIcon)s required input &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp' % locals(
+        )
+
         modalForm = modal(
             modalHeaderContent=self.title,
             modalBodyContent=modalForm,
-            modalFooterContent=self.get_form_action_buttons(formId),
+            modalFooterContent=requredAlert +
+            self.get_form_action_buttons(formId),
             htmlId=modalTrigger,
             centerContent=True
         )
@@ -165,13 +181,16 @@ class modalForm():
         formObject = formObject.replace(
             "class=", """id="%(randId)s" class=""" % locals())
 
+        if " required " in formObject:
+            label = label + self.requredIcon
+
         thisControlRow = controlRow(
             inputList=[formObject, ]
         )
         thisContentLabel = horizontalFormControlLabel(
             labelText=label,
             forId=randId,
-            location="top"
+            location="left"
         )
         thisContentCG = horizontalFormControlGroup(
             content=thisContentLabel + thisControlRow,

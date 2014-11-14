@@ -25,17 +25,15 @@ default_fields.py
 import sys
 import os
 from docopt import docopt
-from dryxPython import logs as dl
 from dryxPython import commonutils as dcu
-from dryxPython.projectsetup import setup_main_clutil
 # from ..__init__ import *
 
 ###################################################################
 # PUBLIC FUNCTIONS                                                #
 ###################################################################
-## LAST MODIFIED : May 28, 2014
-## CREATED : May 28, 2014
-## AUTHOR : DRYX
+# LAST MODIFIED : May 28, 2014
+# CREATED : May 28, 2014
+# AUTHOR : DRYX
 
 
 def default_fields():

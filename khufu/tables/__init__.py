@@ -4,7 +4,7 @@
 tables.py
 =============================
 :Summary:
-    Tables for TBS htmlframework
+    Tables for khufu
 
 :Author:
     David Young

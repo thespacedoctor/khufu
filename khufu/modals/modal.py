@@ -25,9 +25,7 @@ modal.py
 import sys
 import os
 from docopt import docopt
-from dryxPython import logs as dl
 from dryxPython import commonutils as dcu
-from dryxPython.projectsetup import setup_main_clutil
 # from ..__init__ import *
 
 ###################################################################
@@ -40,9 +38,9 @@ from dryxPython.projectsetup import setup_main_clutil
 ###################################################################
 # PUBLIC FUNCTIONS                                                #
 ###################################################################
-## LAST MODIFIED : October 9, 2013
-## CREATED : October 9, 2013
-## AUTHOR : DRYX
+# LAST MODIFIED : October 9, 2013
+# CREATED : October 9, 2013
+# AUTHOR : DRYX
 def modal(
     modalHeaderContent="",
     modalBodyContent="",
@@ -116,4 +114,3 @@ if __name__ == '__main__':
 ###################################################################
 # TEMPLATE FUNCTIONS                                              #
 ###################################################################
-

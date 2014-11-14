@@ -25,7 +25,6 @@ getpackagepath.py
 import sys
 import os
 from docopt import docopt
-from dryxPython import logs as dl
 from dryxPython import commonutils as dcu
 
 ###################################################################
@@ -35,9 +34,9 @@ from dryxPython import commonutils as dcu
 ###################################################################
 # PUBLIC FUNCTIONS                                                #
 ###################################################################
-## LAST MODIFIED : October 24, 2013
-## CREATED : October 24, 2013
-## AUTHOR : DRYX
+# LAST MODIFIED : October 24, 2013
+# CREATED : October 24, 2013
+# AUTHOR : DRYX
 
 # copy usage method(s) here and select the following snippet from the command palette:
 # x-setup-worker-function-parameters-from-usage-method

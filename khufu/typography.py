@@ -4,7 +4,7 @@
 typography.py
 =============================
 :Summary:
-    Basic text elements for TBS htmlframework
+    Basic text elements for khufu
 :Author:
     David Young
 

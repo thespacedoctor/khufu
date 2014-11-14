@@ -4,7 +4,7 @@
 dropdowns.py
 =================================
 :Summary:
-    Dropdown for TBS htmlframework
+    Dropdown for khufu
 
 :Author:
     David Young
@@ -30,9 +30,9 @@ dropdowns.py
 ##################################################################
 
 
-## LAST MODIFIED : March 8, 2013
-## CREATED : March 8, 2013
-## AUTHOR : DRYX
+# LAST MODIFIED : March 8, 2013
+# CREATED : March 8, 2013
+# AUTHOR : DRYX
 def dropdown(
         buttonSize="default",
         buttonColor="default",
@@ -116,7 +116,8 @@ def dropdown(
         content = """class="btn %(buttonSize)s %(buttonColor)s" %(popover)s>%(menuTitle)s""" % locals(
         )
         if splitButtonHref is not False:
-            topButton = """<a href="%(splitButtonHref)s" %(content)s</a>""" % locals()
+            topButton = """<a href="%(splitButtonHref)s" %(content)s</a>""" % locals(
+            )
         else:
             topButton = """<button %(content)s</button>""" % locals()
 
@@ -168,9 +169,9 @@ def dropdown(
 
     return dropdown
 
-## LAST MODIFIED : May 22, 2014
-## CREATED : May 22, 2014
-## AUTHOR : DRYX
+# LAST MODIFIED : May 22, 2014
+# CREATED : May 22, 2014
+# AUTHOR : DRYX
 # copy usage method(s) into function below and select the following snippet from the command palette:
 # x-setup-worker-function-parameters-from-usage-method
 

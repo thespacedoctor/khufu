@@ -27,9 +27,7 @@ import datetime
 import math
 import re
 from docopt import docopt
-from dryxPython import logs as dl
 from dryxPython import commonutils as dcu
-from dryxPython.projectsetup import setup_main_clutil
 from .__init__ import *
 from ..__init__ import *
 from ..typography import *

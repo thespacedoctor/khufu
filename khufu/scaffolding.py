@@ -3,7 +3,7 @@
 """ scaffolding.py
 =============================
 :Summary:
-    Layout / scaffolding module for TBS htmlframework
+    Layout / scaffolding module for khufu
 
 :Author:
     David Young
@@ -99,7 +99,7 @@ def head(
     if not relativeUrlBase:
         relativeUrlBase = ""
 
-    cssUrl = """%(relativeUrlBase)s/assets/styles/css/%(mainCssFileName)s""" % locals()
+    cssUrl = """%(relativeUrlBase)s/static/styles/css/%(mainCssFileName)s""" % locals()
     cssLink = """
         <link rel="stylesheet" href="%(cssUrl)s" type="text/css" />
     """ % locals()
@@ -198,7 +198,7 @@ def body(
       <![endif]-->
         %(navBar)s
         %(container)s
-      <script src="%(relativeUrlBase)s/assets/js/%(jsFileName)s"></script>
+      <script src="%(relativeUrlBase)s/static/js/%(jsFileName)s"></script>
       %(googleAnalyticsCode)s
       </body><!-- /#%(htmlId)s-->
       """ \

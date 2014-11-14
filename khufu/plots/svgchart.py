@@ -25,9 +25,7 @@ svgchart.py
 import sys
 import os
 from docopt import docopt
-from dryxPython import logs as dl
 from dryxPython import commonutils as dcu
-from dryxPython.projectsetup import setup_main_clutil
 # from ..__init__ import *
 
 ###################################################################
@@ -41,9 +39,9 @@ from dryxPython.projectsetup import setup_main_clutil
 # PUBLIC FUNCTIONS                                                #
 ###################################################################
 # x-worker-def
-## LAST MODIFIED : May 9, 2014
-## CREATED : May 9, 2014
-## AUTHOR : DRYX
+# LAST MODIFIED : May 9, 2014
+# CREATED : May 9, 2014
+# AUTHOR : DRYX
 def svgchart(
     htmlClass=False,
     csvUrl="#",
@@ -87,7 +85,8 @@ def svgchart(
     else:
         span = ""
 
-    svg = """<svg class="chart %(htmlClass)s %(chartType)s %(span)s" %(htmlId)s data-src="%(csvUrl)s" disable="%(disable)s"></svg>""" % locals()
+    svg = """<svg class="chart %(htmlClass)s %(chartType)s %(span)s" %(htmlId)s data-src="%(csvUrl)s" disable="%(disable)s"></svg>""" % locals(
+    )
 
     return svg
 

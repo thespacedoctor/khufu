@@ -3,7 +3,7 @@
 """ navigation.py
 ==================================
 :Summary:
-    Navigation for TBS htmlframework
+    Navigation for khufu
 
 :Author:
     David Young

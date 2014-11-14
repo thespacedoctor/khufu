@@ -4,7 +4,7 @@
 forms.py
 =============================
 :Summary:
-    Forms for TBS htmlframework
+    Forms for khufu
 
 :Author:
     David Young

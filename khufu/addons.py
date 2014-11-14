@@ -192,6 +192,11 @@ def popover(
         tooltip = "tooltip"
         content = False
 
+    if title:
+        title = title.replace('"', "'")
+    if content:
+        content = content.replace('"', "'")
+
     popover = """rel="%(tooltip)s" data-container="body" data-placement="%(placement)s" """ % locals()
     if trigger is not False:
         popover = """%(popover)s data-trigger="%(trigger)s" """ % locals()
@@ -201,6 +206,9 @@ def popover(
         popover = """%(popover)s data-content="%(content)s" """ % locals()
     if delay is not False:
         popover = """%(popover)s data-delay="%(delay)s" """ % locals()
+
+    if (title and "<" in title and ">" in title) or (content and "<" in content and ">" in content):
+        popover = """%(popover)s data-html=true """ % locals()
 
     return popover
 

@@ -5,7 +5,7 @@
 images.py 
 =============================
 :Summary:
-    images for TBS htmlframework
+    images for khufu
 
 :Author:
     David Young
