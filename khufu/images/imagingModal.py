@@ -47,7 +47,7 @@ class imagingModal():
         - ``modalFooterContent`` -- the footer (usually buttons)
         - ``stampWidth`` -- 180
         - ``modalImageWidth`` -- 400
-        - ``downloadFilename`` -- False
+        - ``downloadLink`` -- False
     """
     # Initialisation
 
@@ -62,7 +62,7 @@ class imagingModal():
             modalFooterButtons=[],
             stampWidth=180,
             modalImageWidth=400,
-            downloadFilename=False
+            downloadLink=False
     ):
         self.log = log
         self.dbConn = dbConn
@@ -73,7 +73,7 @@ class imagingModal():
         self.randomNum = np.random.randint(300000000)
         self.stampWidth = stampWidth
         self.modalImageWidth = modalImageWidth
-        self.downloadFilename = downloadFilename
+        self.downloadLink = downloadLink
         self.modalFooterButtons = modalFooterButtons
         # x-self-arg-tmpx
         return None
@@ -180,17 +180,15 @@ class imagingModal():
             delay=200
         )
 
-        if self.downloadFilename:
-            downloadFilename = self.downloadFilename
-            downloadFilename = "&fileName=%(downloadFilename)s" % locals()
+        if self.downloadLink:
+            downloadLink = self.downloadLink
             downloadFileButton = button(
                 buttonText="""<i class="icon-file-pdf"></i>""",
                 # [ default | primary | info | success | warning | danger | inverse | link ]
                 buttonStyle='primary',
                 buttonSize='small',  # [ large | default | small | mini ]
                 htmlId=False,
-                href="/marshall/scripts/python/download_file.py?url=%(fileUrl)s%(downloadFilename)s" % locals(
-                ),
+                href=downloadLink,
                 pull=False,  # right, left, center
                 submit=False,
                 block=False,
@@ -198,6 +196,7 @@ class imagingModal():
                 dataToggle=False,  # [ modal ]
                 popover=thisPopover
             )
+            print downloadLink
         else:
             downloadFileButton = ""
 
