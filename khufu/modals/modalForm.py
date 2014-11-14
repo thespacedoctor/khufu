@@ -82,6 +82,7 @@ class modalForm():
             pull=False,  # "left" | "right",
             addBackgroundColor=False
         )
+        self.submitButtonText = "submit"
 
         # 3. @flagged: what variable attrributes need overriden in any baseclass(es) used
         # Override Variable Data Atrributes
@@ -237,7 +238,7 @@ class modalForm():
         )
 
         submit = button(
-            buttonText='submit',
+            buttonText=self.submitButtonText,
             # [ default | primary | info | success | warning | danger | inverse | link ]
             buttonStyle='info',
             buttonSize='small',  # [ large | default | small | mini ]
@@ -250,7 +251,8 @@ class modalForm():
             postInBackground=False,
             dataToggle=False,  # [ modal ]
             popover=False,
-            formId=formId
+            formId=formId,
+            close=True
         )
 
         actionButtons = buttonGroup(

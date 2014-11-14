@@ -267,7 +267,8 @@ def formInput(
         required=False,
         disabled=False,
         defaultValue=False,
-        hidden=False):
+        hidden=False,
+        divWrap=True):
     """Generate a form input - TBS style
 
     **Key Arguments:**
@@ -290,6 +291,7 @@ def formInput(
         - ``disabled`` -- add the disabled attribute on an input to prevent user input
         - ``defaultValue`` -- a default value to be passed to action script
         - ``hidden`` -- hide the CG from the user?
+        - ``divWrap`` -- wrap in div
 
     **Return:**
         - ``input`` -- the input
@@ -429,15 +431,16 @@ def formInput(
         thisInput = u"""<label class="inline">%(thisInput)s%(rightText)s </label>""" % locals(
         )
 
-    formInput = u"""
-        <div class="%(prependClass)s %(appendClass)s %(hidden)s %(pull)s">
-            
-            %(thisInput)s 
-            
-        </div>%(inlineHelpText)s%(blockHelpText)s
-        """ % locals()
-
-    # formInput = """<input class="%s %s" id="%s%s%s%s" value="%s" type="%s" placeholder="%s" %s %s>""" % (span, searchClass, htmlId, inputId, focusId, disabledId, focusedInput, ttype, placeholder, required, disabled)
+    if divWrap:
+        formInput = u"""
+            <div class="%(prependClass)s %(appendClass)s %(hidden)s %(pull)s">
+                
+                %(thisInput)s 
+                
+            </div>%(inlineHelpText)s%(blockHelpText)s
+            """ % locals()
+    else:
+        formInput = thisInput
 
     return formInput
 
