@@ -14,17 +14,15 @@ def hide_from_device(
     """hide from device)
 
     **Key Arguments:**
-
-        # copy usage method(s) here and select the following snippet from the command palette:
-        # x-setup-docstring-keys-from-selected-usage-options
+        - ``content`` - content to hide/show
+        - ``onPhone`` - onPhone?
+        - ``onTablet`` - onTablet?
+        - ``onDesktop`` - onDesktop?
 
     **Return:**
-        - None
+        - ``span`` -- span containings content with show/hide parameters
 
     **Todo**
-        - @review: when complete, clean hide_from_device) function
-        - @review: when complete add logging
-        - @review: when complete, decide whether to abstract function to another module
     """
 
     phoneClass = ""
@@ -51,4 +49,3 @@ def hide_from_device(
     span = """<span class="%(phoneClass)s %(tabletClass)s %(desktopClass)s">%(content)s</span>""" % locals(
     )
     return span
-

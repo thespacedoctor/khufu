@@ -1,9 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# encoding: utf-8
-from . import *
-
 # LAST MODIFIED : April 30, 2014
 # CREATED : April 30, 2014
 # AUTHOR : DRYX
@@ -24,24 +21,18 @@ def row_adjustable(
     **Key Arguments:**
         - ``span`` -- the relative width of the column
         - ``offset`` -- increase the left margin of the column by this amount
+        - ``content`` -- content for the row
         - ``htmlId`` -- the id of the column
         - ``htmlClass`` -- the class of the column
         - ``onPhone`` -- does this column get displayed on a phone sized screen
         - ``onTablet`` -- does this column get displayed on a tablet sized screen
         - ``onDesktop`` -- does this column get displayed on a desktop sized screen
 
-
     **Return:**
         - ``row`` -- the adjustable row
 
     **Todo**
-        - @review: when complete, clean row_adjustable function
-        - @review: when complete add logging
-        - @review: when complete, decide whether to abstract function to another module
     """
-    ################ > IMPORTS ################
-    # TEST THE ARGUMENTS
-
     ## VARIABLES ##
     column = grid_column(
         span=span,  # 1-12

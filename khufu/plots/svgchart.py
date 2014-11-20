@@ -22,29 +22,18 @@ svgchart.py
     - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
 
 :Tasks:
-    @review: when complete pull all general functions and classes into dryxPython
 """
 ################# GLOBAL IMPORTS ####################
 import sys
 import os
 from docopt import docopt
 from dryxPython import commonutils as dcu
-# from ..__init__ import *
 
-###################################################################
-# CLASSES                                                         #
-###################################################################
-# x-class-module-worker-tmpx
-# class-tmpx
-
-
-###################################################################
-# PUBLIC FUNCTIONS                                                #
-###################################################################
-# x-worker-def
 # LAST MODIFIED : May 9, 2014
 # CREATED : May 9, 2014
 # AUTHOR : DRYX
+
+
 def svgchart(
     htmlClass=False,
     csvUrl="#",
@@ -61,14 +50,12 @@ def svgchart(
         - ``htmlId`` -- the html id if required
         - ``csvUrl`` -- url to a csv file/csv data
         - ``chartType`` -- the type of chart required (determines which javascript function to trigger)
+        - ``span`` -- span of chart area
 
     **Return:**
-        - None
+        - ``svg`` -- the svg element
 
     **Todo**
-        - @review: when complete, clean svgchart function
-        - @review: when complete add logging
-        - @review: when complete, decide whether to abstract function to another module
     """
     if not htmlClass:
         htmlClass = ""
@@ -92,13 +79,6 @@ def svgchart(
     )
 
     return svg
-
-# use the tab-trigger below for new function
-# x-def-with-logger
-
-###################################################################
-# PRIVATE (HELPER) FUNCTIONS                                      #
-###################################################################
 
 
 if __name__ == '__main__':

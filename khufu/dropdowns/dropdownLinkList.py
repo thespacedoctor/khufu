@@ -24,12 +24,7 @@ def dropdownLinkList(
         - None
 
     **Todo**
-        - @review: when complete, clean dropdownLinkList function
-        - @review: when complete add logging
-        - @review: when complete, decide whether to abstract function to another module
     """
-    from . import *
-
     linkList = []
     for k, v in linkDictionary.iteritems():
         link = a(

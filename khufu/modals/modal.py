@@ -19,20 +19,12 @@ modal.py
     - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
 
 :Tasks:
-    @review: when complete pull all general functions and classes into dryxPython
 """
 ################# GLOBAL IMPORTS ####################
 import sys
 import os
 from docopt import docopt
 from dryxPython import commonutils as dcu
-# from ..__init__ import *
-
-###################################################################
-# CLASSES                                                         #
-###################################################################
-# xt-class-module-worker-tmpx
-# xt-class-tmpx
 
 
 ###################################################################
@@ -56,19 +48,14 @@ def modal(
       - ``modalBodyContent`` -- the content (form or text)
       - ``modalFooterContent`` -- the foot (usually buttons)
       - ``htmlId`` -- id for button to hook onto with href
+      - ``centerContent`` - center the content in the form?
+      - ``htmlClass`` - htmlClass for the form
 
     **Return:**
         - ``modal`` -- the modal
 
     **Todo**
-        - @review: when complete, clean modal function
-        - @review: when complete add logging
-        - @review: when complete, decide whether to abstract function to another module
     """
-    ################ > IMPORTS ################
-    ## STANDARD LIB ##
-    ## THIRD PARTY ##
-    ## LOCAL APPLICATION ##
     if htmlClass is False:
         htmlClass = ""
 
@@ -96,14 +83,6 @@ def modal(
     </div>""" % locals()
 
     return modal
-
-# use the tab-trigger below for new function
-# xt-def-with-logger
-
-###################################################################
-# PRIVATE (HELPER) FUNCTIONS                                      #
-###################################################################
-
 
 if __name__ == '__main__':
     main()

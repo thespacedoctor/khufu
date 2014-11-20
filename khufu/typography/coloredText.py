@@ -20,20 +20,13 @@ def coloredText(
         - ``color`` -- the color
         - ``htmlClass`` -- the class for the text
         - ``size`` -- the relative size of the text
+        - ``addBackgroundColor`` -- add a complimentary background color to the text
 
     **Return:**
-        - None
+        - ``text`` -- the coloured text span
 
     **Todo**
-        - @review: when complete, clean coloredText function
-        - @review: when complete add logging
-        - @review: when complete, decide whether to abstract function to another module
     """
-    ################ > IMPORTS ################
-    ## STANDARD LIB ##
-    ## THIRD PARTY ##
-    ## LOCAL APPLICATION ##
-
     if pull is not False:
         pull = """pull-%(pull)s""" % locals()
     else:
@@ -53,4 +46,3 @@ def coloredText(
     )
 
     return text
-

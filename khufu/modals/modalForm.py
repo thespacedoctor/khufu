@@ -19,7 +19,6 @@ modalForm.py
     - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
 
 :Tasks:
-    @review: when complete pull all general functions and classes into dryxPython
 """
 ################# GLOBAL IMPORTS ####################
 import sys
@@ -49,11 +48,9 @@ class modalForm():
         - ``title`` -- title
         - ``postToScriptUrl`` -- postToScriptUrl
         - ``reloadToUrl`` -- reloadToUrl
+        - ``formClassName`` -- give a class name to form (if required by CSS or JS)
 
     **Todo**
-        - @review: when complete, clean modalForm class
-        - @review: when complete add logging
-        - @review: when complete, decide whether to abstract class to another module
     """
     # Initialisation
 
@@ -86,9 +83,6 @@ class modalForm():
         )
         self.submitButtonText = "submit"
 
-        # 3. @flagged: what variable attrributes need overriden in any baseclass(es) used
-        # Override Variable Data Atrributes
-
         # Initial Actions
 
         return None
@@ -97,7 +91,6 @@ class modalForm():
         del self
         return None
 
-    # 4. @flagged: what actions does each object have to be able to perform? Add them here
     # Method Attributes
     def get(self):
         """get the modalForm object
@@ -106,8 +99,6 @@ class modalForm():
             - ``modalForm``
 
         **Todo**
-            - @review: when complete, clean get method
-            - @review: when complete add logging
         """
         self.log.info('starting the ``get`` method')
 
@@ -168,14 +159,14 @@ class modalForm():
         """add a form objec to the modal form
 
         **Key Arguments:**
-            # -
+            - ``formObject`` -- the object to add to the form
+            - ``label`` -- label to assign to the object
+            - ``hidden`` -- is the form object hidden initially?
 
         **Return:**
             - None
 
         **Todo**
-            - @review: when complete, clean addFormObject method
-            - @review: when complete add logging
         """
         self.log.info('starting the ``addFormObject`` method')
 
@@ -204,21 +195,18 @@ class modalForm():
         self.log.info('completed the ``addFormObject`` method')
         return None
 
-    # use the tab-trigger below for new method
     def get_form_action_buttons(
             self,
             formId):
         """get form action buttons
 
         **Key Arguments:**
-            # -
+            - ``formId`` -- the HTML id of the form
 
         **Return:**
-            - None
+            - ``actionButtons`` -- the action buttos for the form (cancel, submit)
 
         **Todo**
-            - @review: when complete, clean get_form_action_buttons method
-            - @review: when complete add logging
         """
         self.log.info('starting the ``get_form_action_buttons`` method')
 
@@ -265,7 +253,6 @@ class modalForm():
         self.log.info('completed the ``get_form_action_buttons`` method')
         return actionButtons
 
-    # use the tab-trigger below for new method
     def add_hidden_parameter_value(
             self,
             key,
@@ -273,14 +260,13 @@ class modalForm():
         """add hidden parameter value to the form (to be submitted with the form but does not need user input)
 
         **Key Arguments:**
-            # -
+            - ``key`` -- the key for the hidden value (will be appended to query string when form submitted)
+            - ``value`` -- the value of the hidden parameter
 
         **Return:**
             - None
 
         **Todo**
-            - @review: when complete, clean add_hidden_parameter_value method
-            - @review: when complete add logging
         """
         self.log.info('starting the ``add_hidden_parameter_value`` method')
 
@@ -305,7 +291,6 @@ class modalForm():
         self.log.info('completed the ``add_hidden_parameter_value`` method')
         return None
 
-    # use the tab-trigger below for new method
     def set_hidden_parameters(
             self):
         """get hidden parameters
@@ -317,8 +302,6 @@ class modalForm():
             - None
 
         **Todo**
-            - @review: when complete, clean set_hidden_parameters method
-            - @review: when complete add logging
         """
         self.log.info('starting the ``set_hidden_parameters`` method')
 
@@ -338,22 +321,6 @@ class modalForm():
 
     # use the tab-trigger below for new method
     # xt-class-method
-
-
-# xt-class-tmpx
-
-
-###################################################################
-# PUBLIC FUNCTIONS                                                #
-###################################################################
-# xt-worker-def
-
-# use the tab-trigger below for new function
-# xt-def-with-logger
-
-###################################################################
-# PRIVATE (HELPER) FUNCTIONS                                      #
-###################################################################
 
 
 if __name__ == '__main__':
