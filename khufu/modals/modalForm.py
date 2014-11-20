@@ -29,7 +29,9 @@ import numpy as np
 import khufu
 from docopt import docopt
 from dryxPython import commonutils as dcu
-from ..__init__ import *
+from khufu.forms import *
+from khufu.scaffolding import *
+from khufu.buttons import *
 from . import modal
 
 ###################################################################
@@ -353,13 +355,6 @@ class modalForm():
 # PRIVATE (HELPER) FUNCTIONS                                      #
 ###################################################################
 
-############################################
-# CODE TO BE DEPECIATED                    #
-############################################
 
 if __name__ == '__main__':
     main()
-
-###################################################################
-# TEMPLATE FUNCTIONS                                              #
-###################################################################

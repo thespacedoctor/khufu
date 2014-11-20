@@ -1,3 +1,6 @@
+# encoding: utf-8
+from . import *
+
 #!/usr/bin/env python
 # encoding: utf-8
 """
@@ -28,10 +31,11 @@ import math
 import re
 from docopt import docopt
 from dryxPython import commonutils as dcu
-from .__init__ import *
-from ..__init__ import *
-from ..typography import *
-from ..addons import *
+# from ..__init__ import *
+from khufu.typography import *
+from khufu.addons import *
+from khufu.tables import *
+from khufu.helpers import *
 
 
 ###################################################################
@@ -362,12 +366,6 @@ class sortable_table():
 # PRIVATE (HELPER) FUNCTIONS                                      #
 ###################################################################
 
-############################################
-# CODE TO BE DEPECIATED                    #
-############################################
+
 if __name__ == '__main__':
     main()
-
-###################################################################
-# TEMPLATE FUNCTIONS                                              #
-###################################################################

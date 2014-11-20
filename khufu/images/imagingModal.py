@@ -26,7 +26,7 @@ from docopt import docopt
 from dryxPython import commonutils as dcu
 from ..__init__ import *
 from .. import modals
-from . import image
+from image import image
 
 ###################################################################
 # CLASSES                                                         #
@@ -237,12 +237,6 @@ class imagingModal():
 ###################################################################
 # PRIVATE (HELPER) FUNCTIONS                                      #
 ###################################################################
-############################################
-# CODE TO BE DEPECIATED                    #
-############################################
+
 if __name__ == '__main__':
     main()
-
-###################################################################
-# TEMPLATE FUNCTIONS                                              #
-###################################################################
