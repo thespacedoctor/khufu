@@ -19,7 +19,6 @@ login_form.py
     - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
 
 :Tasks:
-    @review: when complete pull all general functions and classes into dryxPython
 """
 ################# GLOBAL IMPORTS ####################
 import sys
@@ -29,7 +28,6 @@ from dryxPython import logs as dl
 from dryxPython import commonutils as dcu
 from dryxPython.projectsetup import setup_main_clutil
 import khufu
-# from ..__init__ import *
 
 ###################################################################
 # CLASSES                                                         #
@@ -44,41 +42,31 @@ class login_form():
     **Key Arguments:**
         - ``log`` -- logger
         - ``iconPath`` -- path to webapp icon
+        - ``message`` -- message to display (warning)
 
     **Todo**
-        - @review: when complete, clean login_form class
-        - @review: when complete add logging
-        - @review: when complete, decide whether to abstract class to another module
     """
     # Initialisation
-    # 1. @flagged: what are the unique attrributes for each object? Add them
-    # to __init__
 
     def __init__(
         self,
         log,
-        iconPath
+        iconPath,
+        message
     ):
         self.log = log
         log.debug("instansiating a new 'login_form' object")
         self.iconPath = iconPath
+        self.message = message
 
         # xt-self-arg-tmpx
 
-        # 2. @flagged: what are the default attrributes each object could have? Add them to variable attribute set here
-        # Variable Data Atrributes
-
-        # 3. @flagged: what variable attrributes need overriden in any baseclass(es) used
-        # Override Variable Data Atrributes
-
         # Initial Actions
+        # Build image with icon path
         self.icon = khufu.image(
             src=iconPath,  # [ industrial | gray | social ]
             href=False,
             display="polaroid",  # [ rounded | circle | polaroid | False ]
-            pull=False,  # [ "left" | "right" | "center" | False ]
-            htmlClass=False,
-            width=False
         )
 
         return None
@@ -87,21 +75,17 @@ class login_form():
         del self
         return None
 
-    # 4. @flagged: what actions does each object have to be able to perform? Add them here
     # Method Attributes
     def get(self):
         """get the login_form object
 
         **Return:**
-            - ``login_form``
+            - ``formContent`` -- the content of the login form
 
         **Todo**
-            - @review: when complete, clean get method
-            - @review: when complete add logging
         """
         self.log.info('starting the ``get`` method')
 
-        login_form = "nice form"
         formContent = self._setup_form()
 
         self.log.info('completed the ``get`` method')
@@ -118,149 +102,77 @@ class login_form():
             - ``formContent`` -- content of the login form
 
         **Todo**
-            - @review: when complete, clean _setup_form method
-            - @review: when complete add logging
         """
         self.log.info('starting the ``_setup_form`` method')
 
-        textInput = khufu.formInput(
-            # [ text | password | datetime | datetime-local | date | month | time | week | number | float | email | url | search | tel | color ]
+        # username input
+        username = khufu.formInput(
             ttype='text',
             placeholder='username',
             span=12,
-            htmlId="username",
-            searchBar=True,
-            pull=False,
-            prepend=False,
-            append=False,
-            button1=False,
-            button2=False,
-            prependDropdown=False,
-            appendDropdown=False,
-            inlineHelpText=False,
-            blockHelpText=False,
-            focusedInputText=False,
-            required=True,
-            disabled=False
+            htmlId="login",
+            required=True
         )
-        textInput = khufu.controlRow(
-            inputList=[textInput, ]
-        )
-        textLabel = khufu.horizontalFormControlLabel(
-            labelText='',
-            forId="username"
+        username = khufu.controlRow(
+            inputList=[username, ]
         )
         username = khufu.horizontalFormControlGroup(
-            content=textInput,
+            content=username,
             validationLevel=False
         )
 
-        textInput = khufu.formInput(
-            # [ text | password | datetime | datetime-local | date | month | time | week | number | float | email | url | search | tel | color ]
+        # password input
+        password = khufu.formInput(
             ttype='password',
             placeholder='password',
             span=12,
             htmlId="password",
-            searchBar=True,
-            pull=False,
-            prepend=False,
-            append=False,
-            button1=False,
-            button2=False,
-            prependDropdown=False,
-            appendDropdown=False,
-            inlineHelpText=False,
-            blockHelpText=False,
-            focusedInputText=False,
-            required=True,
-            disabled=False
+            required=True
         )
-        textInput = khufu.controlRow(
-            inputList=[textInput, ]
-        )
-        textLabel = khufu.horizontalFormControlLabel(
-            labelText='',
-            forId="password"
+        password = khufu.controlRow(
+            inputList=[password, ]
         )
         password = khufu.horizontalFormControlGroup(
-            content=textInput,
+            content=password,
             validationLevel=False
         )
 
         submit = khufu.button(
             buttonText='login',
-            # [ default | primary | info | success | warning | danger | inverse | link ]
             buttonStyle='info',
             buttonSize='default',  # [ large | default | small | mini ]
-            htmlId=False,
-            href=False,
-            pull=False,  # right, left, center
-            submit=True,
-            block=False,
-            disable=False,
-            postInBackground=False,
-            dataToggle=False,  # [ modal ]
-            popover=False
+            htmlId="form.submitted",
+            submit=True
         )
-
         submit = khufu.horizontalFormControlGroup(
             content=submit,
             validationLevel=False
         )
 
-        # submit = khufu.grid_column(
-        # span=12,  # 1-12
-        # offset=0,  # 1-12
-        #     content=submit,
-        # pull=False,  # ["right", "left", "center"]
-        #     htmlId=False,
-        #     htmlClass=False,
-        #     onPhone=True,
-        #     onTablet=True,
-        #     onDesktop=True
-        # )
+        # add a warning notification
+        if len(self.message):
+            self.message = khufu.alert(
+                alertText=self.message,
+                alertHeading="WARNING: ",
+                extraPadding=False,
+                alertLevel='error'
+            )
+            self.message = khufu.horizontalFormControlGroup(
+                content=self.message,
+                validationLevel=False
+            )
 
-        # xkhufu-tmpx-form-control-group
-        # xkhufu-horizontal-form-item
         formContent = khufu.form(
-            # list of control groups
-            content=self.icon + username + password + submit,
-            # [ "inline" | "horizontal" | "search" | "navbar-form" | "navbar-search" ]
+            content=self.icon + username + password + submit + self.message,
             formType='inline',
-            navBarPull=False,  # [ false | right | left ],
-            postToScript="",
-            htmlId=False,
-            postInBackground=False,
-            htmlClass=False,
-            redirectUrl=False,
-            span=False,
-            offset=False
+            postToScript=""
         )
 
         self.log.info('completed the ``_setup_form`` method')
         return formContent
 
-    # use the tab-trigger below for new method
     # xt-class-method
 
-    # 5. @flagged: what actions of the base class(es) need ammending? ammend them here
-    # Override Method Attributes
-    # method-override-tmpx
-
-# xt-class-tmpx
-
-
-###################################################################
-# PUBLIC FUNCTIONS                                                #
-###################################################################
-# xt-worker-def
-
-# use the tab-trigger below for new function
-# xt-def-with-logger
-
-###################################################################
-# PRIVATE (HELPER) FUNCTIONS                                      #
-###################################################################
 
 if __name__ == '__main__':
     main()

@@ -10,6 +10,7 @@ def responsive_navigation_bar(
     shade='dark',
     brand=False,
     brandLink="#",
+    loginDetails=False,
     outsideNavList=False,
     insideNavList=False,
     htmlId=False,
@@ -39,8 +40,15 @@ def responsive_navigation_bar(
     if not brand:
         brand = ''
     else:
-        brand = """<a class="brand" href="%(brandLink)s">%(brand)s</a>""" % locals(
+        brand = """<a  href="%(brandLink)s">%(brand)s</a>""" % locals(
         )
+
+    if loginDetails:
+        loginDetails = """<span class="login">%(loginDetails)s</span>""" % locals(
+        )
+        brand = "%(brand)s %(loginDetails)s " % locals(
+        )
+    brand = """<div class="brand">%(brand)s</a></div>""" % locals()
 
     if not outsideNavList:
         outsideNavList = ''

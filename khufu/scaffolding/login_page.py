@@ -19,7 +19,6 @@ login_page.py
     - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
 
 :Tasks:
-    @review: when complete pull all general functions and classes into dryxPython
 """
 ################# GLOBAL IMPORTS ####################
 import sys
@@ -29,7 +28,7 @@ from dryxPython import logs as dl
 from dryxPython import commonutils as dcu
 from dryxPython.projectsetup import setup_main_clutil
 import khufu
-# from ..__init__ import *
+
 
 ###################################################################
 # CLASSES                                                         #
@@ -47,15 +46,12 @@ class login_page():
         - ``jsFileName`` -- the filename of the main JS file
         - ``pageTitle`` -- pageTitle
         - ``iconPath`` -- webapp icon path
+        - ``came_from`` -- the url this login page was triggered from
+        - ``message`` -- message to display as notification
 
     **Todo**
-        - @review: when complete, clean login_page class
-        - @review: when complete add logging
-        - @review: when complete, decide whether to abstract class to another module
     """
     # Initialisation
-    # 1. @flagged: what are the unique attrributes for each object? Add them
-    # to __init__
 
     def __init__(
             self,
@@ -63,7 +59,9 @@ class login_page():
             mainCssFileName="main.css",
             jsFileName="main-ck.js",
             pageTitle="Login",
-            iconPath=""
+            iconPath="",
+            came_from="/",
+            message=""
     ):
         self.log = log
         log.debug("instansiating a new 'login_page' object")
@@ -71,18 +69,17 @@ class login_page():
         self.jsFileName = jsFileName
         self.pageTitle = pageTitle
         self.iconPath = iconPath
+        self.came_from = came_from
+        self.message = message
 
         # xt-self-arg-tmpx
 
-        # 2. @flagged: what are the default attrributes each object could have? Add them to variable attribute set here
-        # Variable Data Atrributes
-
-        # 3. @flagged: what variable attrributes need overriden in any baseclass(es) used
-        # Override Variable Data Atrributes
-
+        # Initial actions
+        # create the form
         formContent = khufu.forms.login_form(
             self.log,
-            self.iconPath
+            self.iconPath,
+            self.message
         )
         self.formContent = formContent.get()
         self.webapge = self._build_webapge_scaffolding()
@@ -93,21 +90,21 @@ class login_page():
         del self
         return None
 
-    # 4. @flagged: what actions does each object have to be able to perform? Add them here
     # Method Attributes
     def get(self):
         """get the login_page object
 
         **Return:**
-            - ``login_page``
+            - ``login_page`` -- the html login page
 
         **Todo**
-            - @review: when complete, clean get method
-            - @review: when complete add logging
         """
         self.log.info('starting the ``get`` method')
 
+        # create the webpage
         login_page = self.webapge
+        # clear message
+        self.message = ""
 
         self.log.info('completed the ``get`` method')
         return login_page
@@ -117,14 +114,11 @@ class login_page():
         """ build webapge scaffolding
 
         **Key Arguments:**
-            # -
 
         **Return:**
-            - None
+            - ``webpage`` -- the html login page
 
         **Todo**
-            - @review: when complete, clean _build_webapge_scaffolding method
-            - @review: when complete add logging
         """
         self.log.info('starting the ``_build_webapge_scaffolding`` method')
 
@@ -163,13 +157,6 @@ class login_page():
 
         self.log.info('completed the ``_build_webapge_scaffolding`` method')
         return webpage
-
-    # use the tab-trigger below for new method
-    # xt-class-method
-
-    # 5. @flagged: what actions of the base class(es) need ammending? ammend them here
-    # Override Method Attributes
-    # method-override-tmpx
 
 
 if __name__ == '__main__':
