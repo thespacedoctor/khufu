@@ -67,6 +67,7 @@ class login_form():
             src=iconPath,  # [ industrial | gray | social ]
             href=False,
             display="polaroid",  # [ rounded | circle | polaroid | False ]
+            pull=False
         )
 
         return None
