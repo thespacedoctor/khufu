@@ -1,5 +1,6 @@
 # encoding: utf-8
 from . import *
+import khufu
 
 # LAST MODIFIED : April 29, 2013
 # CREATED : April 29, 2013
@@ -12,7 +13,8 @@ def tabbableNavigation(
         direction='top',
         htmlClass=False,
         htmlId=False,
-        uniqueNavigationId=False
+        uniqueNavigationId=False,
+        contentCount={}
 ):
     """ Generate a tabbable Navigation
 
@@ -33,6 +35,16 @@ def tabbableNavigation(
     contentList = ''
     count = 0
 
+    # turn contentCounts into badges
+    for i in contentDictionary.keys():
+        if i in contentCount.keys():
+            contentCount[i] = khufu.badge(
+                text=str(contentCount[i]),
+                level='inverse'
+            )
+        else:
+            contentCount[i] = ""
+
     if htmlClass is False:
         htmlClass = ""
 
@@ -47,8 +59,9 @@ def tabbableNavigation(
         uniqueNavigationId = """id%(uniqueNavigationId)s""" % locals()
 
     for k, v in contentDictionary.iteritems():
+        badge = contentCount[k]
         if count == 0:
-            titleList = """%(titleList)s<li class="active"><a href="#tab%(uniqueNavigationId)s%(count)s" data-toggle="tab">%(k)s</a></li>""" % locals(
+            titleList = """%(titleList)s<li class="active"><a href="#tab%(uniqueNavigationId)s%(count)s" data-toggle="tab">%(k)s %(badge)s</a></li>""" % locals(
             )
             contentList = \
                 """%(contentList)s
@@ -57,7 +70,7 @@ def tabbableNavigation(
                 </div>""" \
                 % locals()
         else:
-            titleList = """%(titleList)s<li><a href="#tab%(uniqueNavigationId)s%(count)s" data-toggle="tab">%(k)s</a></li>""" % locals(
+            titleList = """%(titleList)s<li><a href="#tab%(uniqueNavigationId)s%(count)s" data-toggle="tab">%(k)s %(badge)s</a></li>""" % locals(
             )
             contentList = \
                 """%(contentList)s
