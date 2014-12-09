@@ -42,8 +42,8 @@ class login_page():
 
     **Key Arguments:**
         - ``log`` -- logger
-        - ``mainCssFileName`` -- the filename of the main CSS file
-        - ``jsFileName`` -- the filename of the main JS file
+        - ``mainCssFilePath`` -- the filepath of the main CSS file
+        - ``jsFilePath`` -- the filepath of the main JS file
         - ``pageTitle`` -- pageTitle
         - ``iconPath`` -- webapp icon path
         - ``came_from`` -- the url this login page was triggered from
@@ -56,8 +56,8 @@ class login_page():
     def __init__(
             self,
             log,
-            mainCssFileName="main.css",
-            jsFileName="main-ck.js",
+            mainCssFilePath="/static/styles/main.css",
+            jsFilePath="/static/js/main-ck.js",
             pageTitle="Login",
             iconPath="",
             came_from="/",
@@ -65,8 +65,8 @@ class login_page():
     ):
         self.log = log
         log.debug("instansiating a new 'login_page' object")
-        self.mainCssFileName = mainCssFileName
-        self.jsFileName = jsFileName
+        self.mainCssFilePath = mainCssFilePath
+        self.jsFilePath = jsFilePath
         self.pageTitle = pageTitle
         self.iconPath = iconPath
         self.came_from = came_from
@@ -124,7 +124,7 @@ class login_page():
 
         head = khufu.head(
             relativeUrlBase=False,
-            mainCssFileName='main_marshall.css',
+            mainCssFilePath=self.mainCssFilePath,
             pageTitle=self.pageTitle,
             extras=''
         )
@@ -147,7 +147,7 @@ class login_page():
             relativeUrlBase=False,
             responsive=True,
             googleAnalyticsCode=False,
-            jsFileName="main-ck.js"
+            jsFilePath=self.jsFilePath
         )
 
         webpage = khufu.htmlDocument(

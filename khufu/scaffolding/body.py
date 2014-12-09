@@ -14,7 +14,7 @@ def body(
         relativeUrlBase=False,
         responsive=True,
         googleAnalyticsCode=False,
-        jsFileName="main.js"
+        jsFilePath="main.js"
 ):
     """Generate an HTML body
 
@@ -26,7 +26,7 @@ def body(
         - ``relativeUrlBase`` -- how to get back to the document root
         - ``responsive`` -- should the webpage be responsive to screen-size?
         - ``googleAnalyticsCode`` -- google analytics code for the website
-        - ``jsFileName`` -- the name of the main javascript file
+        - ``jsFilePath`` -- the name of the main javascript file
 
     **Return:**
         - ``body`` -- the body
@@ -68,7 +68,7 @@ def body(
       <![endif]-->
         %(navBar)s
         %(container)s
-      <script src="%(relativeUrlBase)s/static/js/%(jsFileName)s"></script>
+      <script src="%(jsFilePath)s"></script>
       %(googleAnalyticsCode)s
       </body><!-- /#%(htmlId)s-->
       """ \

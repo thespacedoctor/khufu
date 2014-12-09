@@ -8,7 +8,7 @@ from . import *
 
 def head(
     relativeUrlBase=False,
-    mainCssFileName="main.css",
+    mainCssFilePath="main.css",
     pageTitle="",
     extras="",
     faviconLocation=False,
@@ -19,7 +19,7 @@ def head(
     **Key Arguments:**
         ``relativeUrlBase`` -- relative base url for js, css, image folders
         ``pageTitle`` -- well, the page title!
-        ``mainCssFileName`` -- css file name
+        ``mainCssFilePath`` -- css file path
         ``extras`` -- any extra info to be included in the ``head`` element
         ``faviconLocation`` -- path to faviconLocation if not in document root
 
@@ -29,9 +29,8 @@ def head(
     if not relativeUrlBase:
         relativeUrlBase = ""
 
-    cssUrl = """%(relativeUrlBase)s/static/styles/css/%(mainCssFileName)s""" % locals()
     cssLink = """
-        <link rel="stylesheet" href="%(cssUrl)s" type="text/css" />
+        <link rel="stylesheet" href="%(mainCssFilePath)s" type="text/css" />
     """ % locals()
 
     if faviconLocation is not False:
