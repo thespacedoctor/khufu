@@ -196,7 +196,6 @@ class imagingModal():
                 dataToggle=False,  # [ modal ]
                 popover=thisPopover
             )
-            print downloadLink
         else:
             downloadFileButton = ""
 
