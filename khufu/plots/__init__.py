@@ -1,1 +1,1 @@
-import svgchart
+import svg

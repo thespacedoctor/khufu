@@ -4,7 +4,7 @@ from . import *
 #!/usr/bin/env python
 # encoding: utf-8
 """
-svgchart.py
+svg.py
 ===========
 :Summary:
     Add an SVG chart placeholder to the HTML of your webpage
@@ -34,15 +34,17 @@ from dryxPython import commonutils as dcu
 # AUTHOR : DRYX
 
 
-def svgchart(
+def svg(
     htmlClass=False,
-    csvUrl="#",
+    dataUrl="#",
+    dataFormat="json",
     disable=False,
     htmlId=False,
     chartType="",
-    span=12
+    span=12,
+    height=False
 ):
-    """svgchart
+    """svg
 
     **Key Arguments:**
         - ``htmlClass`` -- the extra html classes required
@@ -75,7 +77,15 @@ def svgchart(
     else:
         span = ""
 
-    svg = """<svg class="chart %(htmlClass)s %(chartType)s %(span)s" %(htmlId)s data-src="%(csvUrl)s" disable="%(disable)s"></svg>""" % locals(
+    if not height:
+        height = ""
+    elif height == "square":
+        htmlClass += " square "
+        height = ""
+    else:
+        height = """ height=%(height)s """ % locals()
+
+    svg = """<svg class="chart %(htmlClass)s  %(span)s" %(htmlId)s chartType="%(chartType)s" data-src="%(dataUrl)s" disable="%(disable)s" %(height)s></svg>""" % locals(
     )
 
     return svg
