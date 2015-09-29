@@ -22,6 +22,13 @@ def tr(
     **Return:**
         - ``tr`` -- the table row
     """
+
+    if isinstance(cellContent, list):
+        new = ""
+        for c in cellContent:
+            new += c
+        cellContent = new
+
     if color is False:
         color = ""
 

@@ -16,7 +16,13 @@ def tbody(
     **Return:**
         - ``tbody`` -- the table body
     """
+
+    if isinstance(trContent, list):
+        new = ""
+        for c in trContent:
+            new += c
+        trContent = new
+
     tbody = """<tbody class="">%(trContent)s</tbody>""" % locals()
 
     return tbody
-

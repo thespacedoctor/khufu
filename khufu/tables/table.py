@@ -57,6 +57,6 @@ def table(
     else:
         condensed = ""
 
-    table = """<table class="table %(striped)s %(bordered)s %(hover)s %(condensed)s %(span)s">%(caption)s%(thead)s%(tbody)s</table>""" % locals(
+    table = """<table class="table %(striped)s %(bordered)s %(hover)s %(condensed)s %(span)s">%(thead)s%(tbody)s%(caption)s</table>""" % locals(
     )
     return table
