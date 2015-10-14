@@ -85,7 +85,7 @@ def svg(
     else:
         height = """ height=%(height)s """ % locals()
 
-    svg = """<svg class="chart %(htmlClass)s  %(span)s" %(htmlId)s chartType="%(chartType)s" data-src="%(dataUrl)s" disable="%(disable)s" %(height)s></svg>""" % locals(
+    svg = """<svg class="chart %(htmlClass)s  %(span)s" %(htmlId)s chartType="%(chartType)s" data-src="%(dataUrl)s" disable="%(disable)s" %(height)s ></svg>""" % locals(
     )
 
     return svg

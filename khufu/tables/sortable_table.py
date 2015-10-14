@@ -133,6 +133,8 @@ class sortable_table():
         thisUrl = self.baseUrl
         if thisUrl[-3:] == ".py":
             thisUrl = "%(thisUrl)s?" % locals()
+        elif "?" not in thisUrl:
+            thisUrl = "%(thisUrl)s?" % locals()
         elif thisUrl[-1:] not in ["?", "&"]:
             thisUrl = "%(thisUrl)s&" % locals()
         self.baseUrl = thisUrl
