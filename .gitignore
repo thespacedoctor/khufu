@@ -28,3 +28,4 @@ logs/*.log
 transients_cache/
 test_database.sql
 /logs/log.html
+config.codekit
