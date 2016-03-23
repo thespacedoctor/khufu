@@ -59,6 +59,7 @@ def svg(
 
     **Todo**
     """
+
     if not htmlClass:
         htmlClass = ""
 
