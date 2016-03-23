@@ -10,7 +10,8 @@ def blockquote(
         content="",
         source=False,
         pullRight=False):
-    """Get HTML5 Blockquote
+    """
+    *Get HTML5 Blockquote*
 
     **Key Arguments:**
         - ``content`` -- content to be quoted
@@ -37,4 +38,3 @@ def blockquote(
         </blockquote>""" % locals()
 
     return blockquote
-

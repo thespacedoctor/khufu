@@ -13,7 +13,8 @@ def searchForm(
         blockHelpText=False,
         focusedInputText=False,
         htmlId=False):
-    """Generate a search-form - TBS style
+    """
+    *Generate a search-form - TBS style*
 
     **Key Arguments:**
         - ``buttonText`` -- the button text
@@ -62,4 +63,3 @@ def searchForm(
     </form>""" % locals()
 
     return searchForm
-

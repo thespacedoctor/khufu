@@ -1,10 +1,7 @@
 # !/usr/bin/env python
 # encoding: utf-8
 """
-modalForm.py
-============
-:Summary:
-    The modal form class
+*The modal form class*
 
 :Author:
     David Young
@@ -12,13 +9,8 @@ modalForm.py
 :Date Created:
     July 1, 2014
 
-:dryx syntax:
-    - ``_someObject`` = a 'private' object that should only be changed for debugging
-
-:Notes:
-    - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
-
-:Tasks:
+.. todo::
+    
 """
 ################# GLOBAL IMPORTS ####################
 import sys
@@ -41,7 +33,7 @@ from . import modal
 class modalForm():
 
     """
-    The worker class for the modalForm module
+    *The worker class for the modalForm module*
 
     **Key Arguments:**
         - ``log`` -- logger
@@ -50,7 +42,8 @@ class modalForm():
         - ``reloadToUrl`` -- reloadToUrl
         - ``formClassName`` -- give a class name to form (if required by CSS or JS)
 
-    **Todo**
+    .. todo::
+
     """
     # Initialisation
 
@@ -93,12 +86,14 @@ class modalForm():
 
     # Method Attributes
     def get(self):
-        """get the modalForm object
+        """
+        *get the modalForm object*
 
         **Return:**
             - ``modalForm``
 
-        **Todo**
+        .. todo::
+
         """
         self.log.info('starting the ``get`` method')
 
@@ -156,7 +151,8 @@ class modalForm():
             formObject,
             label="",
             hidden=False):
-        """add a form objec to the modal form
+        """
+        *add a form objec to the modal form*
 
         **Key Arguments:**
             - ``formObject`` -- the object to add to the form
@@ -166,7 +162,8 @@ class modalForm():
         **Return:**
             - None
 
-        **Todo**
+        .. todo::
+
         """
         self.log.info('starting the ``addFormObject`` method')
 
@@ -198,7 +195,8 @@ class modalForm():
     def get_form_action_buttons(
             self,
             formId):
-        """get form action buttons
+        """
+        *get form action buttons*
 
         **Key Arguments:**
             - ``formId`` -- the HTML id of the form
@@ -206,7 +204,8 @@ class modalForm():
         **Return:**
             - ``actionButtons`` -- the action buttos for the form (cancel, submit)
 
-        **Todo**
+        .. todo::
+
         """
         self.log.info('starting the ``get_form_action_buttons`` method')
 
@@ -257,7 +256,8 @@ class modalForm():
             self,
             key,
             value):
-        """add hidden parameter value to the form (to be submitted with the form but does not need user input)
+        """
+        *add hidden parameter value to the form (to be submitted with the form but does not need user input)*
 
         **Key Arguments:**
             - ``key`` -- the key for the hidden value (will be appended to query string when form submitted)
@@ -266,7 +266,8 @@ class modalForm():
         **Return:**
             - None
 
-        **Todo**
+        .. todo::
+
         """
         self.log.info('starting the ``add_hidden_parameter_value`` method')
 
@@ -293,7 +294,8 @@ class modalForm():
 
     def set_hidden_parameters(
             self):
-        """get hidden parameters
+        """
+        *get hidden parameters*
 
         **Key Arguments:**
             # -
@@ -301,7 +303,8 @@ class modalForm():
         **Return:**
             - None
 
-        **Todo**
+        .. todo::
+
         """
         self.log.info('starting the ``set_hidden_parameters`` method')
 

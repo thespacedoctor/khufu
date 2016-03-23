@@ -8,7 +8,8 @@ from . import *
 
 def tbody(
         trContent=""):
-    """Generate a table body - TBS style
+    """
+    *Generate a table body - TBS style*
 
     **Key Arguments:**
         - ``trContent`` -- the table row content

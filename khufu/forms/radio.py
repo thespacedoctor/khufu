@@ -14,7 +14,8 @@ def radio(
         blockHelpText=False,
         disabled=False,
         checked=False):
-    """Generate a radio - TBS style
+    """
+    *Generate a radio - TBS style*
 
     **Key Arguments:**
         - ``optionText`` -- the text associated with this checkbox
@@ -62,4 +63,3 @@ def radio(
         </label>%(inlineHelpText)s%(inlineHelpText)s""" % locals()
 
     return radio
-

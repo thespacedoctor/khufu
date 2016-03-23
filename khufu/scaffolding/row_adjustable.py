@@ -16,7 +16,8 @@ def row_adjustable(
     onTablet=True,
     onDesktop=True
 ):
-    """row adjustable
+    """
+    *row adjustable*
 
     **Key Arguments:**
         - ``span`` -- the relative width of the column
@@ -31,7 +32,8 @@ def row_adjustable(
     **Return:**
         - ``row`` -- the adjustable row
 
-    **Todo**
+    .. todo::
+
     """
     ## VARIABLES ##
     column = grid_column(

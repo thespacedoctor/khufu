@@ -21,7 +21,8 @@ def li(
         onDesktop=True,
         indent=False,
         hidden=False):
-    """Generate a li - TBS style
+    """
+    *Generate a li - TBS style*
 
     **Key Arguments:**
         - ``content`` -- the content (if a subMenu for dropdown this should be <ul>)

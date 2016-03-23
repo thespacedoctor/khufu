@@ -13,7 +13,8 @@ def th(
         popover=False,
         span=False,
         columnWidth=False):
-    """Generate a table header cell - TBS style
+    """
+    *Generate a table header cell - TBS style*
 
     **Key Arguments:**
         - ``content`` -- the content
@@ -50,4 +51,3 @@ def th(
     th = """<th %(href)s class="%(color)s %(link)s %(span)s" %(columnWidth)s %(popover)s>%(content)s</th>""" % locals()
 
     return th
-

@@ -28,7 +28,8 @@ def formInput(
         defaultValue=False,
         hidden=False,
         divWrap=True):
-    """Generate a form input - TBS style
+    """
+    *Generate a form input - TBS style*
 
     **Key Arguments:**
         - ``ttype`` -- [ text | password | datetime | datetime-local | date | month | time | week | number | float | email | url | search | tel | color ]
@@ -202,4 +203,3 @@ def formInput(
         formInput = thisInput
 
     return formInput
-

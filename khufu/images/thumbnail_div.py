@@ -9,7 +9,8 @@ from . import *
 def thumbnail_div(
         div_content=""
 ):
-    """Generate a thumbnail - TBS style
+    """
+    *Generate a thumbnail - TBS style*
 
     **Key Arguments:**
         - ``div_content`` -- the html content of the thumbnail

@@ -13,7 +13,8 @@ def heroUnit(
         buttonText="",
         buttonHref="#"
 ):
-    """Generate a heroUnit - TBS style
+    """
+    *Generate a heroUnit - TBS style*
 
     **Key Arguments:**
         - ``headline`` -- the headline text

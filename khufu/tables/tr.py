@@ -12,7 +12,8 @@ def tr(
         href=False,
         popover=False,
         span=False):
-    """Generate a table row - TBS style
+    """
+    *Generate a table row - TBS style*
 
     **Key Arguments:**
         - ``cellContent`` -- the content - either <td>s or <th>s

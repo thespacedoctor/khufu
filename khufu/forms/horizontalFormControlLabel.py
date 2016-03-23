@@ -11,7 +11,8 @@ def horizontalFormControlLabel(
         forId=False,
         sideLabel=False,
         location="left"):
-    """set a horizontal form label
+    """
+    *set a horizontal form label*
 
     **Key Arguments:**
         - ``labelText`` -- the label text
@@ -32,4 +33,3 @@ def horizontalFormControlLabel(
     )
 
     return horizontalFormRowLabel
-

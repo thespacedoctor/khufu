@@ -19,7 +19,7 @@ def navBar(
     transparent=False,
     htmlClass=False
 ):
-    """ Generate a navBar - TBS style
+    """ *Generate a navBar - TBS style*
 
     **Key Arguments:**
         - ``brand`` -- the website brand [ image | text ]

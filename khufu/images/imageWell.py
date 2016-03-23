@@ -1,22 +1,13 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-imageWell.py
-=============
-:Summary:
-    Class to generate a well of images
+*Class to generate a well of images*
 
 :Author:
     David Young
 
 :Date Created:
     April 29, 2014
-
-:dryx syntax:
-    - ``_someObject`` = a 'private' object that should only be changed for debugging
-
-:Notes:
-    - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
 """
 ################# GLOBAL IMPORTS ####################
 import sys
@@ -34,7 +25,7 @@ from imagingModal import imagingModal
 class imageWell():
 
     """
-    Framework for a bootstrap style well containing thumbnail images that can be clicked on to reveal a modal of more imformation
+    *Framework for a bootstrap style well containing thumbnail images that can be clicked on to reveal a modal of more imformation*
 
     **Key Arguments:**
         - ``log`` -- logger
@@ -71,7 +62,8 @@ class imageWell():
 
     # Method Attributes
     def get(self):
-        """get the image well
+        """
+        *get the image well*
 
         **Return:**
             - ``imageWellRow`` -- the html text
@@ -147,7 +139,8 @@ class imageWell():
             modalHeaderContent="",
             modalFooterContent="",
             modalFooterButtons=[]):
-        """append an image to the image well
+        """
+        *append an image to the image well*
 
         **Key Arguments:**
             - ``imagePath`` -- path to the image to add to the well

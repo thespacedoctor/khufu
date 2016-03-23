@@ -18,7 +18,7 @@ def grid_column(
     onDesktop=True,
     dataspy=False
 ):
-    """ Get a column block for the Twiiter Bootstrap static layout grid.
+    """ *Get a column block for the Twiiter Bootstrap static layout grid.*
 
     **Key Arguments:**
         - ``log`` -- logger
@@ -78,4 +78,3 @@ def grid_column(
         </div>
     """ % locals()
     return column
-

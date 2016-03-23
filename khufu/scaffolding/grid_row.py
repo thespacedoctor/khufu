@@ -15,8 +15,8 @@ def grid_row(
     onTablet=True,
     onDesktop=True,
 ):
-    """Create a row using the Twitter Bootstrap static layout grid.
-    The static Bootstrap grid system utilizes 12 columns.
+    """ *Create a row using the Twitter Bootstrap static layout grid.
+    The static Bootstrap grid system utilizes 12 columns.*
 
     **Key Arguments:**
         - ``responsive`` -- fluid layout if true, fixed if false

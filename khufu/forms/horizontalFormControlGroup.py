@@ -10,7 +10,8 @@ def horizontalFormControlGroup(
         content="",
         validationLevel=False,
         hidden=False):
-    """Generate a horizontal form control group (row) - TBS style
+    """
+    *Generate a horizontal form control group (row) - TBS style*
 
     **Key Arguments:**
         - ``content`` -- the content
@@ -39,4 +40,3 @@ def horizontalFormControlGroup(
         </div>""" % locals()
 
     return horizontalFormControlGroup
-

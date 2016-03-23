@@ -10,7 +10,7 @@ def alert(alertText='',
           alertHeading="",
           extraPadding=False,
           alertLevel="warning"):
-    """ Generate a alert - TBS style
+    """ *Generate a alert - TBS style*
 
     **Key Arguments:**
         - ``alertText`` -- the text to be displayed in the alert
@@ -45,4 +45,3 @@ def alert(alertText='',
         </div>""" \
         % locals()
     return alert
-

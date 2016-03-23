@@ -7,7 +7,8 @@ from . import *
 
 
 def unescape_html(html):
-    """Unescape a string previously escaped with cgi.escape()
+    """
+    *Unescape a string previously escaped with cgi.escape()*
 
     **Key Arguments:**
         - ``dbConn`` -- mysql database connection

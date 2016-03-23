@@ -1,8 +1,9 @@
 # encoding: utf-8
 from . import *
 
+
 def badge(text='', level='default'):
-    """ Generate a badge - TBS style
+    """ *Generate a badge - TBS style*
 
     **Key Arguments:**
         - ``text`` -- the text content

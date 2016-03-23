@@ -7,7 +7,8 @@ from . import *
 
 
 def controlRow(inputList=[]):
-    """generate a form row
+    """
+    *generate a form row*
 
     **Key Arguments:**
         - ``inputList`` -- list of inputs for the control row
@@ -30,4 +31,3 @@ def controlRow(inputList=[]):
         </div>""" % locals()
 
     return controlRow
-

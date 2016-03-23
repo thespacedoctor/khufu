@@ -17,7 +17,7 @@ def searchbox(
     pull=False,
     actionScript="#"
 ):
-    """Create a Search box
+    """ *Create a Search box*
 
     **Key Arguments:**
         - ``size`` -- size = mini | small | medium | large | xlarge | xxlarge

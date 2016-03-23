@@ -10,7 +10,8 @@ def pagination(
         listItems="",
         size="default",
         align="left"):
-    """Generate pagination - TBS style. Simple pagination inspired by Rdio, great for apps and search results.
+    """
+    *Generate pagination - TBS style. Simple pagination inspired by Rdio, great for apps and search results.*
 
     **Key Arguments:**
         - ``listItems`` -- the numbered items to be listed within the <ul> of the pagination block

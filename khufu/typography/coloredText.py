@@ -13,7 +13,8 @@ def coloredText(
         pull=False,
         size=False,
         addBackgroundColor=False):
-    """Colour text a given colour
+    """
+    *Colour text a given colour*
 
     **Key Arguments:**
         - ``text`` -- the text to color
@@ -25,7 +26,8 @@ def coloredText(
     **Return:**
         - ``text`` -- the coloured text span
 
-    **Todo**
+    .. todo::
+
     """
     if pull is not False:
         pull = """pull-%(pull)s""" % locals()

@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-modal.py
-========
-:Summary:
-    Modal
+*Modal*
 
 :Author:
     David Young
@@ -12,13 +9,8 @@ modal.py
 :Date Created:
     July 1, 2014
 
-:dryx syntax:
-    - ``_someObject`` = a 'private' object that should only be changed for debugging
-
-:Notes:
-    - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
-
-:Tasks:
+.. todo::
+    
 """
 ################# GLOBAL IMPORTS ####################
 import sys
@@ -41,7 +33,8 @@ def modal(
     centerContent=False,
     htmlClass=False
 ):
-    """generate a modal to by generated with a js event
+    """
+    *generate a modal to by generated with a js event*
 
     **Key Arguments:**
       - ``modalHeaderContent`` -- the heading for the modal
@@ -54,7 +47,8 @@ def modal(
     **Return:**
         - ``modal`` -- the modal
 
-    **Todo**
+    .. todo::
+
     """
     if htmlClass is False:
         htmlClass = ""

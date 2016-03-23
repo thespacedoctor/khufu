@@ -18,7 +18,8 @@ def form(
         span=False,
         offset=False,
         openInNewTab=False):
-    """Generate a form - TBS style
+    """
+    *Generate a form - TBS style*
 
     **Key Arguments:**
         - ``content`` -- the content

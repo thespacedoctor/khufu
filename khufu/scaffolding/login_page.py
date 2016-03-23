@@ -1,10 +1,7 @@
 #!/usr/local/bin/python
 # encoding: utf-8
 """
-login_page.py
-=============
-:Summary:
-    Simple Login Page
+*Simple Login Page*
 
 :Author:
     David Young
@@ -12,13 +9,8 @@ login_page.py
 :Date Created:
     November 20, 2014
 
-:dryx syntax:
-    - ``_someObject`` = a 'private' object that should only be changed for debugging
-
-:Notes:
-    - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
-
-:Tasks:
+.. todo::
+    
 """
 ################# GLOBAL IMPORTS ####################
 import sys
@@ -26,7 +18,7 @@ import os
 from docopt import docopt
 from dryxPython import logs as dl
 from dryxPython import commonutils as dcu
-from dryxPython.projectsetup import setup_main_clutil
+from fundamentals import tools, times
 import khufu
 
 
@@ -38,7 +30,7 @@ import khufu
 class login_page():
 
     """
-    The worker class for the login_page module
+    *The worker class for the login_page module*
 
     **Key Arguments:**
         - ``log`` -- logger
@@ -49,7 +41,8 @@ class login_page():
         - ``came_from`` -- the url this login page was triggered from
         - ``message`` -- message to display as notification
 
-    **Todo**
+    .. todo::
+
     """
     # Initialisation
 
@@ -92,12 +85,14 @@ class login_page():
 
     # Method Attributes
     def get(self):
-        """get the login_page object
+        """
+        *get the login_page object*
 
         **Return:**
             - ``login_page`` -- the html login page
 
-        **Todo**
+        .. todo::
+
         """
         self.log.info('starting the ``get`` method')
 
@@ -111,14 +106,16 @@ class login_page():
 
     def _build_webapge_scaffolding(
             self):
-        """ build webapge scaffolding
+        """
+        *build webapge scaffolding*
 
         **Key Arguments:**
 
         **Return:**
             - ``webpage`` -- the html login page
 
-        **Todo**
+        .. todo::
+
         """
         self.log.info('starting the ``_build_webapge_scaffolding`` method')
 

@@ -19,7 +19,8 @@ def select(
         disabled=False,
         popover=False,
         extraAttributeTupleList=False):
-    """Generate a select - TBS style
+    """
+    *Generate a select - TBS style*
 
     **Key Arguments:**
         - ``optionList`` -- the list of options

@@ -19,7 +19,8 @@ def a(
         postInBackground=False,
         openInNewTab=False,
         popover=False):
-    """Generate an anchor - TBS style
+    """
+    *Generate an anchor - TBS style*
 
     **Key Arguments:**
         - ``content`` -- the content

@@ -14,7 +14,8 @@ def formActions(
         button5=False,
         inlineHelpText=False,
         blockHelpText=False):
-    """Generate a formActions - TBS style
+    """
+    *Generate a formActions - TBS style*
 
     **Key Arguments:**
         - ``primaryButton`` -- the primary button
@@ -60,4 +61,3 @@ def formActions(
         </div>%(inlineHelpText)s%(blockHelpText)s""" % locals()
 
     return formActions
-

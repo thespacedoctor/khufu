@@ -11,7 +11,8 @@ def popover(
         content=False,
         delay=200,
         after=False):
-    """popover to provide helper text or some secondary info about an element
+    """
+    *popover to provide helper text or some secondary info about an element*
 
     **Key Arguments:**
         - ``tooltip`` -- use tooltip instead of popover
@@ -26,7 +27,8 @@ def popover(
     **Return:**
         - ``popover`` - the popover helper text to be added to an element
 
-    **Todo**
+    .. todo::
+
         - [ ] when complete, clean popover function
         - [ ] when complete add logging
         - [ ] when complete, decide whether to abstract function to another module
@@ -58,4 +60,3 @@ def popover(
         popover = """%(popover)s data-html=true """ % locals()
 
     return popover
-

@@ -10,7 +10,8 @@ def progressBar(
         barStyle="plain",
         precentageWidth="10",
         barLevel="info"):
-    """Generate a progress bar - TBS style
+    """
+    *Generate a progress bar - TBS style*
 
     **Key Arguments:**
         - ``barStyle`` -- style of the progress bar [ "plain" | "striped" | "striped-active" ]
@@ -35,4 +36,3 @@ def progressBar(
         </div>""" % locals()
 
     return progressBar
-

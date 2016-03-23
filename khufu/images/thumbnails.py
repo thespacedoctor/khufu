@@ -9,7 +9,8 @@ from . import *
 def thumbnails(
         listItems=[]
 ):
-    """Generate a thumbnail - TBS style
+    """
+    *Generate a thumbnail - TBS style*
 
     **Key Arguments:**
         - ``htmlContent`` -- the html content of the thumbnail

@@ -13,7 +13,8 @@ def stackedProgressBar(
         warningWidth="10",
         errorWidth="10"
 ):
-    """Generate a progress bar - TBS style
+    """
+    *Generate a progress bar - TBS style*
 
     **Key Arguments:**
         - ``barLevel`` -- the level/color of progress [ "info" | "success" | "warning" | "danger"]
