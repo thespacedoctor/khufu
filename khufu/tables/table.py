@@ -15,7 +15,8 @@ def table(
         hover=True,
         condensed=False,
         span=False):
-    """Generate a table - TBS style
+    """
+    *Generate a table - TBS style*
 
     **Key Arguments:**
         - ``caption`` -- the table caption

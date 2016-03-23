@@ -10,7 +10,8 @@ def code(
         content="",
         inline=True,
         scroll=False):
-    """Generate a code section
+    """
+    *Generate a code section*
 
     **Key Arguments:**
         - ``content`` -- the content of the code block

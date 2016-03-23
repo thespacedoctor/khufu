@@ -9,7 +9,8 @@ from . import *
 def abbr(
         abbreviation="",
         fullWord=""):
-    """Get HTML5 Abbreviation
+    """
+    *Get HTML5 Abbreviation*
 
     **Key Arguments:**
         - ``abbreviation`` -- the abbreviation

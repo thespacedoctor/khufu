@@ -17,7 +17,8 @@ def textarea(
         required=False,
         disabled=False,
         prepopulate=False):
-    """Generate a textarea - TBS style
+    """
+    *Generate a textarea - TBS style*
 
     **Key Arguments:**
         - ``rows`` -- the number of rows the text area should span
@@ -81,4 +82,3 @@ def textarea(
     )
 
     return textarea
-

@@ -16,7 +16,8 @@ def body(
         googleAnalyticsCode=False,
         jsFilePath="main.js"
 ):
-    """Generate an HTML body
+    """
+    *Generate an HTML body*
 
     **Key Arguments:**
         - ``navBar`` -- the top navigation bar

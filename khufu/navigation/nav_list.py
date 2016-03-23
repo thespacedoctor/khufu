@@ -13,7 +13,7 @@ def nav_list(
     onTablet=True,
     onDesktop=True,
 ):
-    """Create an html list of navigation items from the required python list
+    """ *Create an html list of navigation items from the required python list*
 
     **Key Arguments:**
         - ``itemList`` -- items to be included in the navigation list

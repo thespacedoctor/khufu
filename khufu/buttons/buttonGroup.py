@@ -10,7 +10,8 @@ def buttonGroup(
         buttonList=[],
         format="default",
         pull=False):
-    """Generate a buttonGroup - TBS style
+    """
+    *Generate a buttonGroup - TBS style*
 
     **Key Arguments:**
         - ``buttonList`` -- a list of buttons

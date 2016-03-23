@@ -8,7 +8,8 @@ from . import *
 
 def thead(
         trContent=""):
-    """Generate a table head - TBS style
+    """
+    *Generate a table head - TBS style*
 
     **Key Arguments:**
         - ``trContent`` -- the table row content
@@ -19,4 +20,3 @@ def thead(
     thead = """<thead class="">%(trContent)s</thead>""" % locals()
 
     return thead
-

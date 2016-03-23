@@ -10,7 +10,8 @@ def td(
         content=False,
         color=False,
         span=False):
-    """Generate a table data cell - TBS style
+    """
+    *Generate a table data cell - TBS style*
 
     **Key Arguments:**
         - ``content`` -- the content

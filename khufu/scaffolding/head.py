@@ -14,7 +14,7 @@ def head(
     faviconLocation=False,
     assetsDirectory=False
 ):
-    """Generate an html head element for your webpage
+    """ *Generate an html head element for your webpage*
 
     **Key Arguments:**
         ``relativeUrlBase`` -- relative base url for js, css, image folders

@@ -24,7 +24,8 @@ def button(
         notification=False,
         close=False,
         formId=False):
-    """Generate a button - TBS style
+    """
+    *Generate a button - TBS style*
 
     **Key Arguments:**
         - ``buttonText`` -- the text to display on the button

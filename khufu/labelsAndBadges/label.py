@@ -7,7 +7,7 @@ from . import *
 
 
 def label(text='', level='default'):
-    """ Generate a label - TBS style
+    """ *Generate a label - TBS style*
 
     **Key Arguments:**
         - ``text`` -- the text content
@@ -25,4 +25,3 @@ def label(text='', level='default'):
             %(text)s
         </span>""" % locals()
     return label
-

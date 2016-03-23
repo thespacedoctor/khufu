@@ -1,10 +1,7 @@
 #!/usr/local/bin/python
 # encoding: utf-8
 """
-login_form.py
-=============
-:Summary:
-    Login Form (mainly to be used in Pyramid apps)
+*Login Form (mainly to be used in Pyramid apps)*
 
 :Author:
     David Young
@@ -12,13 +9,8 @@ login_form.py
 :Date Created:
     November 20, 2014
 
-:dryx syntax:
-    - ``_someObject`` = a 'private' object that should only be changed for debugging
-
-:Notes:
-    - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
-
-:Tasks:
+.. todo::
+    
 """
 ################# GLOBAL IMPORTS ####################
 import sys
@@ -26,7 +18,7 @@ import os
 from docopt import docopt
 from dryxPython import logs as dl
 from dryxPython import commonutils as dcu
-from dryxPython.projectsetup import setup_main_clutil
+from fundamentals import tools, times
 import khufu
 
 ###################################################################
@@ -37,14 +29,15 @@ import khufu
 class login_form():
 
     """
-    The worker class for the login_form module
+    *The worker class for the login_form module*
 
     **Key Arguments:**
         - ``log`` -- logger
         - ``iconPath`` -- path to webapp icon
         - ``message`` -- message to display (warning)
 
-    **Todo**
+    .. todo::
+
     """
     # Initialisation
 
@@ -78,12 +71,14 @@ class login_form():
 
     # Method Attributes
     def get(self):
-        """get the login_form object
+        """
+        *get the login_form object*
 
         **Return:**
             - ``formContent`` -- the content of the login form
 
-        **Todo**
+        .. todo::
+
         """
         self.log.info('starting the ``get`` method')
 
@@ -94,7 +89,8 @@ class login_form():
 
     def _setup_form(
             self):
-        """ setup loging form
+        """
+        *setup loging form*
 
         **Key Arguments:**
             # -
@@ -102,7 +98,8 @@ class login_form():
         **Return:**
             - ``formContent`` -- content of the login form
 
-        **Todo**
+        .. todo::
+
         """
         self.log.info('starting the ``_setup_form`` method')
 

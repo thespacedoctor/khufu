@@ -10,7 +10,7 @@ def mediaObject(
     otherContent=False,
     nestedMediaObjects=False,
 ):
-    """ Generate an abstract object style for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.
+    """ *Generate an abstract object style for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.*
 
     **Key Arguments:**
         - ``displayType`` -- the display style of the media object [ "div" | "li" ]
@@ -70,4 +70,3 @@ def mediaObject(
         </%(displayType)s>""" \
         % locals()
     return mediaObject
-

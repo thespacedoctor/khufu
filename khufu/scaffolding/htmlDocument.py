@@ -10,7 +10,8 @@ def htmlDocument(
         contentType=False,
         content='',
         attachmentSaveAsName=False):
-    """The doctype and html tags
+    """
+    *The doctype and html tags*
 
     **Key Arguments:**
         - ``content`` -- the head and body of the html page

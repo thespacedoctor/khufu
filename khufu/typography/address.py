@@ -14,7 +14,8 @@ def address(
         phone=False,
         email=False,
         twitterHandle=False):
-    """Get The HTML5 address element
+    """
+    *Get The HTML5 address element*
 
     **Key Arguments:**
         - ``name`` -- name of person

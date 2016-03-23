@@ -1,10 +1,7 @@
 #!/usr/local/bin/python
 # encoding: utf-8
 """
-getpackagepath.py
-====================
-:Summary:
-    Get common file and folder paths for the host package
+*Get common file and folder paths for the host package*
 
 :Author:
     David Young
@@ -12,13 +9,8 @@ getpackagepath.py
 :Date Created:
     October 24, 2013
 
-:dryx syntax:
-    - ``_someObject`` = a 'private' object that should only be changed for debugging
-
-:Notes:
-    - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
-
-:Tasks:
+.. todo::
+    
     - [ ] when complete pull all general functions and classes into dryxPython
 """
 ################# GLOBAL IMPORTS ####################
@@ -43,7 +35,8 @@ from dryxPython import commonutils as dcu
 
 
 def getpackagepath():
-    """getpackagepath
+    """
+    *getpackagepath*
 
     **Key Arguments:**
         - None
@@ -51,9 +44,10 @@ def getpackagepath():
     **Return:**
         - ``packagePath`` -- path to the host package
 
-    **Todo**
-        - [ ] when complete, clean worker function and add comments
-        - [ ] when complete add logging
+    .. todo::
+
+        - when complete, clean worker function and add comments
+        - when complete add logging
     """
     ################ > IMPORTS ################
     ## STANDARD LIB ##

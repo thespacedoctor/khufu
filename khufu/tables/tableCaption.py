@@ -8,7 +8,8 @@ from . import *
 
 def tableCaption(
         content=""):
-    """Generate a table caption - TBS style
+    """
+    *Generate a table caption - TBS style*
 
     **Key Arguments:**
         - ``content`` -- the content

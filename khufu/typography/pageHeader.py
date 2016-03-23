@@ -9,7 +9,8 @@ from . import *
 def pageHeader(
         headline="",
         tagline=""):
-    """Generate a pageHeader - TBS style
+    """
+    *Generate a pageHeader - TBS style*
 
     **Key Arguments:**
         - ``headline`` -- the headline text

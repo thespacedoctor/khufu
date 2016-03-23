@@ -20,7 +20,8 @@ def image(
         onTablet=True,
         onDesktop=True,
         clickToModal=False,
-        openInNewTab=False):
+        openInNewTab=False,
+        modal=False):
     """Create an HTML image (with ot without link).
     Based on the Twitter bootstrap setup.
 
@@ -37,6 +38,7 @@ def image(
         - ``onDesktop`` -- does this container get displayed on a desktop sized screen
         - ``clickToModal`` -- if you want to display the image in a modal when clicked?
         - ``openInNewTab`` -- open image link in new tab?
+        - ``modal`` -- is this linked to a modal?
 
     **Return:**
         - ``image`` - the formatted image
@@ -93,12 +95,17 @@ def image(
     else:
         clickToModal = "clickToModal"
 
+    if modal:
+        modal = 'data-toggle=modal'
+    else:
+        modal = ""
+
     if "holder.js" in src:
         src = """data-src="%(src)s" """ % locals()
     else:
         src = """src="%(src)s" """ % locals()
 
-    image = """<img %(src)s class="%(display)s %(htmlClass)s %(onPhone)s %(onTablet)s %(onDesktop)s %(pull)s %(clickToModal)s" %(htmlId)s %(width)s %(height)s>""" % locals(
+    image = """<img %(src)s class="%(display)s %(htmlClass)s %(onPhone)s %(onTablet)s %(onDesktop)s %(pull)s %(clickToModal)s" %(htmlId)s %(width)s %(height)s >""" % locals(
     )
 
     if openInNewTab is not False:
@@ -107,7 +114,7 @@ def image(
         openInNewTab = ""
 
     if href:
-        image = """<a href="%(href)s" class="%(thumbnail)s %(onPhone)s %(onTablet)s %(onDesktop)s %(pull)s" %(htmlId)s %(openInNewTab)s>%(image)s</a>""" % locals(
+        image = """<a href="%(href)s" class="%(thumbnail)s %(onPhone)s %(onTablet)s %(onDesktop)s %(pull)s" %(htmlId)s %(openInNewTab)s %(modal)s>%(image)s</a>""" % locals(
         )
 
     return image

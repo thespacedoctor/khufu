@@ -8,7 +8,7 @@ def well(
         wellSize='default',
         htmlId=False,
         htmlClass=False):
-    """Get well. Use the well as a simple effect on an element to give it an inset effect.
+    """ *Get well. Use the well as a simple effect on an element to give it an inset effect.*
 
     **Key Arguments:**
         - ``wellText`` -- the text to be displayed in the well
@@ -34,4 +34,3 @@ def well(
             %(wellText)s
         </div>""" % locals()
     return well
-

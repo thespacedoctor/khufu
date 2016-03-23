@@ -4,10 +4,7 @@ from . import *
 #!/usr/bin/env python
 # encoding: utf-8
 """
-sortable_table.py
-=======================
-:Summary:
-    A sortable, customisable HTML table 
+*A sortable, customisable HTML table*
 
 :Author:
     David Young
@@ -15,13 +12,8 @@ sortable_table.py
 :Date Created:
     May 27, 2014
 
-:dryx syntax:
-    - ``_someObject`` = a 'private' object that should only be changed for debugging
-
-:Notes:
-    - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
-
-:Tasks:
+.. todo::
+    
 """
 ################# GLOBAL IMPORTS ####################
 import sys
@@ -44,7 +36,7 @@ from khufu.helpers import *
 class sortable_table():
 
     """
-    The worker class for the sortable_table module
+    *The worker class for the sortable_table module*
 
     **Key Arguments:**
         - ``dbConn`` -- mysql database connection
@@ -147,7 +139,8 @@ class sortable_table():
 
     # Method Attributes
     def get(self):
-        """get the sortable_table object
+        """
+        *get the sortable_table object*
 
         **Return:**
             - ``sortable_table``
@@ -170,7 +163,8 @@ class sortable_table():
 
     def get_table_head(
             self):
-        """get table head
+        """
+        *get table head*
 
         **Return:**
             - ``tableHead`` -- the table head
@@ -259,7 +253,8 @@ class sortable_table():
 
     def get_table_body(
             self):
-        """get table body
+        """
+        *get table body*
 
         **Return:**
             - ``tableBody``

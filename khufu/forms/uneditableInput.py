@@ -11,7 +11,8 @@ def uneditableInput(
         span=2,
         inlineHelpText=False,
         blockHelpText=False):
-    """Generate a uneditableInput - TBS style
+    """
+    *Generate a uneditableInput - TBS style*
 
     **Key Arguments:**
         - ``placeholder`` -- the placeholder text

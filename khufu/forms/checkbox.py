@@ -14,7 +14,8 @@ def checkbox(
         inlineHelpText=False,
         blockHelpText=False,
         disabled=False):
-    """Generate a checkbox - TBS style
+    """
+    *Generate a checkbox - TBS style*
 
     **Key Arguments:**
         - ``optionText`` -- the text associated with this checkbox

@@ -9,7 +9,8 @@ from . import *
 def emphasizeText(
         style="em",
         text=""):
-    """Get HTML's default emphasis tags with lightweight styles.
+    """
+    *Get HTML's default emphasis tags with lightweight styles.*
 
     **Key Arguments:**
         - ``style`` -- the emphasis tag [ "small" | "strong" | "em" ]

@@ -9,7 +9,8 @@ from . import *
 def descriptionLists(
         orderedDictionary={},
         sideBySide=False):
-    """A list of definitions.
+    """
+    *A list of definitions.*
 
     **Key Arguments:**
         - ``orderedDictionary`` -- the ordered dictionary of the terms and their definitions
@@ -38,4 +39,3 @@ def descriptionLists(
     """ % locals()
 
     return descriptionLists
-

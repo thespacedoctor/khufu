@@ -17,7 +17,8 @@ def p(
         onDesktop=True,
         htmlId=False,
         htmlClass=False):
-    """Get a Paragraph element
+    """
+    *Get a Paragraph element*
 
     **Key Arguments:**
         - ``content`` -- content of the paragraph

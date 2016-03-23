@@ -23,7 +23,8 @@ def dropdown(
         onPhone=True,
         onTablet=True,
         onDesktop=True):
-    """get a toggleable, contextual menu for displaying lists of links. Made interactive with the dropdown JavaScript plugin. You need to wrap the dropdown's trigger and the dropdown menu within .dropdown, or another element that declares position: relative;
+    """
+    *get a toggleable, contextual menu for displaying lists of links. Made interactive with the dropdown JavaScript plugin. You need to wrap the dropdown's trigger and the dropdown menu within .dropdown, or another element that declares position: relative;
 
     - ``buttonSize`` -- size of button [ mini | small | default | large ]
     - ``buttonColor`` -- [ default | sucess | error | warning | info ]
@@ -37,7 +38,7 @@ def dropdown(
     - ``popover`` -- add a popover for this dropdown
     - ``onPhone`` -- does this container get displayed on a phone sized screen
     - ``onTablet`` -- does this container get displayed on a tablet sized screen
-    - ``onDesktop`` -- does this container get displayed on a desktop sized screen
+    - ``onDesktop`` -- does this container get displayed on a desktop sized screen*
 
       **Return:**
         - ``dropdown`` -- the dropdown menu

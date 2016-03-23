@@ -11,7 +11,8 @@ def hide_from_device(
         onPhone=True,
         onTablet=True,
         onDesktop=True):
-    """hide from device)
+    """
+    *hide from device)*
 
     **Key Arguments:**
         - ``content`` - content to hide/show
@@ -22,7 +23,8 @@ def hide_from_device(
     **Return:**
         - ``span`` -- span containings content with show/hide parameters
 
-    **Todo**
+    .. todo::
+
     """
 
     phoneClass = ""

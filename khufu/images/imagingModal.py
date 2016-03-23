@@ -1,22 +1,13 @@
 # !/usr/bin/env python
 # encoding: utf-8
 """
-imagingModal.py
-===============
-:Summary:
-    An image and modal -- click on the image to present the modal of the larger image with download options
+*An image and modal -- click on the image to present the modal of the larger image with download options*
 
 :Author:
     David Young
 
 :Date Created:
     April 30, 2014
-
-:dryx syntax:
-    - ``_someObject`` = a 'private' object that should only be changed for debugging
-
-:Notes:
-    - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
 """
 ################# GLOBAL IMPORTS ####################
 import sys
@@ -36,7 +27,7 @@ from image import image
 class imagingModal():
 
     """
-    An image and modal -- click on the image to present the modal of the larger image with download options
+    *An image and modal -- click on the image to present the modal of the larger image with download options*
 
     **Key Arguments:**
         - ``dbConn`` -- mysql database connection
@@ -88,7 +79,8 @@ class imagingModal():
 
     # Method Attributes
     def get(self):
-        """get the object
+        """
+        *get the object*
 
         **Return:**
             - ``imageModal``
@@ -105,9 +97,10 @@ class imagingModal():
     def _create_image(
             self,
             width=False):
-        """create the html for the image
+        """
+        *create the html for the image
 
-         - ``width`` -- image width
+         - ``width`` -- image width*
 
         **Return:**
             - ``thisImage`` -- the image created
@@ -145,7 +138,8 @@ class imagingModal():
 
     def _create_modal(
             self):
-        """create modal
+        """
+        *create modal*
 
         **Key Arguments:**
             # -

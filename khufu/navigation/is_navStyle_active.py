@@ -10,7 +10,8 @@ def is_navStyle_active(
         log,
         thisPageName,
         thisPageId):
-    """is navStyle active
+    """
+    *is navStyle active*
 
     **Key Arguments:**
         - ``log`` -- logger
@@ -20,7 +21,8 @@ def is_navStyle_active(
     **Return:**
         - ``navStyle`` -- boolean, true if the navStyle should be active, i.e. the link is to the currently viewed page
 
-    **Todo**
+    .. todo::
+
     - [ ] when complete, clean is_navStyle_active function & add logging
     """
     ################ > IMPORTS ################

@@ -4,10 +4,7 @@ from . import *
 #!/usr/bin/env python
 # encoding: utf-8
 """
-svg.py
-===========
-:Summary:
-    Add an SVG chart placeholder to the HTML of your webpage
+*Add an SVG chart placeholder to the HTML of your webpage*
 
 :Author:
     David Young
@@ -15,13 +12,8 @@ svg.py
 :Date Created:
     May 9, 2014
 
-:dryx syntax:
-    - ``_someObject`` = a 'private' object that should only be changed for debugging
-
-:Notes:
-    - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
-
-:Tasks:
+.. todo::
+    
 """
 ################# GLOBAL IMPORTS ####################
 import sys
@@ -44,7 +36,8 @@ def svg(
     span=12,
     height=False
 ):
-    """svg
+    """
+    *svg*
 
     **Key Arguments:**
         - ``htmlClass`` -- the extra html classes required
@@ -57,7 +50,8 @@ def svg(
     **Return:**
         - ``svg`` -- the svg element
 
-    **Todo**
+    .. todo::
+
     """
     if not htmlClass:
         htmlClass = ""

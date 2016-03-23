@@ -7,7 +7,8 @@ from . import *
 
 
 def ol(itemList=[]):
-    """An ordered list
+    """
+    *An ordered list*
 
     **Key Arguments:**
         - ``itemList`` -- a list of items to be included in the ordered list

@@ -4,7 +4,7 @@
 
 
 def closeIcon():
-    """Get close icon. The generic close icon for dismissing content like modals and alerts.
+    """ *Get close icon. The generic close icon for dismissing content like modals and alerts.*
 
     **Key Arguments:**
 
@@ -13,4 +13,3 @@ def closeIcon():
 
     closeIcon = """<button class="close">&times;</button>"""
     return closeIcon
-

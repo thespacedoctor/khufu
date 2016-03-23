@@ -20,7 +20,8 @@ def ul(
         mediaList=False,
         htmlId=False
 ):
-    """Get An unordered list -- can be used for navigation, stacked tab and pill
+    """
+    *Get An unordered list -- can be used for navigation, stacked tab and pill*
 
     **Key Arguments:**
         - ``itemList`` -- a list of items to be included in the unordered list

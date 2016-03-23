@@ -11,7 +11,8 @@ def dropdownLinkList(
         title="dropdown",
         dropDirection="down"
 ):
-    """dropdownLinkList
+    """
+    *dropdownLinkList*
 
     **Key Arguments:**
         - ``log`` -- logger
@@ -23,7 +24,8 @@ def dropdownLinkList(
     **Return:**
         - None
 
-    **Todo**
+    .. todo::
+
     """
     linkList = []
     for k, v in linkDictionary.iteritems():

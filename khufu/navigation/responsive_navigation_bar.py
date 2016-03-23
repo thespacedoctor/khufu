@@ -18,7 +18,7 @@ def responsive_navigation_bar(
     onTablet=True,
     onDesktop=True,
 ):
-    """ Create a twitter bootstrap responsive nav-bar component
+    """ *Create a twitter bootstrap responsive nav-bar component*
 
     **Key Arguments:**
         - ``shade`` -- if dark then colors are inverted [ False | 'dark' ]

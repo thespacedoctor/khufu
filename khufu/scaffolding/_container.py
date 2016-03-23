@@ -15,7 +15,7 @@ def _container(
     onTablet=True,
     onDesktop=True,
 ):
-    """ The over-all content container for the twitter bootstrap webpage
+    """ *The over-all content container for the twitter bootstrap webpage*
 
     **Key Arguments:**
         - ``responsive`` -- fluid layout if true, fixed if false
