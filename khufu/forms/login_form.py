@@ -59,7 +59,7 @@ class login_form():
         self.icon = khufu.image(
             src=iconPath,  # [ industrial | gray | social ]
             href=False,
-            display="polaroid",  # [ rounded | circle | polaroid | False ]
+            display="circle",  # [ rounded | circle | polaroid | False ]
             pull=False
         )
 
