@@ -33,6 +33,7 @@ def select(
         - ``required`` -- required attribute if the field is not optional
         - ``disabled`` -- add the disabled attribute on an input to prevent user input
         - ``popover`` -- add helper text to the select
+        - ``defaultOption`` -- option to select as default
 
     **Return:**
         - ``select`` -- the select
@@ -83,7 +84,10 @@ def select(
 
     options = ""
     for o, v in zip(optionList, valueList):
-        options = """%(options)s <option value="%(v)s">%(o)s</option>""" % locals()
+        if defaultOption and defaultOption == o:
+            options = """%(options)s <option value="%(v)s" selected="selected">%(o)s</option>""" % locals()
+        else:
+            options = """%(options)s <option value="%(v)s">%(o)s</option>""" % locals()
 
     if required:
         required = """required"""
