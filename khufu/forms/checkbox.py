@@ -13,7 +13,8 @@ def checkbox(
         htmlId=False,
         inlineHelpText=False,
         blockHelpText=False,
-        disabled=False):
+        disabled=False,
+        checked=False):
     """
     *Generate a checkbox - TBS style*
 
@@ -25,6 +26,7 @@ def checkbox(
         - ``inlineHelpText`` -- inline and block level support for help text that appears around form controls
         - ``blockHelpText`` -- a longer block of help text that breaks onto a new line and may extend beyond one line
         - ``disabled`` -- add the disabled attribute on an input to prevent user input
+        - ``checked`` -- the default checked/unchecked state of the box
 
     **Return:**
         - ``checkbox`` -- the checkbox
@@ -61,9 +63,14 @@ def checkbox(
     else:
         name = """name="%(htmlId)s" """ % locals()
 
+    if not checked:
+        checked = ""
+    else:
+        checked = "checked"
+
     checkbox = """
         <label class="checkbox %(inline)s">
-          <input type="checkbox" %(name)s value="%(optionNumber)s" id="%(htmlId)s %(disabledId)s" %(disabled)s>
+          <input type="checkbox" %(name)s value="%(optionNumber)s" id="%(htmlId)s %(disabledId)s" %(disabled)s %(checked)s>
           %(optionText)s
         </label>%(inlineHelpText)s%(blockHelpText)s""" % locals()
 
