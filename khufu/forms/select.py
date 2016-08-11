@@ -18,7 +18,8 @@ def select(
         required=False,
         disabled=False,
         popover=False,
-        extraAttributeTupleList=False):
+        extraAttributeTupleList=False,
+        defaultOption=False):
     """
     *Generate a select - TBS style*
 
