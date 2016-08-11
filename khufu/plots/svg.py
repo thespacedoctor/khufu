@@ -53,6 +53,7 @@ def svg(
     .. todo::
 
     """
+
     if not htmlClass:
         htmlClass = ""
 
