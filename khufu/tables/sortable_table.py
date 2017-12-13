@@ -265,9 +265,9 @@ class sortable_table():
         for obj in self.tableRowsDictionary:
 
             if self.searchKeyAndColumn:
-                regex = re.compile(r'^(.*?\?).*')
+                regex = re.compile(r'^(.*?)\?.*')
                 href = regex.sub("\g<1>", self.baseUrl, count=1)
-                href = href + \
+                href = href + "\\" + \
                     self.searchKeyAndColumn[0] + "=" + \
                     obj[self.searchKeyAndColumn[1]]
             else:
