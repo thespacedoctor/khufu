@@ -267,6 +267,7 @@ class sortable_table():
             if self.searchKeyAndColumn:
                 regex = re.compile(r'^(.*?)\?.*')
                 href = regex.sub("\g<1>", self.baseUrl, count=1)
+                href = href.replace("?", "")
                 href = href + "\\" + \
                     self.searchKeyAndColumn[0] + "=" + \
                     obj[self.searchKeyAndColumn[1]]
