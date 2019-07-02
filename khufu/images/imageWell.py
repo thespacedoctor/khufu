@@ -68,7 +68,7 @@ class imageWell():
         **Return:**
             - ``imageWellRow`` -- the html text
         """
-        self.log.info('starting the ``get`` method')
+        self.log.debug('starting the ``get`` method')
 
         ## VARIABLES ##
         numImages = len(self.imageColumns)
@@ -129,7 +129,7 @@ class imageWell():
             onDesktop=True
         )
 
-        self.log.info('completed the ``get`` method')
+        self.log.debug('completed the ``get`` method')
         return  """%(imageWellRow)s""" % locals()
 
     def appendImage(
@@ -151,7 +151,7 @@ class imageWell():
         **Return:**
             - None
         """
-        self.log.info('starting the ``appendImage`` method')
+        self.log.debug('starting the ``appendImage`` method')
 
         # package the image up with a modal to view a larger version with
         # download option
@@ -195,7 +195,7 @@ class imageWell():
         )
         self.imageColumns.append(column)
 
-        self.log.info('completed the ``appendImage`` method')
+        self.log.debug('completed the ``appendImage`` method')
         return None
 
     # use the tab-trigger below for new method

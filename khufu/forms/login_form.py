@@ -80,11 +80,11 @@ class login_form():
         .. todo::
 
         """
-        self.log.info('starting the ``get`` method')
+        self.log.debug('starting the ``get`` method')
 
         formContent = self._setup_form()
 
-        self.log.info('completed the ``get`` method')
+        self.log.debug('completed the ``get`` method')
         return formContent
 
     def _setup_form(
@@ -101,7 +101,7 @@ class login_form():
         .. todo::
 
         """
-        self.log.info('starting the ``_setup_form`` method')
+        self.log.debug('starting the ``_setup_form`` method')
 
         # username input
         username = khufu.formInput(
@@ -166,7 +166,7 @@ class login_form():
             postToScript=""
         )
 
-        self.log.info('completed the ``_setup_form`` method')
+        self.log.debug('completed the ``_setup_form`` method')
         return formContent
 
     # xt-class-method

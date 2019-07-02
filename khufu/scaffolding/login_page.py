@@ -94,14 +94,14 @@ class login_page():
         .. todo::
 
         """
-        self.log.info('starting the ``get`` method')
+        self.log.debug('starting the ``get`` method')
 
         # create the webpage
         login_page = self.webapge
         # clear message
         self.message = ""
 
-        self.log.info('completed the ``get`` method')
+        self.log.debug('completed the ``get`` method')
         return login_page
 
     def _build_webapge_scaffolding(
@@ -117,7 +117,7 @@ class login_page():
         .. todo::
 
         """
-        self.log.info('starting the ``_build_webapge_scaffolding`` method')
+        self.log.debug('starting the ``_build_webapge_scaffolding`` method')
 
         head = khufu.head(
             relativeUrlBase=False,
@@ -152,7 +152,7 @@ class login_page():
             content="%(head)s %(body)s" % locals()
         )
 
-        self.log.info('completed the ``_build_webapge_scaffolding`` method')
+        self.log.debug('completed the ``_build_webapge_scaffolding`` method')
         return webpage
 
 
