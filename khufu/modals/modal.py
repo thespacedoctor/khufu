@@ -9,22 +9,11 @@
 :Date Created:
     July 1, 2014
 
-.. todo::
-    
 """
-################# GLOBAL IMPORTS ####################
 import sys
 import os
-from docopt import docopt
-from dryxPython import commonutils as dcu
 
 
-###################################################################
-# PUBLIC FUNCTIONS                                                #
-###################################################################
-# LAST MODIFIED : October 9, 2013
-# CREATED : October 9, 2013
-# AUTHOR : DRYX
 def modal(
     modalHeaderContent="",
     modalBodyContent="",
@@ -46,9 +35,6 @@ def modal(
 
     **Return:**
         - ``modal`` -- the modal
-
-    .. todo::
-
     """
     if htmlClass is False:
         htmlClass = ""
@@ -77,6 +63,3 @@ def modal(
     </div>""" % locals()
 
     return modal
-
-if __name__ == '__main__':
-    main()

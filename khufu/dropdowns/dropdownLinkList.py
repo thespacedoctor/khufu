@@ -1,10 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# LAST MODIFIED : May 22, 2014
-# CREATED : May 22, 2014
-# AUTHOR : DRYX
-
 
 def dropdownLinkList(
         linkDictionary={},
@@ -20,12 +16,8 @@ def dropdownLinkList(
         - ``title`` -- title for the dropdown
         - ``dropDirection`` -- up or down
 
-
     **Return:**
-        - None
-
-    .. todo::
-
+        - ``thisDropdown``
     """
     linkList = []
     for k, v in linkDictionary.iteritems():

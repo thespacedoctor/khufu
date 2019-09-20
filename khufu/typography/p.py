@@ -1,9 +1,5 @@
-# encoding: utf-8
+# encoding: utf-8E
 from . import *
-
-# LAST MODIFIED : April 11, 2013
-# CREATED : April 11, 2013
-# AUTHOR : DRYX
 
 
 def p(

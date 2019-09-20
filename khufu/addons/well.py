@@ -1,6 +1,4 @@
-# LAST MODIFIED : 20130508
 # CREATED : 20130508
-# AUTHOR : DRYX
 
 
 def well(

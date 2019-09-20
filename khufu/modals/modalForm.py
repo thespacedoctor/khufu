@@ -9,25 +9,16 @@
 :Date Created:
     July 1, 2014
 
-.. todo::
-    
 """
-################# GLOBAL IMPORTS ####################
 import sys
 import os
 import datetime
 import numpy as np
 import khufu
-from docopt import docopt
-from dryxPython import commonutils as dcu
 from khufu.forms import *
 from khufu.scaffolding import *
 from khufu.buttons import *
 from . import modal
-
-###################################################################
-# CLASSES                                                         #
-###################################################################
 
 
 class modalForm():
@@ -41,11 +32,7 @@ class modalForm():
         - ``postToScriptUrl`` -- postToScriptUrl
         - ``reloadToUrl`` -- reloadToUrl
         - ``formClassName`` -- give a class name to form (if required by CSS or JS)
-
-    .. todo::
-
     """
-    # Initialisation
 
     def __init__(
         self,
@@ -62,11 +49,11 @@ class modalForm():
         self.formClass = formClassName
         # xt-self-arg-tmpx
 
-        # Variable Data Atrributes
+        # VARIABLE DATA ATRRIBUTES
         self.formContent = u""
         self.randNum = int(np.random.rand() * 10000)
         self.hiddenParameterList = []
-        # add required icon if needed
+        # ADD REQUIRED ICON IF NEEDED
         self.requredIcon = khufu.coloredText(
             text="*",
             color="red",
@@ -76,24 +63,18 @@ class modalForm():
         )
         self.submitButtonText = "submit"
 
-        # Initial Actions
-
         return None
 
     def close(self):
         del self
         return None
 
-    # Method Attributes
     def get(self):
         """
         *get the modalForm object*
 
         **Return:**
             - ``modalForm``
-
-        .. todo::
-
         """
         self.log.debug('starting the ``get`` method')
 
@@ -127,7 +108,7 @@ class modalForm():
             onDesktop=True
         )
 
-        # The required input footnote
+        # THE REQUIRED INPUT FOOTNOTE
         requredIcon = self.requredIcon
         requredAlert = '%(requredIcon)s required input &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp' % locals(
         )
@@ -158,12 +139,6 @@ class modalForm():
             - ``formObject`` -- the object to add to the form
             - ``label`` -- label to assign to the object
             - ``hidden`` -- is the form object hidden initially?
-
-        **Return:**
-            - None
-
-        .. todo::
-
         """
         self.log.debug('starting the ``addFormObject`` method')
 
@@ -203,9 +178,6 @@ class modalForm():
 
         **Return:**
             - ``actionButtons`` -- the action buttos for the form (cancel, submit)
-
-        .. todo::
-
         """
         self.log.debug('starting the ``get_form_action_buttons`` method')
 
@@ -262,12 +234,6 @@ class modalForm():
         **Key Arguments:**
             - ``key`` -- the key for the hidden value (will be appended to query string when form submitted)
             - ``value`` -- the value of the hidden parameter
-
-        **Return:**
-            - None
-
-        .. todo::
-
         """
         self.log.debug('starting the ``add_hidden_parameter_value`` method')
 
@@ -296,15 +262,6 @@ class modalForm():
             self):
         """
         *get hidden parameters*
-
-        **Key Arguments:**
-            # -
-
-        **Return:**
-            - None
-
-        .. todo::
-
         """
         self.log.debug('starting the ``set_hidden_parameters`` method')
 
@@ -322,9 +279,4 @@ class modalForm():
         self.log.debug('completed the ``set_hidden_parameters`` method')
         return
 
-    # use the tab-trigger below for new method
     # xt-class-method
-
-
-if __name__ == '__main__':
-    main()

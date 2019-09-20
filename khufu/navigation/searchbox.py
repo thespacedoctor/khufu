@@ -1,10 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# LAST MODIFIED : March 15, 2013
-# CREATED : March 15, 2013
-# AUTHOR : DRYX
-
 
 def searchbox(
     size='medium',

@@ -1,10 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# LAST MODIFIED : April 16, 2013
-# CREATED : April 16, 2013
-# AUTHOR : DRYX
-
 
 def code(
         content="",
@@ -21,12 +17,6 @@ def code(
     **Return:**
         - ``code`` -- the code section
     """
-    ################ > IMPORTS ################
-    ## STANDARD LIB ##
-    ## THIRD PARTY ##
-    ## LOCAL APPLICATION ##
-
-    ################ >ACTION(S) ################
     if scroll:
         scroll = "pre-scrollable"
     else:

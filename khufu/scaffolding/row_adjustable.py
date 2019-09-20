@@ -1,10 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# LAST MODIFIED : April 30, 2014
-# CREATED : April 30, 2014
-# AUTHOR : DRYX
-
 
 def row_adjustable(
     span=12,
@@ -31,11 +27,8 @@ def row_adjustable(
 
     **Return:**
         - ``row`` -- the adjustable row
-
-    .. todo::
-
     """
-    ## VARIABLES ##
+
     column = grid_column(
         span=span,  # 1-12
         offset=offset,  # 1-12

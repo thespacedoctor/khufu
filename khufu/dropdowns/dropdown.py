@@ -1,10 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# LAST MODIFIED : March 8, 2013
-# CREATED : March 8, 2013
-# AUTHOR : DRYX
-
 
 def dropdown(
         buttonSize="default",

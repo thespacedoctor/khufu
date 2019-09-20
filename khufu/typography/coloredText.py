@@ -1,10 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# LAST MODIFIED : November 21, 2013
-# CREATED : November 21, 2013
-# AUTHOR : DRYX
-
 
 def coloredText(
         text="",
@@ -25,9 +21,6 @@ def coloredText(
 
     **Return:**
         - ``text`` -- the coloured text span
-
-    .. todo::
-
     """
     if pull is not False:
         pull = """pull-%(pull)s""" % locals()

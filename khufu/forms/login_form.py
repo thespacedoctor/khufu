@@ -8,22 +8,11 @@
 
 :Date Created:
     November 20, 2014
-
-.. todo::
-    
 """
-################# GLOBAL IMPORTS ####################
 import sys
 import os
-from docopt import docopt
-from dryxPython import logs as dl
-from dryxPython import commonutils as dcu
 from fundamentals import tools, times
 import khufu
-
-###################################################################
-# CLASSES                                                         #
-###################################################################
 
 
 class login_form():
@@ -35,11 +24,7 @@ class login_form():
         - ``log`` -- logger
         - ``iconPath`` -- path to webapp icon
         - ``message`` -- message to display (warning)
-
-    .. todo::
-
     """
-    # Initialisation
 
     def __init__(
         self,
@@ -54,8 +39,7 @@ class login_form():
 
         # xt-self-arg-tmpx
 
-        # Initial Actions
-        # Build image with icon path
+        # BUILD IMAGE WITH ICON PATH
         self.icon = khufu.image(
             src=iconPath,  # [ industrial | gray | social ]
             href=False,
@@ -69,16 +53,12 @@ class login_form():
         del self
         return None
 
-    # Method Attributes
     def get(self):
         """
         *get the login_form object*
 
         **Return:**
             - ``formContent`` -- the content of the login form
-
-        .. todo::
-
         """
         self.log.debug('starting the ``get`` method')
 
@@ -92,14 +72,8 @@ class login_form():
         """
         *setup loging form*
 
-        **Key Arguments:**
-            # -
-
         **Return:**
             - ``formContent`` -- content of the login form
-
-        .. todo::
-
         """
         self.log.debug('starting the ``_setup_form`` method')
 
@@ -170,7 +144,3 @@ class login_form():
         return formContent
 
     # xt-class-method
-
-
-if __name__ == '__main__':
-    main()

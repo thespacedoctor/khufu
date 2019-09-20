@@ -1,10 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# LAST MODIFIED : 20130508
-# CREATED : 20130508
-# AUTHOR : DRYX
-
 
 def label(text='', level='default'):
     """ *Generate a label - TBS style*

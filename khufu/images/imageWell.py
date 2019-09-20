@@ -9,19 +9,13 @@
 :Date Created:
     April 29, 2014
 """
-################# GLOBAL IMPORTS ####################
 import sys
 import os
 import math
-from docopt import docopt
-from dryxPython import commonutils as dcu
 from ..__init__ import *
 from imagingModal import imagingModal
 
 
-###################################################################
-# CLASSES                                                         #
-###################################################################
 class imageWell():
 
     """
@@ -33,7 +27,6 @@ class imageWell():
         - ``description`` -- Description of the content of the image well
         - ``imageDisplay`` -- [ rounded | circle | polaroid | False ]
     """
-    # Initialisation
 
     def __init__(
             self,
@@ -53,14 +46,10 @@ class imageWell():
 
         return None
 
-    # Variable Data Atrributes
-
-    # Override Variable Data Atrributes
     def close(self):
         del self
         return None
 
-    # Method Attributes
     def get(self):
         """
         *get the image well*
@@ -153,8 +142,8 @@ class imageWell():
         """
         self.log.debug('starting the ``appendImage`` method')
 
-        # package the image up with a modal to view a larger version with
-        # download option
+        # PACKAGE THE IMAGE UP WITH A MODAL TO VIEW A LARGER VERSION WITH
+        # DOWNLOAD OPTION
         thisImage = imagingModal(
             log=self.log,
             imagePath=imagePath,
@@ -166,14 +155,14 @@ class imageWell():
             modalImageWidth=800,)
         thisImage = thisImage.get()
 
-        # color the title text and make it the correct size
+        # COLOR THE TITLE TEXT AND MAKE IT THE CORRECT SIZE
         imageTitle = coloredText(
             text=imageTitle,
             color="lightgrey",
             size=3,  # 1-10
         )
 
-        # position the title text correctly under each image
+        # POSITION THE TITLE TEXT CORRECTLY UNDER EACH IMAGE
         imageTitle = row_adjustable(
             span=12 - (self.imageSpan - 1),
             offset=self.imageSpan - 1,
@@ -185,8 +174,8 @@ class imageWell():
             onDesktop=True
         )
 
-        # package the image and title, add to parent column and append to master
-        # image list
+        # PACKAGE THE IMAGE AND TITLE, ADD TO PARENT COLUMN AND APPEND TO MASTER
+        # IMAGE LIST
         content = "%(thisImage)s%(imageTitle)s" % locals()
         column = grid_column(
             span=self.imageSpan,  # 1-12
@@ -198,24 +187,4 @@ class imageWell():
         self.log.debug('completed the ``appendImage`` method')
         return None
 
-    # use the tab-trigger below for new method
     # method-tmpx
-
-    # Override Method Attributes
-    # method-override-tmpx
-
-
-###################################################################
-# PUBLIC FUNCTIONS                                                #
-###################################################################
-
-# use the tab-trigger below for new function
-# x-def-with-logger
-
-###################################################################
-# PRIVATE (HELPER) FUNCTIONS                                      #
-###################################################################
-
-
-if __name__ == '__main__':
-    main()

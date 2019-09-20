@@ -1,10 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# LAST MODIFIED : April 16, 2013
-# CREATED : April 16, 2013
-# AUTHOR : DRYX
-
 
 def select(
         optionList=[],

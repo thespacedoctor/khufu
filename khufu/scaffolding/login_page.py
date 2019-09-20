@@ -8,23 +8,11 @@
 
 :Date Created:
     November 20, 2014
-
-.. todo::
-    
 """
-################# GLOBAL IMPORTS ####################
 import sys
 import os
-from docopt import docopt
-from dryxPython import logs as dl
-from dryxPython import commonutils as dcu
 from fundamentals import tools, times
 import khufu
-
-
-###################################################################
-# CLASSES                                                         #
-###################################################################
 
 
 class login_page():
@@ -40,11 +28,7 @@ class login_page():
         - ``iconPath`` -- webapp icon path
         - ``came_from`` -- the url this login page was triggered from
         - ``message`` -- message to display as notification
-
-    .. todo::
-
     """
-    # Initialisation
 
     def __init__(
             self,
@@ -67,7 +51,6 @@ class login_page():
 
         # xt-self-arg-tmpx
 
-        # Initial actions
         # create the form
         formContent = khufu.forms.login_form(
             self.log,
@@ -83,22 +66,18 @@ class login_page():
         del self
         return None
 
-    # Method Attributes
     def get(self):
         """
         *get the login_page object*
 
         **Return:**
             - ``login_page`` -- the html login page
-
-        .. todo::
-
         """
         self.log.debug('starting the ``get`` method')
 
-        # create the webpage
+        # CREATE THE WEBPAGE
         login_page = self.webapge
-        # clear message
+        # CLEAR MESSAGE
         self.message = ""
 
         self.log.debug('completed the ``get`` method')
@@ -113,9 +92,6 @@ class login_page():
 
         **Return:**
             - ``webpage`` -- the html login page
-
-        .. todo::
-
         """
         self.log.debug('starting the ``_build_webapge_scaffolding`` method')
 
@@ -154,7 +130,3 @@ class login_page():
 
         self.log.debug('completed the ``_build_webapge_scaffolding`` method')
         return webpage
-
-
-if __name__ == '__main__':
-    main()

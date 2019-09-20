@@ -1,10 +1,6 @@
 # encoding: utf-8
 from khufu.scaffolding import _container
 
-# LAST MODIFIED : May 31, 2013
-# CREATED : May 31, 2013
-# AUTHOR : DRYX
-
 
 def body(
         navBar=False,

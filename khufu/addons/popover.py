@@ -1,6 +1,4 @@
-# LAST MODIFIED : February 25, 2014
 # CREATED : February 25, 2014
-# AUTHOR : DRYX
 
 
 def popover(

@@ -2,10 +2,6 @@
 from . import *
 import khufu
 
-# LAST MODIFIED : April 29, 2013
-# CREATED : April 29, 2013
-# AUTHOR : DRYX
-
 
 def tabbableNavigation(
         contentDictionary={},  # { name : content }

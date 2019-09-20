@@ -9,19 +9,12 @@
 :Date Created:
     April 30, 2014
 """
-################# GLOBAL IMPORTS ####################
 import sys
 import os
 import numpy as np
-from docopt import docopt
-from dryxPython import commonutils as dcu
 from ..__init__ import *
 from .. import modals
 from image import image
-
-###################################################################
-# CLASSES                                                         #
-###################################################################
 
 
 class imagingModal():
@@ -40,7 +33,6 @@ class imagingModal():
         - ``modalImageWidth`` -- 400
         - ``downloadLink`` -- False
     """
-    # Initialisation
 
     def __init__(
             self,
@@ -73,11 +65,6 @@ class imagingModal():
         del self
         return None
 
-    # Variable Data Atrributes
-
-    # Override Variable Data Atrributes
-
-    # Method Attributes
     def get(self):
         """
         *get the object*
@@ -87,7 +74,7 @@ class imagingModal():
         """
         self.log.debug('starting the ``get`` method')
 
-        # create imaging modal and associated image and return them
+        # CREATE IMAGING MODAL AND ASSOCIATED IMAGE AND RETURN THEM
         thisImage = self._create_image(width=self.stampWidth)
         thisModal = self._create_modal()
 
@@ -107,11 +94,11 @@ class imagingModal():
         """
         self.log.debug('starting the ``create_image`` method')
 
-        #  add placeholder as default image
+        # ADD PLACEHOLDER AS DEFAULT IMAGE
         if not self.imagePath:
             self.imagePath = 'holder.js/200x200/auto/industrial/text:placeholder'
 
-        # create html code for the image
+        # CREATE HTML CODE FOR THE IMAGE
         thisImage = image(
             src=self.imagePath,  # [ industrial | gray | social ]
             href=False,
@@ -122,7 +109,7 @@ class imagingModal():
             thumbnail=True
         )
 
-        # link the image to the associated modal with a random number tag
+        # LINK THE IMAGE TO THE ASSOCIATED MODAL WITH A RANDOM NUMBER TAG
         randNum = self.randomNum
         thisImage = a(
             content=thisImage,
@@ -141,15 +128,12 @@ class imagingModal():
         """
         *create modal*
 
-        **Key Arguments:**
-            # -
-
         **Return:**
             - ``imageModal`` -- the image modal
         """
         self.log.debug('starting the ``create_modal`` method')
 
-        # grab the associated image and place in a wrapper row
+        # GRAB THE ASSOCIATED IMAGE AND PLACE IN A WRAPPER ROW
         thisImage = self._create_image(width=self.modalImageWidth)
         thisImage = row_adjustable(
             span=10,
@@ -162,7 +146,7 @@ class imagingModal():
             onDesktop=True
         )
 
-        # generate the download button for the modal footer
+        # GENERATE THE DOWNLOAD BUTTON FOR THE MODAL FOOTER
         fileUrl = self.imagePath
 
         thisPopover = popover(
@@ -201,7 +185,7 @@ class imagingModal():
             format='default'  # [ default | toolbar | vertical ]
         )
 
-        # create the modal with the correct trigger tag
+        # CREATE THE MODAL WITH THE CORRECT TRIGGER TAG
         randNum = self.randomNum
         imageModal = modals.modal(
             modalHeaderContent=self.modalHeaderContent,
@@ -215,21 +199,4 @@ class imagingModal():
         self.log.debug('completed the ``create_modal`` method')
         return imageModal
 
-    # use the tab-trigger below for new method
     # method-tmpx
-
-    # Override Method Attributes
-    # method-override-tmpx
-
-
-###################################################################
-# PUBLIC FUNCTIONS                                                #
-###################################################################
-# use the tab-trigger below for new function
-# x-def-with-logger
-###################################################################
-# PRIVATE (HELPER) FUNCTIONS                                      #
-###################################################################
-
-if __name__ == '__main__':
-    main()

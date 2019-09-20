@@ -1,6 +1,3 @@
-# encoding: utf-8
-from . import *
-
 #!/usr/bin/env python
 # encoding: utf-8
 """
@@ -11,28 +8,21 @@ from . import *
 
 :Date Created:
     May 27, 2014
-
-.. todo::
-    
 """
-################# GLOBAL IMPORTS ####################
+from . import *
 import sys
 import os
 import datetime
 import math
 import re
-from docopt import docopt
-from dryxPython import commonutils as dcu
 # from ..__init__ import *
 from khufu.typography import *
 from khufu.addons import *
 from khufu.tables import *
 from khufu.helpers import *
+from fundamentals import times
 
 
-###################################################################
-# CLASSES                                                         #
-###################################################################
 class sortable_table():
 
     """
@@ -46,7 +36,6 @@ class sortable_table():
         - ``defaultSort`` -- the column to sort on by default
         - ``tableRowsDictionary`` -- dictionary of column names and values (e.g. a mysql query result)
     """
-    # Initialisation
 
     def __init__(
             self,
@@ -65,7 +54,7 @@ class sortable_table():
         self.tableRowsDictionary = tableRowsDictionary
         # xt-self-arg-tmpx
 
-        # Variable Data Atrributes
+        # VARIABLE DATA ATRRIBUTES
         self.colors = ["green", "blue", "red",  "yellow",
                        "orange", "violet", "magenta", "cyan", ]
         self.modifyDisplayNameDict = {}
@@ -78,7 +67,7 @@ class sortable_table():
         self.extraColumnWidth = 100 - \
             self.columnWidth * len(self.columnsToDisplay)
 
-        # determine how table is to be sorted from url
+        # DETERMINE HOW TABLE IS TO BE SORTED FROM URL
         thisSort = re.search(
             r'sortBy=(\w+)&',
             self.currentPageUrl,
@@ -116,8 +105,8 @@ class sortable_table():
         self.thisSortDesc = thisSortDesc
         self.arrow = arrow
 
-        # remove sort and sortDesc from url to general a baseUrl for header
-        # sorting
+        # REMOVE SORT AND SORTDESC FROM URL TO GENERAL A BASEURL FOR HEADER
+        # SORTING
         reSort = re.compile(r'sortBy=\w+&?')
         reDesc = re.compile(r'sortDesc=\w+&?')
         self.baseUrl = reSort.sub("", self.currentPageUrl)
@@ -137,7 +126,6 @@ class sortable_table():
         del self
         return None
 
-    # Method Attributes
     def get(self):
         """
         *get the sortable_table object*
@@ -169,10 +157,9 @@ class sortable_table():
         **Return:**
             - ``tableHead`` -- the table head
         """
-        # init variables
         tableHead = ""
 
-        # build the table header
+        # BUILD THE TABLE HEADER
         _popover = popover(
             tooltip=True,
             placement="bottom",  # [ top | bottom | left | right ]
@@ -261,7 +248,7 @@ class sortable_table():
         """
         theseTickets = ""
 
-        # build the table body
+        # BUILD THE TABLE BODY
         for obj in self.tableRowsDictionary:
 
             if self.searchKeyAndColumn:
@@ -301,9 +288,8 @@ class sortable_table():
                     obj[c] = ""
                 elif isinstance(obj[c], datetime.datetime):
                     # obj[c] = "boom"
-                    relativeDate = dcu.pretty_date(
-                        date=obj[c]
-                    )
+
+                    relativeDate = times.datetime_relative_to_now(obj[c])
                     thisDate = str(obj[c])[:10]
                     thisDate = coloredText(
                         text="(%(thisDate)s)" % locals(),
@@ -346,24 +332,4 @@ class sortable_table():
         )
         return tableBody
 
-    # use the tab-trigger below for new method
     # xt-class-method
-
-    # Override Method Attributes
-    # method-override-tmpx
-
-
-###################################################################
-# PUBLIC FUNCTIONS                                                #
-###################################################################
-# xt-worker-def
-# use the tab-trigger below for new function
-# xt-def-with-logger
-
-###################################################################
-# PRIVATE (HELPER) FUNCTIONS                                      #
-###################################################################
-
-
-if __name__ == '__main__':
-    main()

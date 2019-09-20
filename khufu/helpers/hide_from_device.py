@@ -1,10 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# LAST MODIFIED : June 26, 2014
-# CREATED : June 26, 2014
-# AUTHOR : DRYX
-
 
 def hide_from_device(
         content="",
@@ -22,9 +18,6 @@ def hide_from_device(
 
     **Return:**
         - ``span`` -- span containings content with show/hide parameters
-
-    .. todo::
-
     """
 
     phoneClass = ""

@@ -1,10 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# LAST MODIFIED : May 28, 2013
-# CREATED : May 28, 2013
-# AUTHOR : DRYX
-
 
 def head(
     relativeUrlBase=False,

@@ -1,10 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# LAST MODIFIED : March 27, 2013
-# CREATED : March 27, 2013
-# AUTHOR : DRYX
-
 
 def grid_row(
     responsive=True,

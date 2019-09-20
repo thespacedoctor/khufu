@@ -1,10 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# LAST MODIFIED : April 13, 2013
-# CREATED : April 13, 2013
-# AUTHOR : DRYX
-
 
 def descriptionLists(
         orderedDictionary={},
@@ -17,7 +13,7 @@ def descriptionLists(
         - ``sideBySide`` -- Make terms and descriptions in <dl> line up side-by-side.
 
     **Return:**
-        - None
+        - ``descriptionLists``
     """
 
     termList = ""

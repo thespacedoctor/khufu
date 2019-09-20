@@ -1,10 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# LAST MODIFIED : March 27, 2013
-# CREATED : March 27, 2013
-# AUTHOR : DRYX
-
 
 def _container(
     responsive=True,
@@ -27,7 +23,8 @@ def _container(
         - ``onDesktop`` -- does this container get displayed on a desktop sized screen
 
     **Return:**
-        - None """
+        - ``container`` 
+    """
 
     if responsive:
         responsive = '-fluid'

@@ -1,29 +1,7 @@
 # encoding: utf-8
 from . import *
-
-#!/usr/bin/env python
-# encoding: utf-8
-"""
-*Add an SVG chart placeholder to the HTML of your webpage*
-
-:Author:
-    David Young
-
-:Date Created:
-    May 9, 2014
-
-.. todo::
-    
-"""
-################# GLOBAL IMPORTS ####################
 import sys
 import os
-from docopt import docopt
-from dryxPython import commonutils as dcu
-
-# LAST MODIFIED : May 9, 2014
-# CREATED : May 9, 2014
-# AUTHOR : DRYX
 
 
 def svg(
@@ -49,9 +27,6 @@ def svg(
 
     **Return:**
         - ``svg`` -- the svg element
-
-    .. todo::
-
     """
 
     if not htmlClass:
@@ -84,7 +59,3 @@ def svg(
     )
 
     return svg
-
-
-if __name__ == '__main__':
-    main()

@@ -8,19 +8,9 @@
 
 :Date Created:
     May 28, 2014
-
-.. todo::
-    
 """
-################# GLOBAL IMPORTS ####################
 import sys
 import os
-from docopt import docopt
-from dryxPython import commonutils as dcu
-
-# LAST MODIFIED : May 28, 2014
-# CREATED : May 28, 2014
-# AUTHOR : DRYX
 
 
 def default_fields():
@@ -29,9 +19,6 @@ def default_fields():
 
     **Return:**
         - ``fieldDict`` -- a dictionary of { fieldName, defaultValue }
-
-    .. todo::
-
     """
     fieldDict = {
         "sortBy": False,
@@ -42,7 +29,3 @@ def default_fields():
         "settingsFile": 1
     }
     return fieldDict
-
-
-if __name__ == '__main__':
-    main()

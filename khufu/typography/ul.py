@@ -1,10 +1,6 @@
 # encoding: utf-8
 from . import *
 
-# LAST MODIFIED : April 13, 2013
-# CREATED : April 13, 2013
-# AUTHOR : DRYX
-
 
 def ul(
         itemList=[],
