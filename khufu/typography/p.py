@@ -1,4 +1,4 @@
-# encoding: utf-8E
+# encoding: utf-8
 from . import *
 
 
