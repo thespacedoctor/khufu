@@ -1,2 +1,2 @@
 from __future__ import absolute_import
-from . import default_fields
+from .default_fields import default_fields
