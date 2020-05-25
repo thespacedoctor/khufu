@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def address(
         name=False,
         addressLine1=False,
@@ -13,17 +12,21 @@ def address(
     """
     *Get The HTML5 address element*
 
-    **Key Arguments:**
-        - ``name`` -- name of person
-        - ``addressLine1`` -- first line of the address
-        - ``addressLine2`` -- second line of the address
-        - ``addressLine3`` -- third line of the address
-        - ``phone`` -- telephone number
-        - ``email`` -- email address
-        - ``twitterHandle`` -- twitter handle
+    **Key Arguments**
 
-    **Return:**
-        - address
+    - ``name`` -- name of person
+    - ``addressLine1`` -- first line of the address
+    - ``addressLine2`` -- second line of the address
+    - ``addressLine3`` -- third line of the address
+    - ``phone`` -- telephone number
+    - ``email`` -- email address
+    - ``twitterHandle`` -- twitter handle
+    
+
+    **Return**
+
+    - address
+    
     """
 
     falseList = [name, addressLine1, addressLine2,

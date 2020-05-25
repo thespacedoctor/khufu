@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def checkbox(
         optionText="",
         inline=False,
@@ -14,18 +13,22 @@ def checkbox(
     """
     *Generate a checkbox - TBS style*
 
-    **Key Arguments:**
-        - ``optionText`` -- the text associated with this checkbox
-        - ``inline`` -- display the checkboxes inline?
-        - ``optionNumber`` -- option number of inline
-        - ``htmlId`` -- htmlId
-        - ``inlineHelpText`` -- inline and block level support for help text that appears around form controls
-        - ``blockHelpText`` -- a longer block of help text that breaks onto a new line and may extend beyond one line
-        - ``disabled`` -- add the disabled attribute on an input to prevent user input
-        - ``checked`` -- the default checked/unchecked state of the box
+    **Key Arguments**
 
-    **Return:**
-        - ``checkbox`` -- the checkbox
+    - ``optionText`` -- the text associated with this checkbox
+    - ``inline`` -- display the checkboxes inline?
+    - ``optionNumber`` -- option number of inline
+    - ``htmlId`` -- htmlId
+    - ``inlineHelpText`` -- inline and block level support for help text that appears around form controls
+    - ``blockHelpText`` -- a longer block of help text that breaks onto a new line and may extend beyond one line
+    - ``disabled`` -- add the disabled attribute on an input to prevent user input
+    - ``checked`` -- the default checked/unchecked state of the box
+    
+
+    **Return**
+
+    - ``checkbox`` -- the checkbox
+    
     """
     if inline is True:
         inline = "inline"

@@ -1,6 +1,6 @@
 # encoding: utf-8
+from builtins import zip
 from . import *
-
 
 def select(
         optionList=[],
@@ -19,20 +19,24 @@ def select(
     """
     *Generate a select - TBS style*
 
-    **Key Arguments:**
-        - ``optionList`` -- the list of options
-        - ``multiple`` -- display all the options at once?
-        - ``span`` -- column span
-        - ``htmlId`` -- the html id of the element
-        - ``inlineHelpText`` -- inline and block level support for help text that appears around form controls
-        - ``blockHelpText`` -- a longer block of help text that breaks onto a new line and may extend beyond one line
-        - ``required`` -- required attribute if the field is not optional
-        - ``disabled`` -- add the disabled attribute on an input to prevent user input
-        - ``popover`` -- add helper text to the select
-        - ``defaultOption`` -- option to select as default
+    **Key Arguments**
 
-    **Return:**
-        - ``select`` -- the select
+    - ``optionList`` -- the list of options
+    - ``multiple`` -- display all the options at once?
+    - ``span`` -- column span
+    - ``htmlId`` -- the html id of the element
+    - ``inlineHelpText`` -- inline and block level support for help text that appears around form controls
+    - ``blockHelpText`` -- a longer block of help text that breaks onto a new line and may extend beyond one line
+    - ``required`` -- required attribute if the field is not optional
+    - ``disabled`` -- add the disabled attribute on an input to prevent user input
+    - ``popover`` -- add helper text to the select
+    - ``defaultOption`` -- option to select as default
+    
+
+    **Return**
+
+    - ``select`` -- the select
+    
     """
     if not htmlId:
         htmlId = ""

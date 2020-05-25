@@ -3,7 +3,6 @@ from . import *
 import sys
 import os
 
-
 def svg(
     htmlClass=False,
     dataUrl="#",
@@ -17,16 +16,20 @@ def svg(
     """
     *svg*
 
-    **Key Arguments:**
-        - ``htmlClass`` -- the extra html classes required
-        - ``disable`` -- disable the plot (can enable via javascript)
-        - ``htmlId`` -- the html id if required
-        - ``csvUrl`` -- url to a csv file/csv data
-        - ``chartType`` -- the type of chart required (determines which javascript function to trigger)
-        - ``span`` -- span of chart area
+    **Key Arguments**
 
-    **Return:**
-        - ``svg`` -- the svg element
+    - ``htmlClass`` -- the extra html classes required
+    - ``disable`` -- disable the plot (can enable via javascript)
+    - ``htmlId`` -- the html id if required
+    - ``csvUrl`` -- url to a csv file/csv data
+    - ``chartType`` -- the type of chart required (determines which javascript function to trigger)
+    - ``span`` -- span of chart area
+    
+
+    **Return**
+
+    - ``svg`` -- the svg element
+    
     """
 
     if not htmlClass:

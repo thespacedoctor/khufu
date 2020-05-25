@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def pagination(
         listItems="",
         size="default",
@@ -9,13 +8,17 @@ def pagination(
     """
     *Generate pagination - TBS style. Simple pagination inspired by Rdio, great for apps and search results.*
 
-    **Key Arguments:**
-        - ``listItems`` -- the numbered items to be listed within the <ul> of the pagination block
-        - ``size`` -- additional pagination block sizes [ "mini" | "small" | "default" | "large" ]
-        - ``align`` -- change the alignment of pagination links [ "left" | "center" | "right" ]
+    **Key Arguments**
 
-    **Return:**
-        - ``pagination`` -- the pagination
+    - ``listItems`` -- the numbered items to be listed within the <ul> of the pagination block
+    - ``size`` -- additional pagination block sizes [ "mini" | "small" | "default" | "large" ]
+    - ``align`` -- change the alignment of pagination links [ "left" | "center" | "right" ]
+    
+
+    **Return**
+
+    - ``pagination`` -- the pagination
+    
     """
     if size == "default":
         size = ""

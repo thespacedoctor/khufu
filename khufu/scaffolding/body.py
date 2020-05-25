@@ -1,7 +1,6 @@
 # encoding: utf-8
 from khufu.scaffolding import _container
 
-
 def body(
         navBar=False,
         content="",
@@ -15,18 +14,22 @@ def body(
     """
     *Generate an HTML body*
 
-    **Key Arguments:**
-        - ``navBar`` -- the top navigation bar
-        - ``htmlId`` -- *id* attribute of the body
-        - ``content`` -- body content built from smaller HTML code blocks
-        - ``extraAttr`` -- an extra attributes to be added to the body definition
-        - ``relativeUrlBase`` -- how to get back to the document root
-        - ``responsive`` -- should the webpage be responsive to screen-size?
-        - ``googleAnalyticsCode`` -- google analytics code for the website
-        - ``jsFilePath`` -- the name of the main javascript file
+    **Key Arguments**
 
-    **Return:**
-        - ``body`` -- the body
+    - ``navBar`` -- the top navigation bar
+    - ``htmlId`` -- *id* attribute of the body
+    - ``content`` -- body content built from smaller HTML code blocks
+    - ``extraAttr`` -- an extra attributes to be added to the body definition
+    - ``relativeUrlBase`` -- how to get back to the document root
+    - ``responsive`` -- should the webpage be responsive to screen-size?
+    - ``googleAnalyticsCode`` -- google analytics code for the website
+    - ``jsFilePath`` -- the name of the main javascript file
+    
+
+    **Return**
+
+    - ``body`` -- the body
+    
     """
     if not navBar:
         navBar = ""

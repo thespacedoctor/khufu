@@ -39,7 +39,6 @@ shutil.copytree(pathToInputDir, pathToOutputDir)
 if not os.path.exists(pathToOutputDir):
     os.makedirs(pathToOutputDir)
 
-
 class test_0001_htmlDocument(unittest.TestCase):
 
     def test_htmlDocument_works_as_expected(self):

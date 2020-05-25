@@ -1,18 +1,21 @@
 # encoding: utf-8
 from . import *
 
-
 def thumbnails(
         listItems=[]
 ):
     """
     *Generate a thumbnail - TBS style*
 
-    **Key Arguments:**
-        - ``htmlContent`` -- the html content of the thumbnail
+    **Key Arguments**
 
-    **Return:**
-        - ``thumbnail`` -- the thumbnail with HTML content
+    - ``htmlContent`` -- the html content of the thumbnail
+    
+
+    **Return**
+
+    - ``thumbnail`` -- the thumbnail with HTML content
+    
     """
     theseItems = ""
     for item in listItems:

@@ -5,25 +5,23 @@
 
 :Author:
     David Young
-
-:Date Created:
-    November 20, 2014
 """
+from builtins import object
 import sys
 import os
 from fundamentals import tools, times
 import khufu
 
-
-class login_form():
-
+class login_form(object):
     """
     *The worker class for the login_form module*
 
-    **Key Arguments:**
-        - ``log`` -- logger
-        - ``iconPath`` -- path to webapp icon
-        - ``message`` -- message to display (warning)
+    **Key Arguments**
+
+    - ``log`` -- logger
+    - ``iconPath`` -- path to webapp icon
+    - ``message`` -- message to display (warning)
+    
     """
 
     def __init__(
@@ -57,8 +55,10 @@ class login_form():
         """
         *get the login_form object*
 
-        **Return:**
-            - ``formContent`` -- the content of the login form
+        **Return**
+
+        - ``formContent`` -- the content of the login form
+        
         """
         self.log.debug('starting the ``get`` method')
 
@@ -72,8 +72,10 @@ class login_form():
         """
         *setup loging form*
 
-        **Return:**
-            - ``formContent`` -- content of the login form
+        **Return**
+
+        - ``formContent`` -- content of the login form
+        
         """
         self.log.debug('starting the ``_setup_form`` method')
 

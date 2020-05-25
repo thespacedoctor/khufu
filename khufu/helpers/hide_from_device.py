@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def hide_from_device(
         content="",
         onPhone=True,
@@ -10,14 +9,18 @@ def hide_from_device(
     """
     *hide from device)*
 
-    **Key Arguments:**
-        - ``content`` - content to hide/show
-        - ``onPhone`` - onPhone?
-        - ``onTablet`` - onTablet?
-        - ``onDesktop`` - onDesktop?
+    **Key Arguments**
 
-    **Return:**
-        - ``span`` -- span containings content with show/hide parameters
+    - ``content`` - content to hide/show
+    - ``onPhone`` - onPhone?
+    - ``onTablet`` - onTablet?
+    - ``onDesktop`` - onDesktop?
+    
+
+    **Return**
+
+    - ``span`` -- span containings content with show/hide parameters
+    
     """
 
     phoneClass = ""

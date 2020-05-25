@@ -1,19 +1,22 @@
 # encoding: utf-8
 from . import *
 
-
 def pageHeader(
         headline="",
         tagline=""):
     """
     *Generate a pageHeader - TBS style*
 
-    **Key Arguments:**
-        - ``headline`` -- the headline text
-        - ``tagline`` -- the tagline text for below the headline
+    **Key Arguments**
 
-    **Return:**
-        - ``pageHeader`` -- the pageHeader
+    - ``headline`` -- the headline text
+    - ``tagline`` -- the tagline text for below the headline
+    
+
+    **Return**
+
+    - ``pageHeader`` -- the pageHeader
+    
     """
     pageHeader = """
         <div class="page-header" id="  ">

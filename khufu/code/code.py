@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def code(
         content="",
         inline=True,
@@ -9,13 +8,17 @@ def code(
     """
     *Generate a code section*
 
-    **Key Arguments:**
-        - ``content`` -- the content of the code block
-        - ``inline`` -- inline or block?
-        - ``scroll`` -- give the block a scroll bar on y-axis?
+    **Key Arguments**
 
-    **Return:**
-        - ``code`` -- the code section
+    - ``content`` -- the content of the code block
+    - ``inline`` -- inline or block?
+    - ``scroll`` -- give the block a scroll bar on y-axis?
+    
+
+    **Return**
+
+    - ``code`` -- the code section
+    
     """
     if scroll:
         scroll = "pre-scrollable"

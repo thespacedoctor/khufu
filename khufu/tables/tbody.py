@@ -1,17 +1,20 @@
 # encoding: utf-8
 from . import *
 
-
 def tbody(
         trContent=""):
     """
     *Generate a table body - TBS style*
 
-    **Key Arguments:**
-        - ``trContent`` -- the table row content
+    **Key Arguments**
 
-    **Return:**
-        - ``tbody`` -- the table body
+    - ``trContent`` -- the table row content
+    
+
+    **Return**
+
+    - ``tbody`` -- the table body
+    
     """
 
     if isinstance(trContent, list):

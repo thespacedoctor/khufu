@@ -1,16 +1,19 @@
 # encoding: utf-8
 from . import *
 
-
 def controlRow(inputList=[]):
     """
     *generate a form row*
 
-    **Key Arguments:**
-        - ``inputList`` -- list of inputs for the control row
+    **Key Arguments**
 
-    **Return:**
-        - ``controlRow`` -- the controlRow
+    - ``inputList`` -- list of inputs for the control row
+    
+
+    **Return**
+
+    - ``controlRow`` -- the controlRow
+    
     """
     if len(inputList) > 1:
         row = "controls-row"

@@ -1,6 +1,6 @@
 # encoding: utf-8
+from builtins import range
 from . import *
-
 
 def form(
         content="",
@@ -17,17 +17,21 @@ def form(
     """
     *Generate a form - TBS style*
 
-    **Key Arguments:**
-        - ``content`` -- the content
-        - ``formType`` -- the type if the form required [ "inline" | "horizontal" | "search" | "navbar-form" | "navbar-search" ]
-        - ``postToScript`` -- the script to post the form values to
-        - ``htmlId`` -- the id for the form
-        - ``navBarPull`` -- align the form is in a navBar [ false | right | left ]
-        - ``postInBackground`` -- submit form in background without refreshing page
-        - ``redirectUrl`` -- url to redirect to after form is submitted
+    **Key Arguments**
 
-    **Return:**
-        - ``inlineForm`` -- the inline form
+    - ``content`` -- the content
+    - ``formType`` -- the type if the form required [ "inline" | "horizontal" | "search" | "navbar-form" | "navbar-search" ]
+    - ``postToScript`` -- the script to post the form values to
+    - ``htmlId`` -- the id for the form
+    - ``navBarPull`` -- align the form is in a navBar [ false | right | left ]
+    - ``postInBackground`` -- submit form in background without refreshing page
+    - ``redirectUrl`` -- url to redirect to after form is submitted
+    
+
+    **Return**
+
+    - ``inlineForm`` -- the inline form
+    
     """
     falseList = [navBarPull, ]
 

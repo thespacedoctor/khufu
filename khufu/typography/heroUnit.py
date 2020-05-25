@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def heroUnit(
         headline="",
         tagline="",
@@ -12,15 +11,19 @@ def heroUnit(
     """
     *Generate a heroUnit - TBS style*
 
-    **Key Arguments:**
-        - ``headline`` -- the headline text
-        - ``tagline`` -- the tagline text for below the headline
-        - ``buttonStyle`` -- the style of the button to be used
-        - ``buttonText`` -- the text for the button
-        - ``buttonHref`` -- the anchor link for the button
+    **Key Arguments**
 
-    **Return:**
-        - ``heroUnit`` -- the heroUnit
+    - ``headline`` -- the headline text
+    - ``tagline`` -- the tagline text for below the headline
+    - ``buttonStyle`` -- the style of the button to be used
+    - ``buttonText`` -- the text for the button
+    - ``buttonHref`` -- the anchor link for the button
+    
+
+    **Return**
+
+    - ``heroUnit`` -- the heroUnit
+    
     """
     heroUnit = """
         <div class="hero-unit" id="  ">

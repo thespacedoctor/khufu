@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def grid_column(
     span=1,
     offset=0,
@@ -16,19 +15,23 @@ def grid_column(
 ):
     """ *Get a column block for the Twiiter Bootstrap static layout grid.*
 
-    **Key Arguments:**
-        - ``log`` -- logger
-        - ``span`` -- the relative width of the column
-        - ``offset`` -- increase the left margin of the column by this amount
-        - ``htmlId`` -- the id of the column
-        - ``htmlClass`` -- the class of the column
-        - ``pull`` -- left, right, or center
-        - ``onPhone`` -- does this column get displayed on a phone sized screen
-        - ``onTablet`` -- does this column get displayed on a tablet sized screen
-        - ``onDesktop`` -- does this column get displayed on a desktop sized screen
+    **Key Arguments**
 
-    **Return:**
-        - ``column`` -- the column """
+    - ``log`` -- logger
+    - ``span`` -- the relative width of the column
+    - ``offset`` -- increase the left margin of the column by this amount
+    - ``htmlId`` -- the id of the column
+    - ``htmlClass`` -- the class of the column
+    - ``pull`` -- left, right, or center
+    - ``onPhone`` -- does this column get displayed on a phone sized screen
+    - ``onTablet`` -- does this column get displayed on a tablet sized screen
+    - ``onDesktop`` -- does this column get displayed on a desktop sized screen
+    
+
+    **Return**
+
+    - ``column`` -- the column """
+    
 
     if htmlId:
         htmlId = """id="%(htmlId)s" """ % locals()

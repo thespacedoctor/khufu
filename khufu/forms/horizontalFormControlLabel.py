@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def horizontalFormControlLabel(
         labelText="",
         forId=False,
@@ -10,12 +9,16 @@ def horizontalFormControlLabel(
     """
     *set a horizontal form label*
 
-    **Key Arguments:**
-        - ``labelText`` -- the label text
-        - ``forId`` -- what is the label for (id of the associated object)?
+    **Key Arguments**
 
-    **Return:**
-        - ``horizontalFormRowLabel`` -- the horizontalFormRowLabel
+    - ``labelText`` -- the label text
+    - ``forId`` -- what is the label for (id of the associated object)?
+    
+
+    **Return**
+
+    - ``horizontalFormRowLabel`` -- the horizontalFormRowLabel
+    
     """
     if forId is False:
         forId = ""

@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def table(
         caption="",
         thead="",
@@ -14,17 +13,21 @@ def table(
     """
     *Generate a table - TBS style*
 
-    **Key Arguments:**
-        - ``caption`` -- the table caption
-        - ``thead`` -- the table head
-        - ``tbody`` -- the table body
-        - ``striped`` -- Adds zebra-striping to any odd table row
-        - ``bordered`` -- Add borders and rounded corners to the table.
-        - ``hover`` -- Enable a hover state on table rows within a <tbody>
-        - ``condensed`` -- Makes tables more compact by cutting cell padding in half.
+    **Key Arguments**
 
-    **Return:**
-        - ``table`` -- the table
+    - ``caption`` -- the table caption
+    - ``thead`` -- the table head
+    - ``tbody`` -- the table body
+    - ``striped`` -- Adds zebra-striping to any odd table row
+    - ``bordered`` -- Add borders and rounded corners to the table.
+    - ``hover`` -- Enable a hover state on table rows within a <tbody>
+    - ``condensed`` -- Makes tables more compact by cutting cell padding in half.
+    
+
+    **Return**
+
+    - ``table`` -- the table
+    
     """
     if striped is True:
         striped = "table-striped"

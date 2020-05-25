@@ -5,11 +5,9 @@
 
 :Author:
     David Young
-
-:Date Created:
-    April 30, 2014
 """
 from __future__ import absolute_import
+from builtins import object
 import sys
 import os
 import numpy as np
@@ -17,22 +15,22 @@ from ..__init__ import *
 from .. import modals
 from .image import image
 
-
-class imagingModal():
-
+class imagingModal(object):
     """
     *An image and modal -- click on the image to present the modal of the larger image with download options*
 
-    **Key Arguments:**
-        - ``dbConn`` -- mysql database connection
-        - ``log`` -- logger
-        - ``display`` -- [ rounded | circle | polaroid | False ]
-        - ``imagePath`` -- path to the image to be displayed
-        - ``modalHeaderContent`` -- the heading for the modal
-        - ``modalFooterContent`` -- the footer (usually buttons)
-        - ``stampWidth`` -- 180
-        - ``modalImageWidth`` -- 400
-        - ``downloadLink`` -- False
+    **Key Arguments**
+
+    - ``dbConn`` -- mysql database connection
+    - ``log`` -- logger
+    - ``display`` -- [ rounded | circle | polaroid | False ]
+    - ``imagePath`` -- path to the image to be displayed
+    - ``modalHeaderContent`` -- the heading for the modal
+    - ``modalFooterContent`` -- the footer (usually buttons)
+    - ``stampWidth`` -- 180
+    - ``modalImageWidth`` -- 400
+    - ``downloadLink`` -- False
+    
     """
 
     def __init__(
@@ -70,8 +68,10 @@ class imagingModal():
         """
         *get the object*
 
-        **Return:**
-            - ``imageModal``
+        **Return**
+
+        - ``imageModal``
+        
         """
         self.log.debug('starting the ``get`` method')
 
@@ -90,8 +90,10 @@ class imagingModal():
 
          - ``width`` -- image width*
 
-        **Return:**
-            - ``thisImage`` -- the image created
+        **Return**
+
+        - ``thisImage`` -- the image created
+        
         """
         self.log.debug('starting the ``create_image`` method')
 
@@ -129,8 +131,10 @@ class imagingModal():
         """
         *create modal*
 
-        **Return:**
-            - ``imageModal`` -- the image modal
+        **Return**
+
+        - ``imageModal`` -- the image modal
+        
         """
         self.log.debug('starting the ``create_modal`` method')
 

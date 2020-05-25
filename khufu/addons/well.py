@@ -1,6 +1,5 @@
 # CREATED : 20130508
 
-
 def well(
         wellText='',
         wellSize='default',
@@ -8,12 +7,16 @@ def well(
         htmlClass=False):
     """ *Get well. Use the well as a simple effect on an element to give it an inset effect.*
 
-    **Key Arguments:**
-        - ``wellText`` -- the text to be displayed in the well
-        - ``wellSize`` -- the size of the well [ "default" | "large" | "small" ]
+    **Key Arguments**
 
-    **Return:**
-        - ``well`` -- the well """
+    - ``wellText`` -- the text to be displayed in the well
+    - ``wellSize`` -- the size of the well [ "default" | "large" | "small" ]
+    
+
+    **Return**
+
+    - ``well`` -- the well """
+    
 
     if htmlId is False:
         htmlId = ""

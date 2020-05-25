@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def buttonGroup(
         buttonList=[],
         format="default",
@@ -9,12 +8,16 @@ def buttonGroup(
     """
     *Generate a buttonGroup - TBS style*
 
-    **Key Arguments:**
-        - ``buttonList`` -- a list of buttons
-        - ``format`` -- format of the button [ default | toolbar | vertical ]
+    **Key Arguments**
 
-    **Return:**
-        - ``buttonGroup`` -- the buttonGroup
+    - ``buttonList`` -- a list of buttons
+    - ``format`` -- format of the button [ default | toolbar | vertical ]
+    
+
+    **Return**
+
+    - ``buttonGroup`` -- the buttonGroup
+    
     """
     thisButtonList = ""
     count = 1

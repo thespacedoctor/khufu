@@ -1,6 +1,6 @@
 # CREATED : 20130508
+from builtins import range
 from khufu import images
-
 
 def mediaObject(
     displayType='div',
@@ -11,15 +11,19 @@ def mediaObject(
 ):
     """ *Generate an abstract object style for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.*
 
-    **Key Arguments:**
-        - ``displayType`` -- the display style of the media object [ "div" | "li" ]
-        - ``img`` -- the image to include
-        - ``headlineText`` -- the headline text for the object
-        - ``otherContent`` -- other content to be displayed inside the media object
-        - ``nestedMediaObjects`` -- nested media objects to be appended
+    **Key Arguments**
 
-    **Return:**
-        - ``media`` -- the media object """
+    - ``displayType`` -- the display style of the media object [ "div" | "li" ]
+    - ``img`` -- the image to include
+    - ``headlineText`` -- the headline text for the object
+    - ``otherContent`` -- other content to be displayed inside the media object
+    - ``nestedMediaObjects`` -- nested media objects to be appended
+    
+
+    **Return**
+
+    - ``media`` -- the media object """
+    
 
     falseList = [nestedMediaObjects]
 

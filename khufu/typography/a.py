@@ -1,6 +1,6 @@
 # encoding: utf-8
+from builtins import range
 from . import *
-
 
 def a(
         content="",
@@ -18,20 +18,24 @@ def a(
     """
     *Generate an anchor - TBS style*
 
-    **Key Arguments:**
-        - ``content`` -- the content
-        - ``href`` -- the href link for the anchor
-        - ``tableIndex`` -- table index for the dropdown menus [ False | -1 ]
-        - ``pull`` -- direction to float the link (esp if image)
-        - ``triggerStyle`` -- link to be used as a dropDown or tab trigger? [ False | "dropdown" | "tab" | "thumbnail" ]
-        - ``htmlClass`` -- the class of the link
-        - ``htmlId`` -- the html id of the anchor
-        - ``postInBackground`` -- post to the href in the background, to fire data off to a cgi script to action without leaving page
-        - ``notification`` -- a notification to be displayed on webpage
-        - ``openInNewTab`` -- open the link in a new tab?
+    **Key Arguments**
 
-    **Return:**
-        - ``a`` -- the a
+    - ``content`` -- the content
+    - ``href`` -- the href link for the anchor
+    - ``tableIndex`` -- table index for the dropdown menus [ False | -1 ]
+    - ``pull`` -- direction to float the link (esp if image)
+    - ``triggerStyle`` -- link to be used as a dropDown or tab trigger? [ False | "dropdown" | "tab" | "thumbnail" ]
+    - ``htmlClass`` -- the class of the link
+    - ``htmlId`` -- the html id of the anchor
+    - ``postInBackground`` -- post to the href in the background, to fire data off to a cgi script to action without leaving page
+    - ``notification`` -- a notification to be displayed on webpage
+    - ``openInNewTab`` -- open the link in a new tab?
+    
+
+    **Return**
+
+    - ``a`` -- the a
+    
     """
     triggerClass = ""
     dropdownCaret = ""

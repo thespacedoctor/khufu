@@ -1,6 +1,6 @@
 # encoding: utf-8
+from builtins import range
 from . import *
-
 
 def navBar(
     brand='',
@@ -17,17 +17,21 @@ def navBar(
 ):
     """ *Generate a navBar - TBS style*
 
-    **Key Arguments:**
-        - ``brand`` -- the website brand [ image | text ]
-        - ``contentList`` -- the content list of li and dropdowns
-        - ``contentListPull`` -- False, right, left
-        - ``fixedOrStatic`` -- Fix the navbar to the top or bottom of the viewport, or create a static full-width navbar that scrolls away with the page [ False | fixed | static ]
-        - ``location`` -- location of the navigation bar if fixed or static
-        - ``dark`` -- Modify the look of the navbar by making it dark
-        - ``transparent`` -- make the bar see-through
+    **Key Arguments**
 
-    **Return:**
-        - ``navBar`` -- the navBar """
+    - ``brand`` -- the website brand [ image | text ]
+    - ``contentList`` -- the content list of li and dropdowns
+    - ``contentListPull`` -- False, right, left
+    - ``fixedOrStatic`` -- Fix the navbar to the top or bottom of the viewport, or create a static full-width navbar that scrolls away with the page [ False | fixed | static ]
+    - ``location`` -- location of the navigation bar if fixed or static
+    - ``dark`` -- Modify the look of the navbar by making it dark
+    - ``transparent`` -- make the bar see-through
+    
+
+    **Return**
+
+    - ``navBar`` -- the navBar """
+    
 
     if brand is not False:
         brand = u"""<a class="brand" href="#">%(brand)s</a>""" % locals()

@@ -5,10 +5,11 @@
 
 :Author:
     David Young
-
-:Date Created:
-    May 27, 2014
 """
+from __future__ import division
+from builtins import str
+from builtins import object
+from past.utils import old_div
 from . import *
 import sys
 import os
@@ -22,19 +23,19 @@ from khufu.tables import *
 from khufu.helpers import *
 from fundamentals import times
 
-
-class sortable_table():
-
+class sortable_table(object):
     """
     *The worker class for the sortable_table module*
 
-    **Key Arguments:**
-        - ``dbConn`` -- mysql database connection
-        - ``log`` -- logger
-        - ``currentPageUrl`` -- the baseurl for the webpage
-        - ``columnsToDisplay`` -- a list of column objects for the table
-        - ``defaultSort`` -- the column to sort on by default
-        - ``tableRowsDictionary`` -- dictionary of column names and values (e.g. a mysql query result)
+    **Key Arguments**
+
+    - ``dbConn`` -- mysql database connection
+    - ``log`` -- logger
+    - ``currentPageUrl`` -- the baseurl for the webpage
+    - ``columnsToDisplay`` -- a list of column objects for the table
+    - ``defaultSort`` -- the column to sort on by default
+    - ``tableRowsDictionary`` -- dictionary of column names and values (e.g. a mysql query result)
+    
     """
 
     def __init__(
@@ -63,7 +64,7 @@ class sortable_table():
         self.headerPopoverText = "click to sort"
         self.searchKeyAndColumn = False
         self.columnsToHide = []
-        self.columnWidth = int(math.floor(100 / len(self.columnsToDisplay)))
+        self.columnWidth = int(math.floor(old_div(100, len(self.columnsToDisplay))))
         self.extraColumnWidth = 100 - \
             self.columnWidth * len(self.columnsToDisplay)
 
@@ -130,8 +131,10 @@ class sortable_table():
         """
         *get the sortable_table object*
 
-        **Return:**
-            - ``sortable_table``
+        **Return**
+
+        - ``sortable_table``
+        
         """
 
         tableHead = self.get_table_head()
@@ -154,8 +157,10 @@ class sortable_table():
         """
         *get table head*
 
-        **Return:**
-            - ``tableHead`` -- the table head
+        **Return**
+
+        - ``tableHead`` -- the table head
+        
         """
         tableHead = ""
 
@@ -175,7 +180,7 @@ class sortable_table():
         for i, c in enumerate(self.columnsToDisplay):
             # build sort url
             direction = "False"
-            if c in self.modifySortByDict.keys():
+            if c in list(self.modifySortByDict.keys()):
                 columnSortByAlias = self.modifySortByDict[c]
             else:
                 columnSortByAlias = c
@@ -197,7 +202,7 @@ class sortable_table():
                     thisArrow = self.arrow
 
             # add text color and change display names if necessary
-            if c in self.modifyDisplayNameDict.keys():
+            if c in list(self.modifyDisplayNameDict.keys()):
                 thisText = self.modifyDisplayNameDict[c]
             else:
                 thisText = c
@@ -243,8 +248,10 @@ class sortable_table():
         """
         *get table body*
 
-        **Return:**
-            - ``tableBody``
+        **Return**
+
+        - ``tableBody``
+        
         """
         theseTickets = ""
 
@@ -266,7 +273,7 @@ class sortable_table():
 
             for i, c in enumerate(self.columnsToDisplay):
 
-                if (isinstance(obj[c], ("".__class__, u"".__class__)) or isinstance(obj[c], unicode)) and "." not in obj[c]:
+                if (isinstance(obj[c], ("".__class__, u"".__class__)) or isinstance(obj[c], str)) and "." not in obj[c]:
                     try:
                         obj[c] = int(obj[c])
                     except:
@@ -280,11 +287,11 @@ class sortable_table():
 
                 if c.lower() in ["radeg", "decdeg"]:
                     obj[c] = "%6.3f" % obj[c]
-                elif (isinstance(obj[c], float) or isinstance(obj[c], long)) and obj[c]:
+                elif (isinstance(obj[c], float) or isinstance(obj[c], int)) and obj[c]:
                     obj[c] = "%6.2f" % obj[c]
                 elif obj[c] == 0:
                     pass
-                elif not obj[c] or ((isinstance(obj[c], ("".__class__, u"".__class__)) or isinstance(obj[c], unicode)) and ("unkn" in obj[c].lower())):
+                elif not obj[c] or ((isinstance(obj[c], ("".__class__, u"".__class__)) or isinstance(obj[c], str)) and ("unkn" in obj[c].lower())):
                     obj[c] = ""
                 elif isinstance(obj[c], datetime.datetime):
                     # obj[c] = "boom"

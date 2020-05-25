@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def nav_list(
     itemList=[],
     pull=False,
@@ -11,15 +10,19 @@ def nav_list(
 ):
     """ *Create an html list of navigation items from the required python list*
 
-    **Key Arguments:**
-        - ``itemList`` -- items to be included in the navigation list
-        - ``pull`` -- float the nav-list [ False | 'right' | 'left' ]
-        - ``onPhone`` -- does this container get displayed on a phone sized screen
-        - ``onTablet`` -- does this container get displayed on a tablet sized screen
-        - ``onDesktop`` -- does this container get displayed on a desktop sized screen
+    **Key Arguments**
 
-    **Return:**
-        - navList """
+    - ``itemList`` -- items to be included in the navigation list
+    - ``pull`` -- float the nav-list [ False | 'right' | 'left' ]
+    - ``onPhone`` -- does this container get displayed on a phone sized screen
+    - ``onTablet`` -- does this container get displayed on a tablet sized screen
+    - ``onDesktop`` -- does this container get displayed on a desktop sized screen
+    
+
+    **Return**
+
+    - navList """
+    
 
     if pull:
         pull = """pull-%(pull)s""" % locals()

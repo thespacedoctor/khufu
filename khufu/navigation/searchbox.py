@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def searchbox(
     size='medium',
     htmlId="",
@@ -15,17 +14,21 @@ def searchbox(
 ):
     """ *Create a Search box*
 
-    **Key Arguments:**
-        - ``size`` -- size = mini | small | medium | large | xlarge | xxlarge
-        - ``htmlId`` -- the html id of the search bar
-        - ``placeholder`` -- placeholder text
-        - ``button`` -- do you want a search button?
-        - ``buttonSize``
-        - ``buttonColor``
-        - ``actionScript`` -- the script used to action the search text
+    **Key Arguments**
 
-    **Return:**
-        - ``markup`` -- markup for the searchbar """
+    - ``size`` -- size = mini | small | medium | large | xlarge | xxlarge
+    - ``htmlId`` -- the html id of the search bar
+    - ``placeholder`` -- placeholder text
+    - ``button`` -- do you want a search button?
+    - ``buttonSize``
+    - ``buttonColor``
+    - ``actionScript`` -- the script used to action the search text
+    
+
+    **Return**
+
+    - ``markup`` -- markup for the searchbar """
+    
 
     if button:
         button = """<button type="submit" class="btn-%(buttonSize)s btn-%(buttonColor)s">Search</button>""" % locals(

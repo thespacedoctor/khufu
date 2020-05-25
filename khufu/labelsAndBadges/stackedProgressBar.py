@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def stackedProgressBar(
         barStyle="plain",
         infoWidth="10",
@@ -12,16 +11,20 @@ def stackedProgressBar(
     """
     *Generate a progress bar - TBS style*
 
-    **Key Arguments:**
-        - ``barLevel`` -- the level/color of progress [ "info" | "success" | "warning" | "danger"]
-        - ``barStyle`` -- style of the progress bar [ "plain" | "striped" | "striped-active" ]
-        - ``infoWidth`` -- the precentage width of the info level bar
-        - ``successWidth`` -- the precentage width of the success level bar
-        - ``warningWidth`` -- the precentage width of the warning level bar
-        - ``errorWidth`` -- the precentage width of the error level bar
+    **Key Arguments**
 
-    **Return:**
-        - ``progressBar`` -- the progressBar
+    - ``barLevel`` -- the level/color of progress [ "info" | "success" | "warning" | "danger"]
+    - ``barStyle`` -- style of the progress bar [ "plain" | "striped" | "striped-active" ]
+    - ``infoWidth`` -- the precentage width of the info level bar
+    - ``successWidth`` -- the precentage width of the success level bar
+    - ``warningWidth`` -- the precentage width of the warning level bar
+    - ``errorWidth`` -- the precentage width of the error level bar
+    
+
+    **Return**
+
+    - ``progressBar`` -- the progressBar
+    
     """
     if barStyle == "striped":
         barStyle = "progress-striped"

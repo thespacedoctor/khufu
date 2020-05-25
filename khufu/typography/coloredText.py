@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def coloredText(
         text="",
         color="red",
@@ -12,15 +11,19 @@ def coloredText(
     """
     *Colour text a given colour*
 
-    **Key Arguments:**
-        - ``text`` -- the text to color
-        - ``color`` -- the color
-        - ``htmlClass`` -- the class for the text
-        - ``size`` -- the relative size of the text
-        - ``addBackgroundColor`` -- add a complimentary background color to the text
+    **Key Arguments**
 
-    **Return:**
-        - ``text`` -- the coloured text span
+    - ``text`` -- the text to color
+    - ``color`` -- the color
+    - ``htmlClass`` -- the class for the text
+    - ``size`` -- the relative size of the text
+    - ``addBackgroundColor`` -- add a complimentary background color to the text
+    
+
+    **Return**
+
+    - ``text`` -- the coloured text span
+    
     """
     if pull is not False:
         pull = """pull-%(pull)s""" % locals()

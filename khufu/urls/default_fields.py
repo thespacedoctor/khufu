@@ -5,20 +5,18 @@
 
 :Author:
     David Young
-
-:Date Created:
-    May 28, 2014
 """
 import sys
 import os
-
 
 def default_fields():
     """
     *default feilds*
 
-    **Return:**
-        - ``fieldDict`` -- a dictionary of { fieldName, defaultValue }
+    **Return**
+
+    - ``fieldDict`` -- a dictionary of { fieldName, defaultValue }
+    
     """
     fieldDict = {
         "sortBy": False,

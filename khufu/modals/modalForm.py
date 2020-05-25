@@ -5,11 +5,8 @@
 
 :Author:
     David Young
-
-:Date Created:
-    July 1, 2014
-
 """
+from builtins import object
 import sys
 import os
 import datetime
@@ -20,18 +17,18 @@ from khufu.scaffolding import *
 from khufu.buttons import *
 from . import modal
 
-
-class modalForm():
-
+class modalForm(object):
     """
     *The worker class for the modalForm module*
 
-    **Key Arguments:**
-        - ``log`` -- logger
-        - ``title`` -- title
-        - ``postToScriptUrl`` -- postToScriptUrl
-        - ``reloadToUrl`` -- reloadToUrl
-        - ``formClassName`` -- give a class name to form (if required by CSS or JS)
+    **Key Arguments**
+
+    - ``log`` -- logger
+    - ``title`` -- title
+    - ``postToScriptUrl`` -- postToScriptUrl
+    - ``reloadToUrl`` -- reloadToUrl
+    - ``formClassName`` -- give a class name to form (if required by CSS or JS)
+    
     """
 
     def __init__(
@@ -73,8 +70,10 @@ class modalForm():
         """
         *get the modalForm object*
 
-        **Return:**
-            - ``modalForm``
+        **Return**
+
+        - ``modalForm``
+        
         """
         self.log.debug('starting the ``get`` method')
 
@@ -135,10 +134,12 @@ class modalForm():
         """
         *add a form objec to the modal form*
 
-        **Key Arguments:**
-            - ``formObject`` -- the object to add to the form
-            - ``label`` -- label to assign to the object
-            - ``hidden`` -- is the form object hidden initially?
+        **Key Arguments**
+
+        - ``formObject`` -- the object to add to the form
+        - ``label`` -- label to assign to the object
+        - ``hidden`` -- is the form object hidden initially?
+        
         """
         self.log.debug('starting the ``addFormObject`` method')
 
@@ -173,11 +174,15 @@ class modalForm():
         """
         *get form action buttons*
 
-        **Key Arguments:**
-            - ``formId`` -- the HTML id of the form
+        **Key Arguments**
 
-        **Return:**
-            - ``actionButtons`` -- the action buttos for the form (cancel, submit)
+        - ``formId`` -- the HTML id of the form
+        
+
+        **Return**
+
+        - ``actionButtons`` -- the action buttos for the form (cancel, submit)
+        
         """
         self.log.debug('starting the ``get_form_action_buttons`` method')
 
@@ -231,15 +236,17 @@ class modalForm():
         """
         *add hidden parameter value to the form (to be submitted with the form but does not need user input)*
 
-        **Key Arguments:**
-            - ``key`` -- the key for the hidden value (will be appended to query string when form submitted)
-            - ``value`` -- the value of the hidden parameter
+        **Key Arguments**
+
+        - ``key`` -- the key for the hidden value (will be appended to query string when form submitted)
+        - ``value`` -- the value of the hidden parameter
+        
         """
         self.log.debug('starting the ``add_hidden_parameter_value`` method')
 
         if isinstance(value, ("".__class__, u"".__class__)):
             ttype = "text"
-        if isinstance(value, unicode):
+        if isinstance(value, str):
             ttype = "text"
         elif isinstance(value, datetime.date):
             ttype = "datetime"

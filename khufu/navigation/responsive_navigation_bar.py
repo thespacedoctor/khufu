@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def responsive_navigation_bar(
     shade='dark',
     brand=False,
@@ -16,18 +15,22 @@ def responsive_navigation_bar(
 ):
     """ *Create a twitter bootstrap responsive nav-bar component*
 
-    **Key Arguments:**
-        - ``shade`` -- if dark then colors are inverted [ False | 'dark' ]
-        - ``brand`` -- the website brand [ image | text ]
-        - ``outsideNavList`` -- nav-list to be contained outside collapsible content
-        - ``insideNavList`` -- nav-list to be contained inside collapsible content
-        - ``htmlId`` --
-        - ``onPhone`` -- does this container get displayed on a phone sized screen
-        - ``onTablet`` -- does this container get displayed on a tablet sized screen
-        - ``onDesktop`` -- does this container get displayed on a desktop sized screen
+    **Key Arguments**
 
-    **Return:**
-        - ``navBar`` -- """
+    - ``shade`` -- if dark then colors are inverted [ False | 'dark' ]
+    - ``brand`` -- the website brand [ image | text ]
+    - ``outsideNavList`` -- nav-list to be contained outside collapsible content
+    - ``insideNavList`` -- nav-list to be contained inside collapsible content
+    - ``htmlId`` --
+    - ``onPhone`` -- does this container get displayed on a phone sized screen
+    - ``onTablet`` -- does this container get displayed on a tablet sized screen
+    - ``onDesktop`` -- does this container get displayed on a desktop sized screen
+    
+
+    **Return**
+
+    - ``navBar`` -- """
+    
 
     if not shade:
         shade = ''

@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def radio(
         optionText="",
         optionNumber=1,
@@ -13,17 +12,21 @@ def radio(
     """
     *Generate a radio - TBS style*
 
-    **Key Arguments:**
-        - ``optionText`` -- the text associated with this checkbox
-        - ``optionNumber`` -- the order in the option list
-        - ``htmlId`` -- the html id of the element
-        - ``inlineHelpText`` -- inline and block level support for help text that appears around form controls
-        - ``blockHelpText`` -- a longer block of help text that breaks onto a new line and may extend beyond one line
-        - ``disabled`` -- add the disabled attribute on an input to prevent user input
-        - ``checked`` -- is the radio button checked by default
+    **Key Arguments**
 
-    **Return:**
-        - ``radio`` -- the radio
+    - ``optionText`` -- the text associated with this checkbox
+    - ``optionNumber`` -- the order in the option list
+    - ``htmlId`` -- the html id of the element
+    - ``inlineHelpText`` -- inline and block level support for help text that appears around form controls
+    - ``blockHelpText`` -- a longer block of help text that breaks onto a new line and may extend beyond one line
+    - ``disabled`` -- add the disabled attribute on an input to prevent user input
+    - ``checked`` -- is the radio button checked by default
+    
+
+    **Return**
+
+    - ``radio`` -- the radio
+    
     """
     if inlineHelpText:
         inlineHelpText = """<span class="help-inline">%(inlineHelpText)s</span>""" % locals(

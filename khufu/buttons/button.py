@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def button(
         buttonText="",
         buttonStyle="default",
@@ -22,21 +21,26 @@ def button(
     """
     *Generate a button - TBS style*
 
-    **Key Arguments:**
-        - ``buttonText`` -- the text to display on the button
-        - ``buttonStyle`` -- the style of the button required [ default | primary | info | success | warning | danger | inverse | link ]
-        - ``buttonSize`` -- the size of the button required [ large | small | mini ]
-        - ``htmlId`` -- the htmlId for the button
-        - ``href`` -- link the button to another location?
-        - ``pull`` -- left, right or center
-        - ``submit`` -- set to true if a form button [ true | false ]
-        - ``block`` -- create block level buttons—those that span the full width of a parent [ True | False ]
-        - ``disable`` -- this class is only for aesthetic; you must use custom JavaScript to disable links here
-        - ``dataToggle`` -- for use with js to launch, for example, a modal
+    **Key Arguments**
+
+    - ``buttonText`` -- the text to display on the button
+    - ``buttonStyle`` -- the style of the button required [ default | primary | info | success | warning | danger | inverse | link ]
+    - ``buttonSize`` -- the size of the button required [ large | small | mini ]
+    - ``htmlId`` -- the htmlId for the button
+    - ``href`` -- link the button to another location?
+    - ``pull`` -- left, right or center
+    - ``submit`` -- set to true if a form button [ true | false ]
+    - ``block`` -- create block level buttons—those that span the full width of a parent [ True | False ]
+    - ``disable`` -- this class is only for aesthetic; you must use custom JavaScript to disable links here
+    - ``dataToggle`` -- for use with js to launch, for example, a modal
+    
+
         - ``popover`` -- add a popover element for this button
 
-    **Return:**
-        - ``button`` -- the button
+    **Return**
+
+    - ``button`` -- the button
+    
     """
     if buttonStyle == "default":
         buttonStyle = ""

@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def grid_row(
     responsive=True,
     columns='',
@@ -14,17 +13,21 @@ def grid_row(
     """ *Create a row using the Twitter Bootstrap static layout grid.
     The static Bootstrap grid system utilizes 12 columns.*
 
-    **Key Arguments:**
-        - ``responsive`` -- fluid layout if true, fixed if false
-        - ``columns`` -- coulmns to be included in this row
-        - ``htmlId`` -- the id of the row
-        - ``htmlClass`` -- the class of the row
-        - ``onPhone`` -- does this row get displayed on a phone sized screen
-        - ``onTablet`` -- does this row get displayed on a tablet sized screen
-        - ``onDesktop`` -- does this row get displayed on a desktop sized screen
+    **Key Arguments**
 
-    **Return:**
-        - ``row`` -- the row """
+    - ``responsive`` -- fluid layout if true, fixed if false
+    - ``columns`` -- coulmns to be included in this row
+    - ``htmlId`` -- the id of the row
+    - ``htmlClass`` -- the class of the row
+    - ``onPhone`` -- does this row get displayed on a phone sized screen
+    - ``onTablet`` -- does this row get displayed on a tablet sized screen
+    - ``onDesktop`` -- does this row get displayed on a desktop sized screen
+    
+
+    **Return**
+
+    - ``row`` -- the row """
+    
 
     if responsive:
         responsive = '-fluid'

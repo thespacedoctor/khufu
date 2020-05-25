@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def td(
         content=False,
         color=False,
@@ -9,12 +8,16 @@ def td(
     """
     *Generate a table data cell - TBS style*
 
-    **Key Arguments:**
-        - ``content`` -- the content
-        - ``color`` -- [ sucess | error | warning | info ]
+    **Key Arguments**
 
-    **Return:**
-        - ``td`` -- the table data cell
+    - ``content`` -- the content
+    - ``color`` -- [ sucess | error | warning | info ]
+    
+
+    **Return**
+
+    - ``td`` -- the table data cell
+    
     """
     if color is False:
         color = ""

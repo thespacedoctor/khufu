@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def htmlDocument(
         contentType=False,
         content='',
@@ -9,13 +8,17 @@ def htmlDocument(
     """
     *The doctype and html tags*
 
-    **Key Arguments:**
-        - ``content`` -- the head and body of the html page
-        - ``attachmentSaveAsName`` -- save file as this name instead of opening in browser
+    **Key Arguments**
 
-    **Return:**
-        - ``contentType`` -- the content type [ "text/html" ]
-        - ``doctype`` -- the HTML5 doctype
+    - ``content`` -- the head and body of the html page
+    - ``attachmentSaveAsName`` -- save file as this name instead of opening in browser
+    
+
+    **Return**
+
+    - ``contentType`` -- the content type [ "text/html" ]
+    - ``doctype`` -- the HTML5 doctype
+    
     """
 
     if attachmentSaveAsName is not False:

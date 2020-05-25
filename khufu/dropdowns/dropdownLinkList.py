@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def dropdownLinkList(
         linkDictionary={},
         title="dropdown",
@@ -10,17 +9,21 @@ def dropdownLinkList(
     """
     *dropdownLinkList*
 
-    **Key Arguments:**
-        - ``log`` -- logger
-        - ``linkDictionary`` -- { text : href }
-        - ``title`` -- title for the dropdown
-        - ``dropDirection`` -- up or down
+    **Key Arguments**
 
-    **Return:**
-        - ``thisDropdown``
+    - ``log`` -- logger
+    - ``linkDictionary`` -- { text : href }
+    - ``title`` -- title for the dropdown
+    - ``dropDirection`` -- up or down
+    
+
+    **Return**
+
+    - ``thisDropdown``
+    
     """
     linkList = []
-    for k, v in linkDictionary.items():
+    for k, v in list(linkDictionary.items()):
         link = a(
             content=k,
             href=v,

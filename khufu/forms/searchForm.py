@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def searchForm(
         buttonText="",
         span=2,
@@ -12,16 +11,20 @@ def searchForm(
     """
     *Generate a search-form - TBS style*
 
-    **Key Arguments:**
-        - ``buttonText`` -- the button text
-        - ``span`` -- column span
-        - ``inlineHelpText`` -- inline and block level support for help text that appears around form controls
-        - ``blockHelpText`` -- a longer block of help text that breaks onto a new line and may extend beyond one line
-        - ``focusedInputText`` -- make the input focused by providing some initial editable input text
-        - ``htmlId`` -- htmlId
+    **Key Arguments**
 
-    **Return:**
-        - ``searchForm`` -- the search-form
+    - ``buttonText`` -- the button text
+    - ``span`` -- column span
+    - ``inlineHelpText`` -- inline and block level support for help text that appears around form controls
+    - ``blockHelpText`` -- a longer block of help text that breaks onto a new line and may extend beyond one line
+    - ``focusedInputText`` -- make the input focused by providing some initial editable input text
+    - ``htmlId`` -- htmlId
+    
+
+    **Return**
+
+    - ``searchForm`` -- the search-form
+    
     """
     if span:
         span = "span%(span)s" % locals()

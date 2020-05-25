@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def uneditableInput(
         placeholder="",
         span=2,
@@ -10,14 +9,18 @@ def uneditableInput(
     """
     *Generate a uneditableInput - TBS style*
 
-    **Key Arguments:**
-        - ``placeholder`` -- the placeholder text
-        - ``span`` -- column span
-        - ``inlineHelpText`` -- inline and block level support for help text that appears around form controls
-        - ``blockHelpText`` -- a longer block of help text that breaks onto a new line and may extend beyond one line
+    **Key Arguments**
 
-    **Return:**
-        - ``uneditableInput`` -- an uneditable input - the user can see but not interact
+    - ``placeholder`` -- the placeholder text
+    - ``span`` -- column span
+    - ``inlineHelpText`` -- inline and block level support for help text that appears around form controls
+    - ``blockHelpText`` -- a longer block of help text that breaks onto a new line and may extend beyond one line
+    
+
+    **Return**
+
+    - ``uneditableInput`` -- an uneditable input - the user can see but not interact
+    
     """
     if span:
         span = "span%(span)s" % locals()

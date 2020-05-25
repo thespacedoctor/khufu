@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def head(
     relativeUrlBase=False,
     mainCssFilePath="main.css",
@@ -12,15 +11,19 @@ def head(
 ):
     """ *Generate an html head element for your webpage*
 
-    **Key Arguments:**
-        ``relativeUrlBase`` -- relative base url for js, css, image folders
-        ``pageTitle`` -- well, the page title!
-        ``mainCssFilePath`` -- css file path
-        ``extras`` -- any extra info to be included in the ``head`` element
-        ``faviconLocation`` -- path to faviconLocation if not in document root
+    **Key Arguments**
 
-    **Return:**
-        - ``head`` -- the head """
+    ``relativeUrlBase`` -- relative base url for js, css, image folders
+    ``pageTitle`` -- well, the page title!
+    ``mainCssFilePath`` -- css file path
+    ``extras`` -- any extra info to be included in the ``head`` element
+    ``faviconLocation`` -- path to faviconLocation if not in document root
+    
+
+    **Return**
+
+    - ``head`` -- the head """
+    
 
     if not relativeUrlBase:
         relativeUrlBase = ""

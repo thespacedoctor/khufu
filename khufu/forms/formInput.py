@@ -1,6 +1,6 @@
 # encoding: utf-8
+from builtins import range
 from . import *
-
 
 def formInput(
         ttype="text",
@@ -27,17 +27,20 @@ def formInput(
     """
     *Generate a form input - TBS style*
 
-    **Key Arguments:**
-        - ``ttype`` -- [ text | password | datetime | datetime-local | date | month | time | week | number | float | email | url | search | tel | color ]
-        - ``placeholder`` -- the placeholder text
-        - ``span`` -- column span
-        - ``htmlId`` -- html id
-        - ``searchBar`` -- is this input a searchbar?
-        - ``pull`` -- [ false | right | left ] align form
-        - ``prepend`` -- prepend text to the input.
-        - ``append`` -- append text to the input.
-        - ``button1`` -- do you want a button associated with the input?
-        - ``button2`` -- as above for a 2nd button
+    **Key Arguments**
+
+    - ``ttype`` -- [ text | password | datetime | datetime-local | date | month | time | week | number | float | email | url | search | tel | color ]
+    - ``placeholder`` -- the placeholder text
+    - ``span`` -- column span
+    - ``htmlId`` -- html id
+    - ``searchBar`` -- is this input a searchbar?
+    - ``pull`` -- [ false | right | left ] align form
+    - ``prepend`` -- prepend text to the input.
+    - ``append`` -- append text to the input.
+    - ``button1`` -- do you want a button associated with the input?
+    - ``button2`` -- as above for a 2nd button
+    
+
         - ``appendDropdown`` -- do you want a appended button-dropdown associated with the input?
         - ``prependDropdown`` -- do you want a prepended button-dropdown associated with the input?
         - ``inlineHelpText`` -- inline and block level support for help text that appears around form controls
@@ -49,8 +52,10 @@ def formInput(
         - ``hidden`` -- hide the CG from the user?
         - ``divWrap`` -- wrap in div
 
-    **Return:**
-        - ``input`` -- the input
+    **Return**
+
+    - ``input`` -- the input
+    
     """
     prependContent = False
     appendContent = False
@@ -169,7 +174,7 @@ def formInput(
         disabledId = u""
 
     if defaultValue:
-        if isinstance(defaultValue, ("".__class__, u"".__class__)) or isinstance(defaultValue, unicode):
+        if isinstance(defaultValue, ("".__class__, u"".__class__)) or isinstance(defaultValue, str):
             defaultValue = defaultValue.replace('"', "\"")
             defaultValue = u'"%(defaultValue)s"' % locals()
 

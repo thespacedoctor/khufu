@@ -1,6 +1,5 @@
 # CREATED : February 25, 2014
 
-
 def popover(
         tooltip=False,
         placement=False,
@@ -12,18 +11,21 @@ def popover(
     """
     *popover to provide helper text or some secondary info about an element*
 
-    **Key Arguments:**
-        - ``tooltip`` -- use tooltip instead of popover
-        - ``placement`` -- direction popover expands into [ top | bottom | left | right ]
-        - ``trigger`` -- the trigger for the popover [ False | click | hover | focus | manual ]
-        - ``title`` -- the popover title
-        - ``content`` -- the popover content
-        - ``delay`` -- delay in ms
-        - ``after`` -- place the div required by the 
+    **Key Arguments**
 
+    - ``tooltip`` -- use tooltip instead of popover
+    - ``placement`` -- direction popover expands into [ top | bottom | left | right ]
+    - ``trigger`` -- the trigger for the popover [ False | click | hover | focus | manual ]
+    - ``title`` -- the popover title
+    - ``content`` -- the popover content
+    - ``delay`` -- delay in ms
+    - ``after`` -- place the div required by the 
+    
 
-    **Return:**
-        - ``popover`` - the popover helper text to be added to an element
+    **Return**
+
+    - ``popover`` - the popover helper text to be added to an element
+    
 
     .. todo::
 

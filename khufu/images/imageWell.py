@@ -5,28 +5,29 @@
 
 :Author:
     David Young
-
-:Date Created:
-    April 29, 2014
 """
 from __future__ import absolute_import
+from __future__ import division
+from builtins import range
+from builtins import object
+from past.utils import old_div
 import sys
 import os
 import math
 from ..__init__ import *
 from .imagingModal import imagingModal
 
-
-class imageWell():
-
+class imageWell(object):
     """
     *Framework for a bootstrap style well containing thumbnail images that can be clicked on to reveal a modal of more imformation*
 
-    **Key Arguments:**
-        - ``log`` -- logger
-        - ``title`` -- Title of Image Well
-        - ``description`` -- Description of the content of the image well
-        - ``imageDisplay`` -- [ rounded | circle | polaroid | False ]
+    **Key Arguments**
+
+    - ``log`` -- logger
+    - ``title`` -- Title of Image Well
+    - ``description`` -- Description of the content of the image well
+    - ``imageDisplay`` -- [ rounded | circle | polaroid | False ]
+    
     """
 
     def __init__(
@@ -55,15 +56,17 @@ class imageWell():
         """
         *get the image well*
 
-        **Return:**
-            - ``imageWellRow`` -- the html text
+        **Return**
+
+        - ``imageWellRow`` -- the html text
+        
         """
         self.log.debug('starting the ``get`` method')
 
         ## VARIABLES ##
         numImages = len(self.imageColumns)
-        colPerRow = int(math.floor(12 / self.imageSpan))
-        numRows = int(math.ceil(float(numImages) / float(colPerRow)))
+        colPerRow = int(math.floor(old_div(12, self.imageSpan)))
+        numRows = int(math.ceil(old_div(float(numImages), float(colPerRow))))
 
         # header text for the image well
         self.title = pageHeader(
@@ -132,14 +135,18 @@ class imageWell():
         """
         *append an image to the image well*
 
-        **Key Arguments:**
-            - ``imagePath`` -- path to the image to add to the well
-            - ``imageTitle`` -- text to tag the image with
-            - ``modalHeaderContent`` -- the heading for the modal
-            - ``modalFooterContent`` -- the footer (usually buttons)
+        **Key Arguments**
 
-        **Return:**
-            - None
+        - ``imagePath`` -- path to the image to add to the well
+        - ``imageTitle`` -- text to tag the image with
+        - ``modalHeaderContent`` -- the heading for the modal
+        - ``modalFooterContent`` -- the footer (usually buttons)
+        
+
+        **Return**
+
+        - None
+        
         """
         self.log.debug('starting the ``appendImage`` method')
 

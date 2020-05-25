@@ -1,7 +1,7 @@
 # encoding: utf-8
+from builtins import str
 from . import *
 import khufu
-
 
 def tabbableNavigation(
         contentDictionary={},  # { name : content }
@@ -14,14 +14,18 @@ def tabbableNavigation(
 ):
     """ Generate a tabbable Navigation
 
-    **Key Arguments:**
-        - ``contentDictionary`` -- the content dictionary { name : content }
-        - ``fadeIn`` -- make tabs fade in
-        - ``direction`` -- the position of the tabs [ above | below | left | right ]
-        - ``uniqueNavigationId`` -- a unique id for this navigation block if more than one on page
+    **Key Arguments**
 
-    **Return:**
-        - ``tabbableNavigation`` -- the tabbableNavigation """
+    - ``contentDictionary`` -- the content dictionary { name : content }
+    - ``fadeIn`` -- make tabs fade in
+    - ``direction`` -- the position of the tabs [ above | below | left | right ]
+    - ``uniqueNavigationId`` -- a unique id for this navigation block if more than one on page
+    
+
+    **Return**
+
+    - ``tabbableNavigation`` -- the tabbableNavigation """
+    
 
     if fadeIn is True:
         fadeIn = 'fade'
@@ -54,7 +58,7 @@ def tabbableNavigation(
     elif isinstance(uniqueNavigationId, int):
         uniqueNavigationId = """id%(uniqueNavigationId)s""" % locals()
 
-    for k, v in contentDictionary.items():
+    for k, v in list(contentDictionary.items()):
         badge = contentCount[k]
         if count == 0:
             titleList = """%(titleList)s<li class="active"><a href="#tab%(uniqueNavigationId)s%(count)s" data-toggle="tab">%(k)s %(badge)s</a></li>""" % locals(

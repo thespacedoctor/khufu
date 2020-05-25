@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def th(
         content="",
         color=False,
@@ -12,14 +11,18 @@ def th(
     """
     *Generate a table header cell - TBS style*
 
-    **Key Arguments:**
-        - ``content`` -- the content
-        - ``color`` -- [ sucess | error | warning | info ]
-        - ``href`` -- add a link for the header cell (to sort for example)
-        - ``popover`` -- add helper text
+    **Key Arguments**
 
-    **Return:**
-        - ``th`` -- the table header cell
+    - ``content`` -- the content
+    - ``color`` -- [ sucess | error | warning | info ]
+    - ``href`` -- add a link for the header cell (to sort for example)
+    - ``popover`` -- add helper text
+    
+
+    **Return**
+
+    - ``th`` -- the table header cell
+    
     """
     if color is False:
         color = ""

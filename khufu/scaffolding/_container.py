@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def _container(
     responsive=True,
     content='',
@@ -13,17 +12,21 @@ def _container(
 ):
     """ *The over-all content container for the twitter bootstrap webpage*
 
-    **Key Arguments:**
-        - ``responsive`` -- fluid layout if true, fixed if false
-        - ``content`` -- html content of the container div
-        - ``htmlId`` -- the id of the container
-        - ``htmlClass`` -- the class of the container
-        - ``onPhone`` -- does this container get displayed on a phone sized screen
-        - ``onTablet`` -- does this container get displayed on a tablet sized screen
-        - ``onDesktop`` -- does this container get displayed on a desktop sized screen
+    **Key Arguments**
 
-    **Return:**
-        - ``container`` 
+    - ``responsive`` -- fluid layout if true, fixed if false
+    - ``content`` -- html content of the container div
+    - ``htmlId`` -- the id of the container
+    - ``htmlClass`` -- the class of the container
+    - ``onPhone`` -- does this container get displayed on a phone sized screen
+    - ``onTablet`` -- does this container get displayed on a tablet sized screen
+    - ``onDesktop`` -- does this container get displayed on a desktop sized screen
+    
+
+    **Return**
+
+    - ``container`` 
+    
     """
 
     if responsive:

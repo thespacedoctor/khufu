@@ -1,16 +1,19 @@
 # encoding: utf-8
 from . import *
 
-
 def ol(itemList=[]):
     """
     *An ordered list*
 
-    **Key Arguments:**
-        - ``itemList`` -- a list of items to be included in the ordered list
+    **Key Arguments**
 
-    **Return:**
-        - ol
+    - ``itemList`` -- a list of items to be included in the ordered list
+    
+
+    **Return**
+
+    - ol
+    
     """
     thisList = ""
     for item in itemList:

@@ -1,7 +1,6 @@
 # encoding: utf-8
 from . import *
 
-
 def progressBar(
         barStyle="plain",
         precentageWidth="10",
@@ -9,13 +8,17 @@ def progressBar(
     """
     *Generate a progress bar - TBS style*
 
-    **Key Arguments:**
-        - ``barStyle`` -- style of the progress bar [ "plain" | "striped" | "striped-active" ]
-        - ``precentageWidth`` -- the current progress of the bar
-        - ``barLevel`` -- the level color of the bar [ "info" | "warning" | "success" | "error" ]
+    **Key Arguments**
 
-    **Return:**
-        - ``progressBar`` -- the progressBar
+    - ``barStyle`` -- style of the progress bar [ "plain" | "striped" | "striped-active" ]
+    - ``precentageWidth`` -- the current progress of the bar
+    - ``barLevel`` -- the level color of the bar [ "info" | "warning" | "success" | "error" ]
+    
+
+    **Return**
+
+    - ``progressBar`` -- the progressBar
+    
     """
     barLevel = "progress-%(barLevel)s" % locals()
 

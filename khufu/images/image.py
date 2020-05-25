@@ -1,6 +1,6 @@
 # encoding: utf-8
+from builtins import range
 from . import *
-
 
 def image(
         src="http://placehold.it/200x200",
@@ -21,23 +21,28 @@ def image(
     """Create an HTML image (with ot without link).
     Based on the Twitter bootstrap setup.
 
-    **Key Arguments:**
-        - ``src`` -- image url
-        - ``href`` -- image link url
-        - ``display`` -- how the image is to be displayed [ rounded | circle | polaroid ]
-        - ``pull`` -- how to align the image if within a <div> [ "left" | "right" | "center" ]
-        - ``htmlId`` -- the id of the image
-        - ``htmlClass`` -- the class of the image
-        - ``width`` -- the width of the image
-        - ``onPhone`` -- does this container get displayed on a phone sized screen
-        - ``onTablet`` -- does this container get displayed on a tablet sized screen
-        - ``onDesktop`` -- does this container get displayed on a desktop sized screen
+    **Key Arguments**
+
+    - ``src`` -- image url
+    - ``href`` -- image link url
+    - ``display`` -- how the image is to be displayed [ rounded | circle | polaroid ]
+    - ``pull`` -- how to align the image if within a <div> [ "left" | "right" | "center" ]
+    - ``htmlId`` -- the id of the image
+    - ``htmlClass`` -- the class of the image
+    - ``width`` -- the width of the image
+    - ``onPhone`` -- does this container get displayed on a phone sized screen
+    - ``onTablet`` -- does this container get displayed on a tablet sized screen
+    - ``onDesktop`` -- does this container get displayed on a desktop sized screen
+    
+
         - ``clickToModal`` -- if you want to display the image in a modal when clicked?
         - ``openInNewTab`` -- open image link in new tab?
         - ``modal`` -- is this linked to a modal?
 
-    **Return:**
-        - ``image`` - the formatted image
+    **Return**
+
+    - ``image`` - the formatted image
+    
     """
     falseList = [thumbnail, pull]
     for i in range(len(falseList)):

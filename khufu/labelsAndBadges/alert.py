@@ -1,6 +1,6 @@
 # encoding: utf-8
+from builtins import range
 from . import *
-
 
 def alert(alertText='',
           alertHeading="",
@@ -8,13 +8,17 @@ def alert(alertText='',
           alertLevel="warning"):
     """ *Generate a alert - TBS style*
 
-    **Key Arguments:**
-        - ``alertText`` -- the text to be displayed in the alert
-        - ``extraPadding`` -- for longer messages, increase the padding on the top and bottom of the alert wrapper
-        - ``alertLevel`` -- the level of the alert [ "warning" | "error" | "success" | "info" ]
+    **Key Arguments**
 
-    **Return:**
-        - ``alert`` -- the alert """
+    - ``alertText`` -- the text to be displayed in the alert
+    - ``extraPadding`` -- for longer messages, increase the padding on the top and bottom of the alert wrapper
+    - ``alertLevel`` -- the level of the alert [ "warning" | "error" | "success" | "info" ]
+    
+
+    **Return**
+
+    - ``alert`` -- the alert """
+    
 
     falseList = [extraPadding, ]
     for i in range(len(falseList)):

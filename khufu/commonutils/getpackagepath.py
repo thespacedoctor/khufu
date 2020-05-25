@@ -5,20 +5,18 @@
 
 :Author:
     David Young
-
-:Date Created:
-    October 24, 2013
 """
 import sys
 import os
-
 
 def getpackagepath():
     """
     *getpackagepath*
 
-    **Return:**
-        - ``packagePath`` -- path to the host package
+    **Return**
+
+    - ``packagePath`` -- path to the host package
+    
     """
 
     moduleDirectory = os.path.dirname(__file__)

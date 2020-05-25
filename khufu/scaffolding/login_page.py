@@ -5,29 +5,27 @@
 
 :Author:
     David Young
-
-:Date Created:
-    November 20, 2014
 """
+from builtins import object
 import sys
 import os
 from fundamentals import tools, times
 import khufu
 
-
-class login_page():
-
+class login_page(object):
     """
     *The worker class for the login_page module*
 
-    **Key Arguments:**
-        - ``log`` -- logger
-        - ``mainCssFilePath`` -- the filepath of the main CSS file
-        - ``jsFilePath`` -- the filepath of the main JS file
-        - ``pageTitle`` -- pageTitle
-        - ``iconPath`` -- webapp icon path
-        - ``came_from`` -- the url this login page was triggered from
-        - ``message`` -- message to display as notification
+    **Key Arguments**
+
+    - ``log`` -- logger
+    - ``mainCssFilePath`` -- the filepath of the main CSS file
+    - ``jsFilePath`` -- the filepath of the main JS file
+    - ``pageTitle`` -- pageTitle
+    - ``iconPath`` -- webapp icon path
+    - ``came_from`` -- the url this login page was triggered from
+    - ``message`` -- message to display as notification
+    
     """
 
     def __init__(
@@ -70,8 +68,10 @@ class login_page():
         """
         *get the login_page object*
 
-        **Return:**
-            - ``login_page`` -- the html login page
+        **Return**
+
+        - ``login_page`` -- the html login page
+        
         """
         self.log.debug('starting the ``get`` method')
 
@@ -88,10 +88,14 @@ class login_page():
         """
         *build webapge scaffolding*
 
-        **Key Arguments:**
+        **Key Arguments**
 
-        **Return:**
-            - ``webpage`` -- the html login page
+        
+
+        **Return**
+
+        - ``webpage`` -- the html login page
+        
         """
         self.log.debug('starting the ``_build_webapge_scaffolding`` method')
 

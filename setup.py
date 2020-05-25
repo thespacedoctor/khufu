@@ -4,7 +4,6 @@ import os
 moduleDirectory = os.path.dirname(os.path.realpath(__file__))
 exec(open(moduleDirectory + "/khufu/__version__.py").read())
 
-
 def readme():
     with open(moduleDirectory + '/README.md') as f:
         return f.read()
@@ -12,7 +11,8 @@ def readme():
 install_requires = [
     'pyyaml',
     'khufu',
-    'fundamentals'
+    'fundamentals',
+    'numpy'
 ]
 
 # READ THE DOCS SERVERS

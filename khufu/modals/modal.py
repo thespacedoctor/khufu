@@ -5,14 +5,9 @@
 
 :Author:
     David Young
-
-:Date Created:
-    July 1, 2014
-
 """
 import sys
 import os
-
 
 def modal(
     modalHeaderContent="",
@@ -25,7 +20,9 @@ def modal(
     """
     *generate a modal to by generated with a js event*
 
-    **Key Arguments:**
+    **Key Arguments**
+
+    
       - ``modalHeaderContent`` -- the heading for the modal
       - ``modalBodyContent`` -- the content (form or text)
       - ``modalFooterContent`` -- the foot (usually buttons)
@@ -33,8 +30,10 @@ def modal(
       - ``centerContent`` - center the content in the form?
       - ``htmlClass`` - htmlClass for the form
 
-    **Return:**
-        - ``modal`` -- the modal
+    **Return**
+
+    - ``modal`` -- the modal
+    
     """
     if htmlClass is False:
         htmlClass = ""

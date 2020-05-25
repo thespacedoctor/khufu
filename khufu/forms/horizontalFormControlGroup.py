@@ -1,6 +1,6 @@
 # encoding: utf-8
+from builtins import range
 from . import *
-
 
 def horizontalFormControlGroup(
         content="",
@@ -9,13 +9,17 @@ def horizontalFormControlGroup(
     """
     *Generate a horizontal form control group (row) - TBS style*
 
-    **Key Arguments:**
-        - ``content`` -- the content
-        - ``validationLevel`` -- validation level [ warning | error | info | success ]
-        - ``hidden`` -- hide the CG from the user?
+    **Key Arguments**
 
-    **Return:**
-        - ``horizontalFormControlGroup`` -- the horizontal form control group
+    - ``content`` -- the content
+    - ``validationLevel`` -- validation level [ warning | error | info | success ]
+    - ``hidden`` -- hide the CG from the user?
+    
+
+    **Return**
+
+    - ``horizontalFormControlGroup`` -- the horizontal form control group
+    
     """
     falseList = [validationLevel, ]
 
