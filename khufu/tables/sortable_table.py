@@ -266,7 +266,7 @@ class sortable_table():
 
             for i, c in enumerate(self.columnsToDisplay):
 
-                if (isinstance(obj[c], str) or isinstance(obj[c], unicode)) and "." not in obj[c]:
+                if (isinstance(obj[c], ("".__class__, u"".__class__)) or isinstance(obj[c], unicode)) and "." not in obj[c]:
                     try:
                         obj[c] = int(obj[c])
                     except:
@@ -284,7 +284,7 @@ class sortable_table():
                     obj[c] = "%6.2f" % obj[c]
                 elif obj[c] == 0:
                     pass
-                elif not obj[c] or ((isinstance(obj[c], str) or isinstance(obj[c], unicode)) and ("unkn" in obj[c].lower())):
+                elif not obj[c] or ((isinstance(obj[c], ("".__class__, u"".__class__)) or isinstance(obj[c], unicode)) and ("unkn" in obj[c].lower())):
                     obj[c] = ""
                 elif isinstance(obj[c], datetime.datetime):
                     # obj[c] = "boom"

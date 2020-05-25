@@ -32,8 +32,8 @@ def tabbableNavigation(
     count = 0
 
     # turn contentCounts into badges
-    for i in contentDictionary.keys():
-        if i in contentCount.keys():
+    for i in list(contentDictionary.keys()):
+        if i in list(contentCount.keys()):
             contentCount[i] = khufu.badge(
                 text=str(contentCount[i]),
                 level='inverse'
@@ -54,7 +54,7 @@ def tabbableNavigation(
     elif isinstance(uniqueNavigationId, int):
         uniqueNavigationId = """id%(uniqueNavigationId)s""" % locals()
 
-    for k, v in contentDictionary.iteritems():
+    for k, v in contentDictionary.items():
         badge = contentCount[k]
         if count == 0:
             titleList = """%(titleList)s<li class="active"><a href="#tab%(uniqueNavigationId)s%(count)s" data-toggle="tab">%(k)s %(badge)s</a></li>""" % locals(

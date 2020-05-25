@@ -17,7 +17,7 @@ def descriptionLists(
     """
 
     termList = ""
-    for k, v in orderedDictionary.iteritems():
+    for k, v in orderedDictionary.items():
         termList = """%(termList)s
             <dt>%(k)s</dt>
             <dd>%(v)s</dd>

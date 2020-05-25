@@ -9,12 +9,11 @@
 :Date Created:
     April 29, 2014
 """
-from __future__ import absolute_import
 import sys
 import os
 import math
 from ..__init__ import *
-from .imagingModal import imagingModal
+from imagingModal import imagingModal
 
 
 class imageWell():

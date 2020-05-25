@@ -20,7 +20,7 @@ def dropdownLinkList(
         - ``thisDropdown``
     """
     linkList = []
-    for k, v in linkDictionary.iteritems():
+    for k, v in linkDictionary.items():
         link = a(
             content=k,
             href=v,

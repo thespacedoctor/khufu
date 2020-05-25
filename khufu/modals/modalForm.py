@@ -237,7 +237,7 @@ class modalForm():
         """
         self.log.debug('starting the ``add_hidden_parameter_value`` method')
 
-        if isinstance(value, str):
+        if isinstance(value, ("".__class__, u"".__class__)):
             ttype = "text"
         if isinstance(value, unicode):
             ttype = "text"

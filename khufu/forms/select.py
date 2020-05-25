@@ -45,7 +45,7 @@ def select(
         for attributeTuple in extraAttributeTupleList:
             attr = attributeTuple[0]
             val = attributeTuple[1]
-            if isinstance(val, str) or isinstance(val, unicode):
+            if isinstance(val, ("".__class__, u"".__class__)) :
                 val = '"%(val)s"' % locals()
             extraAttributes = """%(extraAttributes)s %(attr)s=%(val)s """ % locals(
             )

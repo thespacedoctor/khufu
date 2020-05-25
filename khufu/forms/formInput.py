@@ -169,7 +169,7 @@ def formInput(
         disabledId = u""
 
     if defaultValue:
-        if isinstance(defaultValue, str) or isinstance(defaultValue, unicode):
+        if isinstance(defaultValue, ("".__class__, u"".__class__)) or isinstance(defaultValue, unicode):
             defaultValue = defaultValue.replace('"', "\"")
             defaultValue = u'"%(defaultValue)s"' % locals()
 

@@ -9,13 +9,12 @@
 :Date Created:
     April 30, 2014
 """
-from __future__ import absolute_import
 import sys
 import os
 import numpy as np
 from ..__init__ import *
 from .. import modals
-from .image import image
+from image import image
 
 
 class imagingModal():
