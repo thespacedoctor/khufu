@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Coverage report</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.index_ready);
+    </script>
+</head>
+<body class="indexfile">
+<div id="header">
+    <div class="content">
+        <h1>Coverage report:
+            <span class="pc_cov">1%</span>
+        </h1>
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+        <form id="filter_container">
+            <input id="filter" type="text" value="" placeholder="filter..." />
+        </form>
+    </div>
+</div>
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">n</span>
+        <span class="key">s</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">c</span> &nbsp; change column sorting
+    </p>
+    </div>
+</div>
+<div id="index">
+    <table class="index">
+        <thead>
+            <tr class="tablehead" title="Click to sort">
+                <th class="name left headerSortDown shortkey_n">Module</th>
+                <th class="shortkey_s">statements</th>
+                <th class="shortkey_m">missing</th>
+                <th class="shortkey_x">excluded</th>
+                <th class="right shortkey_c">coverage</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr class="total">
+                <td class="name left">Total</td>
+                <td>1936</td>
+                <td>1921</td>
+                <td>0</td>
+                <td class="right" data-ratio="15 1936">1%</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr class="file">
+                <td class="name left"><a href="bk_setup_py.html">bk_setup.py</a></td>
+                <td>8</td>
+                <td>8</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 8">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu___init___py.html">khufu/__init__.py</a></td>
+                <td>17</td>
+                <td>15</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 17">12%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu___version___py.html">khufu/__version__.py</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 1">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_addons___init___py.html">khufu/addons/__init__.py</a></td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 4">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_addons_closeIcon_py.html">khufu/addons/closeIcon.py</a></td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 3">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_addons_mediaObject_py.html">khufu/addons/mediaObject.py</a></td>
+                <td>13</td>
+                <td>13</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 13">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_addons_popover_py.html">khufu/addons/popover.py</a></td>
+                <td>21</td>
+                <td>21</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 21">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_addons_well_py.html">khufu/addons/well.py</a></td>
+                <td>11</td>
+                <td>11</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 11">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_buttons___init___py.html">khufu/buttons/__init__.py</a></td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 2">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_buttons_button_py.html">khufu/buttons/button.py</a></td>
+                <td>52</td>
+                <td>52</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 52">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_buttons_buttonGroup_py.html">khufu/buttons/buttonGroup.py</a></td>
+                <td>18</td>
+                <td>18</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 18">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_cl_utils_py.html">khufu/cl_utils.py</a></td>
+                <td>72</td>
+                <td>59</td>
+                <td>0</td>
+                <td class="right" data-ratio="13 72">18%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_code___init___py.html">khufu/code/__init__.py</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 1">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_code_code_py.html">khufu/code/code.py</a></td>
+                <td>9</td>
+                <td>9</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 9">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_commonutils___init___py.html">khufu/commonutils/__init__.py</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 1">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_commonutils_getpackagepath_py.html">khufu/commonutils/getpackagepath.py</a></td>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 7">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_docstring_test_py.html">khufu/docstring_test.py</a></td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 4">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_dropdowns___init___py.html">khufu/dropdowns/__init__.py</a></td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 2">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_dropdowns_dropdown_py.html">khufu/dropdowns/dropdown.py</a></td>
+                <td>50</td>
+                <td>50</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 50">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_dropdowns_dropdownLinkList_py.html">khufu/dropdowns/dropdownLinkList.py</a></td>
+                <td>9</td>
+                <td>9</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 9">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_forms___init___py.html">khufu/forms/__init__.py</a></td>
+                <td>13</td>
+                <td>13</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 13">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_forms_checkbox_py.html">khufu/forms/checkbox.py</a></td>
+                <td>27</td>
+                <td>27</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 27">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_forms_controlRow_py.html">khufu/forms/controlRow.py</a></td>
+                <td>10</td>
+                <td>10</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 10">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_forms_form_py.html">khufu/forms/form.py</a></td>
+                <td>36</td>
+                <td>36</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 36">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_forms_formActions_py.html">khufu/forms/formActions.py</a></td>
+                <td>15</td>
+                <td>15</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 15">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_forms_formInput_py.html">khufu/forms/formInput.py</a></td>
+                <td>78</td>
+                <td>78</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 78">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_forms_horizontalFormControlGroup_py.html">khufu/forms/horizontalFormControlGroup.py</a></td>
+                <td>12</td>
+                <td>12</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 12">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_forms_horizontalFormControlLabel_py.html">khufu/forms/horizontalFormControlLabel.py</a></td>
+                <td>9</td>
+                <td>9</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 9">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_forms_login_form_py.html">khufu/forms/login_form.py</a></td>
+                <td>37</td>
+                <td>37</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 37">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_forms_radio_py.html">khufu/forms/radio.py</a></td>
+                <td>20</td>
+                <td>20</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 20">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_forms_searchForm_py.html">khufu/forms/searchForm.py</a></td>
+                <td>19</td>
+                <td>19</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 19">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_forms_select_py.html">khufu/forms/select.py</a></td>
+                <td>45</td>
+                <td>45</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 45">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_forms_textarea_py.html">khufu/forms/textarea.py</a></td>
+                <td>31</td>
+                <td>31</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 31">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_forms_uneditableInput_py.html">khufu/forms/uneditableInput.py</a></td>
+                <td>13</td>
+                <td>13</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 13">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_helpers___init___py.html">khufu/helpers/__init__.py</a></td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 2">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_helpers_hide_from_device_py.html">khufu/helpers/hide_from_device.py</a></td>
+                <td>19</td>
+                <td>19</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 19">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_helpers_unescape_html_py.html">khufu/helpers/unescape_html.py</a></td>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 7">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_images___init___py.html">khufu/images/__init__.py</a></td>
+                <td>5</td>
+                <td>5</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 5">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_images_image_py.html">khufu/images/image.py</a></td>
+                <td>50</td>
+                <td>50</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 50">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_images_imageWell_py.html">khufu/images/imageWell.py</a></td>
+                <td>49</td>
+                <td>49</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 49">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_images_imagingModal_py.html">khufu/images/imagingModal.py</a></td>
+                <td>56</td>
+                <td>56</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 56">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_images_thumbnail_div_py.html">khufu/images/thumbnail_div.py</a></td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 4">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_images_thumbnails_py.html">khufu/images/thumbnails.py</a></td>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 7">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_labelsAndBadges___init___py.html">khufu/labelsAndBadges/__init__.py</a></td>
+                <td>5</td>
+                <td>5</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 5">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_labelsAndBadges_alert_py.html">khufu/labelsAndBadges/alert.py</a></td>
+                <td>16</td>
+                <td>16</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 16">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_labelsAndBadges_badge_py.html">khufu/labelsAndBadges/badge.py</a></td>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 7">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_labelsAndBadges_label_py.html">khufu/labelsAndBadges/label.py</a></td>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 7">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_labelsAndBadges_progressBar_py.html">khufu/labelsAndBadges/progressBar.py</a></td>
+                <td>10</td>
+                <td>10</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 10">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_labelsAndBadges_stackedProgressBar_py.html">khufu/labelsAndBadges/stackedProgressBar.py</a></td>
+                <td>9</td>
+                <td>9</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 9">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_modals___init___py.html">khufu/modals/__init__.py</a></td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 2">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_modals_modal_py.html">khufu/modals/modal.py</a></td>
+                <td>14</td>
+                <td>14</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 14">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_modals_modalForm_py.html">khufu/modals/modalForm.py</a></td>
+                <td>80</td>
+                <td>80</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 80">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_navigation___init___py.html">khufu/navigation/__init__.py</a></td>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 7">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_navigation_is_navStyle_active_py.html">khufu/navigation/is_navStyle_active.py</a></td>
+                <td>8</td>
+                <td>8</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 8">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_navigation_navBar_py.html">khufu/navigation/navBar.py</a></td>
+                <td>39</td>
+                <td>39</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 39">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_navigation_nav_list_py.html">khufu/navigation/nav_list.py</a></td>
+                <td>19</td>
+                <td>19</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 19">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_navigation_pagination_py.html">khufu/navigation/pagination.py</a></td>
+                <td>10</td>
+                <td>10</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 10">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_navigation_responsive_navigation_bar_py.html">khufu/navigation/responsive_navigation_bar.py</a></td>
+                <td>32</td>
+                <td>32</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 32">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_navigation_searchbox_py.html">khufu/navigation/searchbox.py</a></td>
+                <td>16</td>
+                <td>16</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 16">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_navigation_tabbableNavigation_py.html">khufu/navigation/tabbableNavigation.py</a></td>
+                <td>34</td>
+                <td>34</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 34">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_plots___init___py.html">khufu/plots/__init__.py</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 1">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_plots_svg_py.html">khufu/plots/svg.py</a></td>
+                <td>23</td>
+                <td>23</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 23">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_scaffolding___init___py.html">khufu/scaffolding/__init__.py</a></td>
+                <td>8</td>
+                <td>8</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 8">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_scaffolding__container_py.html">khufu/scaffolding/_container.py</a></td>
+                <td>21</td>
+                <td>21</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 21">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_scaffolding_body_py.html">khufu/scaffolding/body.py</a></td>
+                <td>12</td>
+                <td>12</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 12">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_scaffolding_grid_column_py.html">khufu/scaffolding/grid_column.py</a></td>
+                <td>30</td>
+                <td>30</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 30">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_scaffolding_grid_row_py.html">khufu/scaffolding/grid_row.py</a></td>
+                <td>21</td>
+                <td>21</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 21">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_scaffolding_head_py.html">khufu/scaffolding/head.py</a></td>
+                <td>10</td>
+                <td>10</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 10">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_scaffolding_htmlDocument_py.html">khufu/scaffolding/htmlDocument.py</a></td>
+                <td>12</td>
+                <td>12</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 12">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_scaffolding_login_page_py.html">khufu/scaffolding/login_page.py</a></td>
+                <td>36</td>
+                <td>36</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 36">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_scaffolding_row_adjustable_py.html">khufu/scaffolding/row_adjustable.py</a></td>
+                <td>5</td>
+                <td>5</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 5">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_tables___init___py.html">khufu/tables/__init__.py</a></td>
+                <td>8</td>
+                <td>8</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 8">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_tables_sortable_table_py.html">khufu/tables/sortable_table.py</a></td>
+                <td>155</td>
+                <td>155</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 155">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_tables_table_py.html">khufu/tables/table.py</a></td>
+                <td>21</td>
+                <td>21</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 21">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_tables_tableCaption_py.html">khufu/tables/tableCaption.py</a></td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 4">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_tables_tbody_py.html">khufu/tables/tbody.py</a></td>
+                <td>9</td>
+                <td>9</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 9">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_tables_td_py.html">khufu/tables/td.py</a></td>
+                <td>11</td>
+                <td>11</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 11">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_tables_th_py.html">khufu/tables/th.py</a></td>
+                <td>19</td>
+                <td>19</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 19">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_tables_thead_py.html">khufu/tables/thead.py</a></td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 4">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_tables_tr_py.html">khufu/tables/tr.py</a></td>
+                <td>21</td>
+                <td>21</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 21">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_typography___init___py.html">khufu/typography/__init__.py</a></td>
+                <td>13</td>
+                <td>13</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 13">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_typography_a_py.html">khufu/typography/a.py</a></td>
+                <td>41</td>
+                <td>41</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 41">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_typography_abbr_py.html">khufu/typography/abbr.py</a></td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 4">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_typography_address_py.html">khufu/typography/address.py</a></td>
+                <td>29</td>
+                <td>29</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 29">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_typography_blockquote_py.html">khufu/typography/blockquote.py</a></td>
+                <td>10</td>
+                <td>10</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 10">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_typography_coloredText_py.html">khufu/typography/coloredText.py</a></td>
+                <td>13</td>
+                <td>13</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 13">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_typography_descriptionLists_py.html">khufu/typography/descriptionLists.py</a></td>
+                <td>10</td>
+                <td>10</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 10">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_typography_emphasizeText_py.html">khufu/typography/emphasizeText.py</a></td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 4">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_typography_heroUnit_py.html">khufu/typography/heroUnit.py</a></td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 4">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_typography_li_py.html">khufu/typography/li.py</a></td>
+                <td>50</td>
+                <td>50</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 50">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_typography_ol_py.html">khufu/typography/ol.py</a></td>
+                <td>9</td>
+                <td>9</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 9">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_typography_p_py.html">khufu/typography/p.py</a></td>
+                <td>36</td>
+                <td>36</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 36">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_typography_pageHeader_py.html">khufu/typography/pageHeader.py</a></td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 4">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_typography_ul_py.html">khufu/typography/ul.py</a></td>
+                <td>48</td>
+                <td>48</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 48">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_urls___init___py.html">khufu/urls/__init__.py</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 1">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_urls_default_fields_py.html">khufu/urls/default_fields.py</a></td>
+                <td>6</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 6">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="khufu_utKit_py.html">khufu/utKit.py</a></td>
+                <td>22</td>
+                <td>22</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 22">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="setup_py.html">setup.py</a></td>
+                <td>17</td>
+                <td>17</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 17">0%</td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="no_rows">
+        No items found using the specified filter.
+    </p>
+</div>
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.1</a>,
+            created at 2020-05-25 11:17
+        </p>
+    </div>
+</div>
+</body>
+</html>

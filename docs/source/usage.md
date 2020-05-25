@@ -1,0 +1,18 @@
+
+
+```bash 
+    
+    Documentation for khufu can be found here: http://khufu.readthedocs.org/en/stable
+    
+    Usage:
+        khufu init
+        khufu [-s <pathToSettingsFile>]  
+    
+    Options:
+        init                                   setup the khufu settings file for the first time
+        -h, --help                             show this help message
+        -v, --version                          show version
+        -s, --settings <pathToSettingsFile>    the settings file
+    
+
+```

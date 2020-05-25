@@ -1,87 +1,54 @@
+from __future__ import print_function
+from builtins import str
 import os
-import nose
-from ... import khufu as dhf
+import unittest
+import shutil
+import yaml
+from khufu.utKit import utKit
+import khufu as dhf
+from fundamentals import tools
+from os.path import expanduser
+home = expanduser("~")
 
-# SETUP AND TEARDOWN FIXTURE FUNCTIONS FOR THE ENTIRE MODULE
+packageDirectory = utKit("").get_project_root()
+settingsFile = packageDirectory + "/test_settings.yaml"
 
+su = tools(
+    arguments={"settingsFile": settingsFile},
+    docString=__doc__,
+    logLevel="DEBUG",
+    options_first=False,
+    projectName=None,
+    defaultSettingsFile=False
+)
+arguments, settings, log, dbConn = su.setup()
 
-def setUpModule():
-    import logging
-    import logging.config
-    import yaml
+# SETUP PATHS TO COMMON DIRECTORIES FOR TEST DATA
+moduleDirectory = os.path.dirname(__file__)
+pathToInputDir = moduleDirectory + "/input/"
+pathToOutputDir = moduleDirectory + "/output/"
 
-    "set up test fixtures"
-    moduleDirectory = os.path.dirname(__file__) + "/../../tests"
+try:
+    shutil.rmtree(pathToOutputDir)
+except:
+    pass
+# COPY INPUT TO OUTPUT DIR
+shutil.copytree(pathToInputDir, pathToOutputDir)
 
-    # SETUP PATHS TO COMMONG DIRECTORIES FOR TEST DATA
-    global pathToInputDataDir, pathToOutputDir, pathToOutputDataDir, pathToInputDir
-    pathToInputDir = moduleDirectory + "/input/"
-    pathToInputDataDir = pathToInputDir + "data/"
-    pathToOutputDir = moduleDirectory + "/output/"
-    pathToOutputDataDir = pathToOutputDir + "data/"
-
-    # SETUP THE TEST LOG FILE
-    global testlog
-    testlog = open(pathToOutputDir + "tests.log", 'w')
-
-    # SETUP LOGGING
-    loggerConfig = """
-    version: 1
-    formatters:
-        file_style:
-            format: '* %(asctime)s - %(name)s - %(levelname)s (%(filename)s > %(funcName)s > %(lineno)d) - %(message)s  '
-            datefmt: '%Y/%m/%d %H:%M:%S'
-        console_style:
-            format: '* %(asctime)s - %(levelname)s: %(filename)s:%(funcName)s:%(lineno)d > %(message)s'
-            datefmt: '%H:%M:%S'
-        html_style:
-            format: '<div id="row" class="%(levelname)s"><span class="date">%(asctime)s</span>   <span class="label">file:</span><span class="filename">%(filename)s</span>   <span class="label">method:</span><span class="funcName">%(funcName)s</span>   <span class="label">line#:</span><span class="lineno">%(lineno)d</span> <span class="pathname">%(pathname)s</span>  <div class="right"><span class="message">%(message)s</span><span class="levelname">%(levelname)s</span></div></div>'
-            datefmt: '%Y-%m-%d <span class= "time">%H:%M <span class= "seconds">%Ss</span></span>'
-    handlers:
-        console:
-            class: logging.StreamHandler
-            level: DEBUG
-            formatter: console_style
-            stream: ext://sys.stdout
-    root:
-        level: DEBUG
-        handlers: [console]"""
-
-    logging.config.dictConfig(yaml.load(loggerConfig))
-    global log
-    log = logging.getLogger(__name__)
-
-    global cheatsheet
-    cheatsheet = open(pathToOutputDir +
-                      "htdocs/dryxPython_htmlframework_cheatsheet.html", 'w')
-
-    global fillerText
-    fillerText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-    # x-setup-dbconn-for-test-module
-
-    return None
-
-
-def tearDownModule():
-    "tear down test fixtures"
-    # CLOSE THE TEST LOG FILE
-    cheatsheet.close()
-    testlog.close()
-    return None
-
-
-class emptyLogger:
-    info = None
-    error = None
-    debug = None
-    critical = None
-    warning = None
+# Recursively create missing directories
+if not os.path.exists(pathToOutputDir):
+    os.makedirs(pathToOutputDir)
 
 
 class test_0001_htmlDocument(unittest.TestCase):
 
     def test_htmlDocument_works_as_expected(self):
+
+        fillerText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+        cheatsheet = open(
+            pathToOutputDir + "/dryxPython_htmlframework_cheatsheet.html", 'w')
+
         content = ""
         lt = lambda x: "<BR/><h2>%s</h2>" % (x,)
         st = lambda x: "<BR/><h4>%s</h4>" % (x,)
@@ -664,7 +631,7 @@ class test_0001_htmlDocument(unittest.TestCase):
         uneditableInput = dhf.uneditableInput(**kwargs)
         formRow = dhf.controlRow(
             inputList=[uneditableInput, ])
-        uneditableInputCG = dhf. (
+        uneditableInputCG = dhf.horizontalFormControlGroup(
             content=label + formRow,
             validationLevel=False
         )
@@ -1845,7 +1812,7 @@ class test_0001_htmlDocument(unittest.TestCase):
         content += lt(text)
         mediaObject = dhf.mediaObject(
             displayType='div',
-            img=link,
+            imagePath=link,
             headlineText="Media Object Headline",
             otherContent="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             nestedMediaObjects=False
@@ -1854,7 +1821,7 @@ class test_0001_htmlDocument(unittest.TestCase):
 
         mediaObject = dhf.mediaObject(
             displayType='div',
-            img=link,
+            imagePath=link,
             headlineText="Media Object Headline",
             otherContent="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             nestedMediaObjects=mediaObject
@@ -1937,7 +1904,7 @@ class test_0001_htmlDocument(unittest.TestCase):
         content += lt(text)
         kwargs = {}
         kwargs["displayType"] = 'div'
-        kwargs["img"] = dhf.image(
+        kwargs["imagePath"] = dhf.image(
             # [ industrial | gray | social ]
             src='holder.js/200x200/auto/industrial/text:test mediaobject',
         )
@@ -2222,12 +2189,12 @@ class test_0001_htmlDocument(unittest.TestCase):
         kwargs["relativeUrlBase"] = ""
         kwargs["responsive"] = True
         kwargs["googleAnalyticsCode"] = False
-        kwargs["jsFileName"] = "main-ck.js"
+        kwargs["jsFilePath"] = "main-ck.js"
         bodyContent = dhf.body(**kwargs)
 
         kwargs = {}
         kwargs["relativeUrlBase"] = ''
-        kwargs["mainCssFileName"] = "main.css"
+        kwargs["mainCssFilePath"] = "main.css"
         kwargs["pageTitle"] = ""
         kwargs["extras"] = ""
         headContent = dhf.head(**kwargs)

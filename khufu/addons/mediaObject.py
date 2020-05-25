@@ -1,4 +1,5 @@
 # CREATED : 20130508
+from khufu import images
 
 
 def mediaObject(
