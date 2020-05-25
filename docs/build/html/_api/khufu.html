@@ -1,0 +1,456 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>khufu package &mdash; khufu v1.2.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/rtd_sphinx_search.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/whistles-theme/Contents/Resources/core.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/whistles-theme/Contents/Resources/style.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/whistles-theme/Contents/Resources/dryx.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/js/rtd_sphinx_search.min.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/whistles-theme/Contents/Resources/main.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          messageStyle: "none",
+          tex2jax: {preview: "none"}
+        });
+    </script>
+  
+  <!-- REMOTE SCRIPTS AND STYLES -->
+
+  <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot-number.min.css">
+  <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/monokai-sublime.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.11.3/flowchart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot.min.js"></script>
+
+  
+
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+
+          
+              
+          
+
+
+<!--           
+            <a href="../index.html" class="icon icon-home"> khufu
+          
+
+          
+            
+            <img src="../_static/thespacedoctor_icon_white_circle.png" class="logo" alt="Logo"/>
+          
+          </a> -->
+
+
+
+          
+            <a href="../index.html" class="icon icon-home"> khufu</a> <p>Twitter Bootstrap elements via Python</p> <a href="../index.html"><img src="../_static/thespacedoctor_icon_white_circle.png" class="logo" alt="Logo"/> </a>
+          
+
+
+          
+          
+            
+            
+              <div class="version">
+                v1.2.1
+              </div>
+            
+          
+
+          
+              <a class="github-button" href="https://github.com/thespacedoctor/khufu" data-size="large" data-show-count="true" aria-label="Star thespacedoctor/khufu on GitHub">Star</a>
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../initialisation.html">Initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todolist.html">Todo List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes_link.html">Release Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html#functions">Functions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">A-Z Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">khufu</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>khufu package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/_api/khufu.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-khufu">
+<span id="khufu-package"></span><h1>khufu package<a class="headerlink" href="#module-khufu" title="Permalink to this headline">  ∞</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">  ∞</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="khufu.addons.html">khufu.addons package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.addons.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.addons.closeIcon.html">khufu.addons.closeIcon module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.addons.mediaObject.html">khufu.addons.mediaObject module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.addons.popover.html">khufu.addons.popover module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.addons.well.html">khufu.addons.well module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.buttons.html">khufu.buttons package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.buttons.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.buttons.button.html">khufu.buttons.button module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.buttons.buttonGroup.html">khufu.buttons.buttonGroup module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.code.html">khufu.code package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.code.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.code.code.html">khufu.code.code module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.commonutils.html">khufu.commonutils package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.commonutils.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.commonutils.getpackagepath.html">khufu.commonutils.getpackagepath module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.dropdowns.html">khufu.dropdowns package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.dropdowns.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.dropdowns.dropdown.html">khufu.dropdowns.dropdown module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.dropdowns.dropdownLinkList.html">khufu.dropdowns.dropdownLinkList module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.forms.html">khufu.forms package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.forms.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.forms.checkbox.html">khufu.forms.checkbox module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.forms.controlRow.html">khufu.forms.controlRow module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.forms.form.html">khufu.forms.form module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.forms.formActions.html">khufu.forms.formActions module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.forms.formInput.html">khufu.forms.formInput module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.forms.horizontalFormControlGroup.html">khufu.forms.horizontalFormControlGroup module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.forms.horizontalFormControlLabel.html">khufu.forms.horizontalFormControlLabel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.forms.login_form.html">khufu.forms.login_form module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.forms.radio.html">khufu.forms.radio module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.forms.searchForm.html">khufu.forms.searchForm module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.forms.select.html">khufu.forms.select module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.forms.textarea.html">khufu.forms.textarea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.forms.uneditableInput.html">khufu.forms.uneditableInput module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.helpers.html">khufu.helpers package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.helpers.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.helpers.hide_from_device.html">khufu.helpers.hide_from_device module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.helpers.unescape_html.html">khufu.helpers.unescape_html module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.images.html">khufu.images package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.images.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.images.image.html">khufu.images.image module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.images.imageWell.html">khufu.images.imageWell module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.images.imagingModal.html">khufu.images.imagingModal module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.images.thumbnail_div.html">khufu.images.thumbnail_div module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.images.thumbnails.html">khufu.images.thumbnails module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.labelsAndBadges.html">khufu.labelsAndBadges package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.labelsAndBadges.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.labelsAndBadges.alert.html">khufu.labelsAndBadges.alert module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.labelsAndBadges.badge.html">khufu.labelsAndBadges.badge module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.labelsAndBadges.label.html">khufu.labelsAndBadges.label module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.labelsAndBadges.progressBar.html">khufu.labelsAndBadges.progressBar module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.labelsAndBadges.stackedProgressBar.html">khufu.labelsAndBadges.stackedProgressBar module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.modals.html">khufu.modals package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.modals.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.modals.modal.html">khufu.modals.modal module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.modals.modalForm.html">khufu.modals.modalForm module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.navigation.html">khufu.navigation package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.navigation.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.navigation.is_navStyle_active.html">khufu.navigation.is_navStyle_active module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.navigation.navBar.html">khufu.navigation.navBar module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.navigation.nav_list.html">khufu.navigation.nav_list module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.navigation.pagination.html">khufu.navigation.pagination module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.navigation.responsive_navigation_bar.html">khufu.navigation.responsive_navigation_bar module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.navigation.searchbox.html">khufu.navigation.searchbox module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.navigation.tabbableNavigation.html">khufu.navigation.tabbableNavigation module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.plots.html">khufu.plots package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.plots.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.plots.svg.html">khufu.plots.svg module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.scaffolding.html">khufu.scaffolding package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.scaffolding.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.scaffolding._container.html">khufu.scaffolding._container module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.scaffolding.body.html">khufu.scaffolding.body module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.scaffolding.grid_column.html">khufu.scaffolding.grid_column module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.scaffolding.grid_row.html">khufu.scaffolding.grid_row module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.scaffolding.head.html">khufu.scaffolding.head module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.scaffolding.htmlDocument.html">khufu.scaffolding.htmlDocument module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.scaffolding.login_page.html">khufu.scaffolding.login_page module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.scaffolding.row_adjustable.html">khufu.scaffolding.row_adjustable module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.tables.html">khufu.tables package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.tables.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.tables.sortable_table.html">khufu.tables.sortable_table module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.tables.table.html">khufu.tables.table module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.tables.tableCaption.html">khufu.tables.tableCaption module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.tables.tbody.html">khufu.tables.tbody module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.tables.td.html">khufu.tables.td module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.tables.th.html">khufu.tables.th module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.tables.thead.html">khufu.tables.thead module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.tables.tr.html">khufu.tables.tr module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.typography.html">khufu.typography package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.typography.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.typography.a.html">khufu.typography.a module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.typography.abbr.html">khufu.typography.abbr module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.typography.address.html">khufu.typography.address module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.typography.blockquote.html">khufu.typography.blockquote module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.typography.coloredText.html">khufu.typography.coloredText module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.typography.descriptionLists.html">khufu.typography.descriptionLists module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.typography.emphasizeText.html">khufu.typography.emphasizeText module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.typography.heroUnit.html">khufu.typography.heroUnit module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.typography.li.html">khufu.typography.li module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.typography.ol.html">khufu.typography.ol module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.typography.p.html">khufu.typography.p module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.typography.pageHeader.html">khufu.typography.pageHeader module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="khufu.typography.ul.html">khufu.typography.ul module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.urls.html">khufu.urls package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="khufu.urls.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="khufu.urls.default_fields.html">khufu.urls.default_fields module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">  ∞</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="khufu.cl_utils.html">khufu.cl_utils module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="khufu.utKit.html">khufu.utKit module</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Dave Young
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

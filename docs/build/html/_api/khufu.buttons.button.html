@@ -1,0 +1,296 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>khufu.buttons.button module &mdash; khufu v1.2.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/rtd_sphinx_search.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/whistles-theme/Contents/Resources/core.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/whistles-theme/Contents/Resources/style.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/whistles-theme/Contents/Resources/dryx.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/js/rtd_sphinx_search.min.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/whistles-theme/Contents/Resources/main.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          messageStyle: "none",
+          tex2jax: {preview: "none"}
+        });
+    </script>
+  
+  <!-- REMOTE SCRIPTS AND STYLES -->
+
+  <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot-number.min.css">
+  <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/monokai-sublime.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.11.3/flowchart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot.min.js"></script>
+
+  
+
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+
+          
+              
+          
+
+
+<!--           
+            <a href="../index.html" class="icon icon-home"> khufu
+          
+
+          
+            
+            <img src="../_static/thespacedoctor_icon_white_circle.png" class="logo" alt="Logo"/>
+          
+          </a> -->
+
+
+
+          
+            <a href="../index.html" class="icon icon-home"> khufu</a> <p>Twitter Bootstrap elements via Python</p> <a href="../index.html"><img src="../_static/thespacedoctor_icon_white_circle.png" class="logo" alt="Logo"/> </a>
+          
+
+
+          
+          
+            
+            
+              <div class="version">
+                v1.2.1
+              </div>
+            
+          
+
+          
+              <a class="github-button" href="https://github.com/thespacedoctor/khufu" data-size="large" data-show-count="true" aria-label="Star thespacedoctor/khufu on GitHub">Star</a>
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../initialisation.html">Initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todolist.html">Todo List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes_link.html">Release Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html#functions">Functions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">A-Z Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">khufu</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>khufu.buttons.button module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/_api/khufu.buttons.button.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-khufu.buttons.button">
+<span id="khufu-buttons-button-module"></span><h1>khufu.buttons.button module<a class="headerlink" href="#module-khufu.buttons.button" title="Permalink to this headline">  ∞</a></h1>
+<dl class="py function">
+<dt id="khufu.buttons.button.button">
+<code class="sig-name descname">button</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">buttonText</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">buttonStyle</span><span class="o">=</span><span class="default_value">'default'</span></em>, <em class="sig-param"><span class="n">buttonSize</span><span class="o">=</span><span class="default_value">'default'</span></em>, <em class="sig-param"><span class="n">htmlId</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">htmlClass</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">href</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">pull</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">submit</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">block</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">disable</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">dataToggle</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">popover</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">postInBackground</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">notification</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">close</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">formId</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/khufu/tree/master/khufu/buttons/button/button.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#khufu.buttons.button.button" title="Permalink to this definition">  ∞</a></dt>
+<dd><p><em>Generate a button - TBS style</em></p>
+<p><strong>Key Arguments</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">buttonText</span></code> – the text to display on the button</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">buttonStyle</span></code> – the style of the button required [ default | primary | info | success | warning | danger | inverse | link ]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">buttonSize</span></code> – the size of the button required [ large | small | mini ]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">htmlId</span></code> – the htmlId for the button</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">href</span></code> – link the button to another location?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pull</span></code> – left, right or center</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">submit</span></code> – set to true if a form button [ true | false ]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">block</span></code> – create block level buttons—those that span the full width of a parent [ True | False ]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">disable</span></code> – this class is only for aesthetic; you must use custom JavaScript to disable links here</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dataToggle</span></code> – for use with js to launch, for example, a modal</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">popover</span></code> – add a popover element for this button</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Return</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">button</span></code> – the button</p></li>
+</ul>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Dave Young
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
