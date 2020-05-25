@@ -2,6 +2,7 @@
 from builtins import range
 from . import *
 
+
 def p(
         content="",
         lead=False,
@@ -22,16 +23,16 @@ def p(
     - ``lead`` -- is this a lead paragraph?
     - ``textAlign`` -- how to align paragraph text [ left | center | right ]
     - ``color`` -- colored text for emphasis [ muted | warning | info | error | success ]
-    - ``navBar`` -- is this <p> for a navbar?
+    - ``navBar`` -- is this `<p>` for a navbar?
     - ``onPhone`` -- does this container get displayed on a phone sized screen
     - ``onTablet`` -- does this container get displayed on a tablet sized screen
     - ``onDesktop`` -- does this container get displayed on a desktop sized screen
-    
+
 
     **Return**
 
     - ``p`` -- the html paragraph element
-    
+
     """
     falseList = [lead, textAlign, ]
     for i in range(len(falseList)):

@@ -1,6 +1,7 @@
 # encoding: utf-8
 from . import *
 
+
 def dropdown(
         buttonSize="default",
         buttonColor="default",
@@ -19,7 +20,7 @@ def dropdown(
         onTablet=True,
         onDesktop=True):
     """
-    *get a toggleable, contextual menu for displaying lists of links. Made interactive with the dropdown JavaScript plugin. You need to wrap the dropdown's trigger and the dropdown menu within .dropdown, or another element that declares position: relative;
+    *get a toggleable, contextual menu for displaying lists of links. Made interactive with the dropdown JavaScript plugin. You need to wrap the dropdown's trigger and the dropdown menu within .dropdown, or another element that declares position: relative*
 
     - ``buttonSize`` -- size of button [ mini | small | default | large ]
     - ``buttonColor`` -- [ default | sucess | error | warning | info ]
@@ -35,9 +36,8 @@ def dropdown(
     - ``onTablet`` -- does this container get displayed on a tablet sized screen
     - ``onDesktop`` -- does this container get displayed on a desktop sized screen*
 
-      **Return**
+    **Return**
 
-      
         - ``dropdown`` -- the dropdown menu
     """
     # Twitter Bootstrap notes

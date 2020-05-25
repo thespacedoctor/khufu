@@ -1,6 +1,7 @@
 # encoding: utf-8
 from . import *
 
+
 def pagination(
         listItems="",
         size="default",
@@ -10,15 +11,15 @@ def pagination(
 
     **Key Arguments**
 
-    - ``listItems`` -- the numbered items to be listed within the <ul> of the pagination block
+    - ``listItems`` -- the numbered items to be listed within the `<ul>` of the pagination block
     - ``size`` -- additional pagination block sizes [ "mini" | "small" | "default" | "large" ]
     - ``align`` -- change the alignment of pagination links [ "left" | "center" | "right" ]
-    
+
 
     **Return**
 
     - ``pagination`` -- the pagination
-    
+
     """
     if size == "default":
         size = ""

@@ -14,6 +14,7 @@ import codecs
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.todo',
               'sphinx.ext.mathjax', 'sphinx.ext.autosummary', 'sphinx.ext.coverage', 'sphinx.ext.linkcode', 'sphinxcontrib.mermaid', 'sphinx_search.extension']
 
+
 class Mock(MagicMock):
     """AVOID INSTALLING THESE C-DEPENDENT PACKAGES"""
     @classmethod
@@ -135,6 +136,7 @@ markdown_parser_config = {
     },
 }
 
+
 def updateUsageMd():
     """
     *Grab the usage from cl_utils.py to display in README.md*
@@ -162,6 +164,7 @@ def updateUsageMd():
     writeFile.close()
 
     return None
+
 
 def generateAutosummaryIndex():
 
@@ -240,6 +243,7 @@ def generateAutosummaryIndex():
 
     # FOR SUBPACKAGES USE THE SUBPACKAGE TEMPLATE INSTEAD OF DEFAULT MODULE
     # TEMPLATE
+    thisText = ""
     if len(allModules):
         thisText  = """
 Modules
@@ -320,6 +324,7 @@ Functions
 
     return thisText
 
+
 def findAllSubpackges(
     pathToPackage
 ):
@@ -335,6 +340,7 @@ def findAllSubpackges(
 
     return subPackages
 
+
 def linkcode_resolve(domain, info):
     if domain != 'py':
         return None
@@ -344,6 +350,7 @@ def linkcode_resolve(domain, info):
     if info['fullname']:
         filename += "/" + info['fullname'] + ".py"
     return link_resolver_url + "/" + filename
+
 
 def docstring(app, what, name, obj, options, lines):
 
@@ -398,6 +405,7 @@ def docstring(app, what, name, obj, options, lines):
     lines.clear()
     for line in rst.split("\n"):
         lines.append(line)
+
 
 def setup(app):
     app.connect('autodoc-process-docstring', docstring)

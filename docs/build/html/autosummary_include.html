@@ -1,0 +1,563 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>&lt;no title&gt; &mdash; khufu v1.2.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/rtd_sphinx_search.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/whistles-theme/Contents/Resources/core.css" type="text/css" />
+  <link rel="stylesheet" href="_static/whistles-theme/Contents/Resources/style.css" type="text/css" />
+  <link rel="stylesheet" href="_static/whistles-theme/Contents/Resources/dryx.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/js/rtd_sphinx_search.min.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="_static/whistles-theme/Contents/Resources/main.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          messageStyle: "none",
+          tex2jax: {preview: "none"}
+        });
+    </script>
+  
+  <!-- REMOTE SCRIPTS AND STYLES -->
+
+  <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot-number.min.css">
+  <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/monokai-sublime.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.11.3/flowchart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot.min.js"></script>
+
+  
+
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+
+          
+              
+          
+
+
+<!--           
+            <a href="index.html" class="icon icon-home"> khufu
+          
+
+          
+            
+            <img src="_static/thespacedoctor_icon_white_circle.png" class="logo" alt="Logo"/>
+          
+          </a> -->
+
+
+
+          
+            <a href="index.html" class="icon icon-home"> khufu</a> <p>Twitter Bootstrap elements via Python</p> <a href="index.html"><img src="_static/thespacedoctor_icon_white_circle.png" class="logo" alt="Logo"/> </a>
+          
+
+
+          
+          
+            
+            
+              <div class="version">
+                v1.2.1
+              </div>
+            
+          
+
+          
+              <a class="github-button" href="https://github.com/thespacedoctor/khufu" data-size="large" data-show-count="true" aria-label="Star thespacedoctor/khufu on GitHub">Star</a>
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="initialisation.html">Initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="todolist.html">Todo List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_link.html">Release Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="autosummary.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="autosummary.html#functions">Functions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">A-Z Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">khufu</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>&lt;no title&gt;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/autosummary_include.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><strong>Modules</strong></p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.addons</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.buttons</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.code</span></code></p></td>
+<td><p><em>Generate a code section</em></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.commonutils</span></code></p></td>
+<td><p><em>common tools used throughout package</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.dropdowns</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.forms</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.helpers</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.images</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.labelsAndBadges</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.modals</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.navigation</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.plots</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.scaffolding</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.tables</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.typography</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.urls</span></code></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Classes</strong></p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.forms.login_form.html#khufu.forms.login_form" title="khufu.forms.login_form"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.forms.login_form</span></code></a></p></td>
+<td><p><em>The worker class for the login_form module</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.images.imageWell.html#khufu.images.imageWell" title="khufu.images.imageWell"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.images.imageWell</span></code></a></p></td>
+<td><p><em>Framework for a bootstrap style well containing thumbnail images that can be clicked on to reveal a modal of more imformation</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.images.imagingModal.html#khufu.images.imagingModal" title="khufu.images.imagingModal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.images.imagingModal</span></code></a></p></td>
+<td><p><em>An image and modal – click on the image to present the modal of the larger image with download options</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.modals.modalForm.html#khufu.modals.modalForm" title="khufu.modals.modalForm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.modals.modalForm</span></code></a></p></td>
+<td><p><em>The worker class for the modalForm module</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.scaffolding.login_page.html#khufu.scaffolding.login_page" title="khufu.scaffolding.login_page"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.scaffolding.login_page</span></code></a></p></td>
+<td><p><em>The worker class for the login_page module</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.tables.sortable_table.html#khufu.tables.sortable_table" title="khufu.tables.sortable_table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.tables.sortable_table</span></code></a></p></td>
+<td><p><em>The worker class for the sortable_table module</em></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Functions</strong></p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.addons.closeIcon.html#khufu.addons.closeIcon" title="khufu.addons.closeIcon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.addons.closeIcon</span></code></a></p></td>
+<td><p><em>Get close icon.The generic close icon for dismissing content like modals and alerts.</em>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.addons.mediaObject.html#khufu.addons.mediaObject" title="khufu.addons.mediaObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.addons.mediaObject</span></code></a></p></td>
+<td><p><em>Generate an abstract object style for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.addons.popover.html#khufu.addons.popover" title="khufu.addons.popover"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.addons.popover</span></code></a></p></td>
+<td><p><em>popover to provide helper text or some secondary info about an element</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.addons.well.html#khufu.addons.well" title="khufu.addons.well"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.addons.well</span></code></a></p></td>
+<td><p><em>Get well.Use the well as a simple effect on an element to give it an inset effect.</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.buttons.button.html#khufu.buttons.button" title="khufu.buttons.button"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.buttons.button</span></code></a></p></td>
+<td><p><em>Generate a button - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.buttons.buttonGroup.html#khufu.buttons.buttonGroup" title="khufu.buttons.buttonGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.buttons.buttonGroup</span></code></a></p></td>
+<td><p><em>Generate a buttonGroup - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.code.code.html#khufu.code.code" title="khufu.code.code"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.code.code</span></code></a></p></td>
+<td><p><em>Generate a code section</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.commonutils.getpackagepath.html#khufu.commonutils.getpackagepath" title="khufu.commonutils.getpackagepath"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.commonutils.getpackagepath</span></code></a></p></td>
+<td><p><em>getpackagepath</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.dropdowns.dropdown.html#khufu.dropdowns.dropdown" title="khufu.dropdowns.dropdown"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.dropdowns.dropdown</span></code></a></p></td>
+<td><p><em>get a toggleable, contextual menu for displaying lists of links.Made interactive with the dropdown JavaScript plugin.You need to wrap the dropdown’s trigger and the dropdown menu within .dropdown, or another element that declares position: relative</em>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.dropdowns.dropdownLinkList.html#khufu.dropdowns.dropdownLinkList" title="khufu.dropdowns.dropdownLinkList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.dropdowns.dropdownLinkList</span></code></a></p></td>
+<td><p><em>dropdownLinkList</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.forms.checkbox.html#khufu.forms.checkbox" title="khufu.forms.checkbox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.forms.checkbox</span></code></a></p></td>
+<td><p><em>Generate a checkbox - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.forms.controlRow.html#khufu.forms.controlRow" title="khufu.forms.controlRow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.forms.controlRow</span></code></a></p></td>
+<td><p><em>generate a form row</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.forms.form.html#khufu.forms.form" title="khufu.forms.form"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.forms.form</span></code></a></p></td>
+<td><p><em>Generate a form - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.forms.formActions.html#khufu.forms.formActions" title="khufu.forms.formActions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.forms.formActions</span></code></a></p></td>
+<td><p><em>Generate a formActions - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.forms.formInput.html#khufu.forms.formInput" title="khufu.forms.formInput"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.forms.formInput</span></code></a></p></td>
+<td><p><em>Generate a form input - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.forms.horizontalFormControlGroup.html#khufu.forms.horizontalFormControlGroup" title="khufu.forms.horizontalFormControlGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.forms.horizontalFormControlGroup</span></code></a></p></td>
+<td><p><em>Generate a horizontal form control group (row) - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.forms.horizontalFormControlLabel.html#khufu.forms.horizontalFormControlLabel" title="khufu.forms.horizontalFormControlLabel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.forms.horizontalFormControlLabel</span></code></a></p></td>
+<td><p><em>set a horizontal form label</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.forms.radio.html#khufu.forms.radio" title="khufu.forms.radio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.forms.radio</span></code></a></p></td>
+<td><p><em>Generate a radio - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.forms.searchForm.html#khufu.forms.searchForm" title="khufu.forms.searchForm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.forms.searchForm</span></code></a></p></td>
+<td><p><em>Generate a search-form - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.forms.select.html#khufu.forms.select" title="khufu.forms.select"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.forms.select</span></code></a></p></td>
+<td><p><em>Generate a select - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.forms.textarea.html#khufu.forms.textarea" title="khufu.forms.textarea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.forms.textarea</span></code></a></p></td>
+<td><p><em>Generate a textarea - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.forms.uneditableInput.html#khufu.forms.uneditableInput" title="khufu.forms.uneditableInput"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.forms.uneditableInput</span></code></a></p></td>
+<td><p><em>Generate a uneditableInput - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.helpers.hide_from_device.html#khufu.helpers.hide_from_device" title="khufu.helpers.hide_from_device"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.helpers.hide_from_device</span></code></a></p></td>
+<td><p><em>hide from device)</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.helpers.unescape_html.html#khufu.helpers.unescape_html" title="khufu.helpers.unescape_html"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.helpers.unescape_html</span></code></a></p></td>
+<td><p><em>Unescape a string previously escaped with cgi.escape()</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.images.image.html#khufu.images.image" title="khufu.images.image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.images.image</span></code></a></p></td>
+<td><p><em>Create an HTML image (with ot without link).Based on the Twitter bootstrap setup.</em>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.images.thumbnail_div.html#khufu.images.thumbnail_div" title="khufu.images.thumbnail_div"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.images.thumbnail_div</span></code></a></p></td>
+<td><p><em>Generate a thumbnail - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.images.thumbnails.html#khufu.images.thumbnails" title="khufu.images.thumbnails"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.images.thumbnails</span></code></a></p></td>
+<td><p><em>Generate a thumbnail - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.labelsAndBadges.alert.html#khufu.labelsAndBadges.alert" title="khufu.labelsAndBadges.alert"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.labelsAndBadges.alert</span></code></a></p></td>
+<td><p><em>Generate a alert - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.labelsAndBadges.badge.html#khufu.labelsAndBadges.badge" title="khufu.labelsAndBadges.badge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.labelsAndBadges.badge</span></code></a></p></td>
+<td><p><em>Generate a badge - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.labelsAndBadges.label.html#khufu.labelsAndBadges.label" title="khufu.labelsAndBadges.label"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.labelsAndBadges.label</span></code></a></p></td>
+<td><p><em>Generate a label - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.labelsAndBadges.progressBar.html#khufu.labelsAndBadges.progressBar" title="khufu.labelsAndBadges.progressBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.labelsAndBadges.progressBar</span></code></a></p></td>
+<td><p><em>Generate a progress bar - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.labelsAndBadges.stackedProgressBar.html#khufu.labelsAndBadges.stackedProgressBar" title="khufu.labelsAndBadges.stackedProgressBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.labelsAndBadges.stackedProgressBar</span></code></a></p></td>
+<td><p><em>Generate a progress bar - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.modals.modal.html#khufu.modals.modal" title="khufu.modals.modal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.modals.modal</span></code></a></p></td>
+<td><p><em>generate a modal to by generated with a js event</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.navigation.is_navStyle_active.html#khufu.navigation.is_navStyle_active" title="khufu.navigation.is_navStyle_active"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.navigation.is_navStyle_active</span></code></a></p></td>
+<td><p><em>is navStyle active</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.navigation.navBar.html#khufu.navigation.navBar" title="khufu.navigation.navBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.navigation.navBar</span></code></a></p></td>
+<td><p><em>Generate a navBar - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.navigation.nav_list.html#khufu.navigation.nav_list" title="khufu.navigation.nav_list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.navigation.nav_list</span></code></a></p></td>
+<td><p><em>Create an html list of navigation items from the required python list</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.navigation.pagination.html#khufu.navigation.pagination" title="khufu.navigation.pagination"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.navigation.pagination</span></code></a></p></td>
+<td><p><em>Generate pagination - TBS style.Simple pagination inspired by Rdio, great for apps and search results.</em>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.navigation.responsive_navigation_bar.html#khufu.navigation.responsive_navigation_bar" title="khufu.navigation.responsive_navigation_bar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.navigation.responsive_navigation_bar</span></code></a></p></td>
+<td><p><em>Create a twitter bootstrap responsive nav-bar component</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.navigation.searchbox.html#khufu.navigation.searchbox" title="khufu.navigation.searchbox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.navigation.searchbox</span></code></a></p></td>
+<td><p><em>Create a Search box</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.navigation.tabbableNavigation.html#khufu.navigation.tabbableNavigation" title="khufu.navigation.tabbableNavigation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.navigation.tabbableNavigation</span></code></a></p></td>
+<td><p>Generate a tabbable Navigation</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.plots.svg.html#khufu.plots.svg" title="khufu.plots.svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.plots.svg</span></code></a></p></td>
+<td><p><em>svg</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.scaffolding.body.html#khufu.scaffolding.body" title="khufu.scaffolding.body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.scaffolding.body</span></code></a></p></td>
+<td><p><em>Generate an HTML body</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.scaffolding.grid_column.html#khufu.scaffolding.grid_column" title="khufu.scaffolding.grid_column"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.scaffolding.grid_column</span></code></a></p></td>
+<td><p><em>Get a column block for the Twiiter Bootstrap static layout grid.</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.scaffolding.grid_row.html#khufu.scaffolding.grid_row" title="khufu.scaffolding.grid_row"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.scaffolding.grid_row</span></code></a></p></td>
+<td><p><em>Create a row using the Twitter Bootstrap static layout grid.The static Bootstrap grid system utilizes 12 columns.</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.scaffolding.head.html#khufu.scaffolding.head" title="khufu.scaffolding.head"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.scaffolding.head</span></code></a></p></td>
+<td><p><em>Generate an html head element for your webpage</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.scaffolding.htmlDocument.html#khufu.scaffolding.htmlDocument" title="khufu.scaffolding.htmlDocument"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.scaffolding.htmlDocument</span></code></a></p></td>
+<td><p><em>The doctype and html tags</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.scaffolding.row_adjustable.html#khufu.scaffolding.row_adjustable" title="khufu.scaffolding.row_adjustable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.scaffolding.row_adjustable</span></code></a></p></td>
+<td><p><em>row adjustable</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.tables.table.html#khufu.tables.table" title="khufu.tables.table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.tables.table</span></code></a></p></td>
+<td><p><em>Generate a table - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.tables.tableCaption.html#khufu.tables.tableCaption" title="khufu.tables.tableCaption"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.tables.tableCaption</span></code></a></p></td>
+<td><p><em>Generate a table caption - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.tables.tbody.html#khufu.tables.tbody" title="khufu.tables.tbody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.tables.tbody</span></code></a></p></td>
+<td><p><em>Generate a table body - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.tables.td.html#khufu.tables.td" title="khufu.tables.td"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.tables.td</span></code></a></p></td>
+<td><p><em>Generate a table data cell - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.tables.th.html#khufu.tables.th" title="khufu.tables.th"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.tables.th</span></code></a></p></td>
+<td><p><em>Generate a table header cell - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.tables.thead.html#khufu.tables.thead" title="khufu.tables.thead"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.tables.thead</span></code></a></p></td>
+<td><p><em>Generate a table head - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.tables.tr.html#khufu.tables.tr" title="khufu.tables.tr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.tables.tr</span></code></a></p></td>
+<td><p><em>Generate a table row - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.typography.a.html#khufu.typography.a" title="khufu.typography.a"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.typography.a</span></code></a></p></td>
+<td><p><em>Generate an anchor - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.typography.abbr.html#khufu.typography.abbr" title="khufu.typography.abbr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.typography.abbr</span></code></a></p></td>
+<td><p><em>Get HTML5 Abbreviation</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.typography.address.html#khufu.typography.address" title="khufu.typography.address"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.typography.address</span></code></a></p></td>
+<td><p><em>Get The HTML5 address element</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.typography.blockquote.html#khufu.typography.blockquote" title="khufu.typography.blockquote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.typography.blockquote</span></code></a></p></td>
+<td><p><em>Get HTML5 Blockquote</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.typography.coloredText.html#khufu.typography.coloredText" title="khufu.typography.coloredText"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.typography.coloredText</span></code></a></p></td>
+<td><p><em>Colour text a given colour</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.typography.descriptionLists.html#khufu.typography.descriptionLists" title="khufu.typography.descriptionLists"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.typography.descriptionLists</span></code></a></p></td>
+<td><p><em>A list of definitions.</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.typography.emphasizeText.html#khufu.typography.emphasizeText" title="khufu.typography.emphasizeText"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.typography.emphasizeText</span></code></a></p></td>
+<td><p><em>Get HTML’s default emphasis tags with lightweight styles.</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.typography.heroUnit.html#khufu.typography.heroUnit" title="khufu.typography.heroUnit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.typography.heroUnit</span></code></a></p></td>
+<td><p><em>Generate a heroUnit - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.typography.li.html#khufu.typography.li" title="khufu.typography.li"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.typography.li</span></code></a></p></td>
+<td><p><em>Generate a li - TBS style</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.typography.ol.html#khufu.typography.ol" title="khufu.typography.ol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.typography.ol</span></code></a></p></td>
+<td><p><em>An ordered list</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.typography.p.html#khufu.typography.p" title="khufu.typography.p"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.typography.p</span></code></a></p></td>
+<td><p><em>Get a Paragraph element</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.typography.pageHeader.html#khufu.typography.pageHeader" title="khufu.typography.pageHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.typography.pageHeader</span></code></a></p></td>
+<td><p><em>Generate a pageHeader - TBS style</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/khufu.typography.ul.html#khufu.typography.ul" title="khufu.typography.ul"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.typography.ul</span></code></a></p></td>
+<td><p><em>Get An unordered list – can be used for navigation, stacked tab and pill</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/khufu.urls.default_fields.html#khufu.urls.default_fields" title="khufu.urls.default_fields"><code class="xref py py-obj docutils literal notranslate"><span class="pre">khufu.urls.default_fields</span></code></a></p></td>
+<td><p><em>default feilds</em></p></td>
+</tr>
+</tbody>
+</table>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Dave Young
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

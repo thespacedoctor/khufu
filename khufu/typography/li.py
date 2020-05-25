@@ -2,6 +2,7 @@
 from builtins import range
 from . import *
 
+
 def li(
         content="",
         span=False,
@@ -22,20 +23,20 @@ def li(
 
     **Key Arguments**
 
-    - ``content`` -- the content (if a subMenu for dropdown this should be <ul>)
+    - ``content`` -- the content (if a subMenu for dropdown this should be `<ul>`)
     - ``span`` -- the column span [ False | 1-12 ]
     - ``disabled`` -- add the disabled attribute on an grey out this list item. Note you can optionally swap anchors for spans to remove click functionality.
-    - ``submenuTitle`` -- if a submenu (<ul>) is to be included as content, use this as the title.
+    - ``submenuTitle`` -- if a submenu (`<ul>`) is to be included as content, use this as the title.
     - ``divider`` -- if true this list item shall be a line
     - ``navStyle`` -- how is the navigation element to be displayed? [ active | header ]
     - ``navDropDown`` -- true if the list item is to be used as a dropdown in navigation
-    - ``pager`` -- use the <li> within a pager navigation? [ False | "previous" | "next" ]
-    
+    - ``pager`` -- use the `<li>` within a pager navigation? [ False | "previous" | "next" ]
+
 
     **Return**
 
     - ``li`` -- the li
-    
+
     """
     submenuClass = False
     falseList = [disabled, submenuClass,

@@ -1,2 +1,2 @@
 from __future__ import absolute_import
-from . import svg
+from .svg import svg

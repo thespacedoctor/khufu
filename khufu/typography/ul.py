@@ -2,6 +2,7 @@
 from builtins import range
 from . import *
 
+
 def ul(
         itemList=[],
         unstyled=False,
@@ -29,17 +30,15 @@ def ul(
     - ``navPull`` -- set the alignment of the navigation links [ false | left | right ]
     - ``navDirection`` -- set the direction of the navigation [ 'default' | 'stacked' ]
     - ``breadcrumb`` -- display breadcrumb across muliple pages? [ False | True ]
-    - ``pager`` -- use <ul> for a pager
-    - ``thumbnails`` -- use the <ul> for a thumnail block?
-    
-
-        - ``mediaList`` -- use the <ul> for a media object list?
-        - ``htmlId`` -- the html id of the ul
+    - ``pager`` -- use `<ul>` for a pager
+    - ``thumbnails`` -- use the `<ul>` for a thumnail block?
+    - ``mediaList`` -- use the `<ul>` for a media object list?
+    - ``htmlId`` -- the html id of the ul
 
     **Return**
 
-    - ul
-    
+    - ``ul``
+
     """
     role = False
     falseList = [unstyled, inline, dropDownMenu, role, navStyle,

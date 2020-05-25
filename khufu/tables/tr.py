@@ -1,6 +1,7 @@
 # encoding: utf-8
 from . import *
 
+
 def tr(
         cellContent="",
         color=False,
@@ -12,15 +13,15 @@ def tr(
 
     **Key Arguments**
 
-    - ``cellContent`` -- the content - either <td>s or <th>s
+    - ``cellContent`` -- the content - either `<td>`s or `<th>`s
     - ``color`` -- [ sucess | error | warning | info ]
     - ``href`` -- add a link for the whole table row
-    
+
 
     **Return**
 
     - ``tr`` -- the table row
-    
+
     """
 
     if isinstance(cellContent, list):

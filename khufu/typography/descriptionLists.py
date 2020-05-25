@@ -1,6 +1,7 @@
 # encoding: utf-8
 from . import *
 
+
 def descriptionLists(
         orderedDictionary={},
         sideBySide=False):
@@ -10,13 +11,13 @@ def descriptionLists(
     **Key Arguments**
 
     - ``orderedDictionary`` -- the ordered dictionary of the terms and their definitions
-    - ``sideBySide`` -- Make terms and descriptions in <dl> line up side-by-side.
-    
+    - ``sideBySide`` -- Make terms and descriptions in `<dl>` line up side-by-side.
+
 
     **Return**
 
     - ``descriptionLists``
-    
+
     """
 
     termList = ""

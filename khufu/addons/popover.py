@@ -1,5 +1,6 @@
 # CREATED : February 25, 2014
 
+
 def popover(
         tooltip=False,
         placement=False,
@@ -20,18 +21,19 @@ def popover(
     - ``content`` -- the popover content
     - ``delay`` -- delay in ms
     - ``after`` -- place the div required by the 
-    
+
 
     **Return**
 
     - ``popover`` - the popover helper text to be added to an element
-    
 
+    ```eval_rst
     .. todo::
 
         - [ ] when complete, clean popover function
         - [ ] when complete add logging
         - [ ] when complete, decide whether to abstract function to another module
+    ```
     """
 
     if tooltip is False:
