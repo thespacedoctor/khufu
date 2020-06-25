@@ -15,6 +15,7 @@ from ..__init__ import *
 from .. import modals
 from .image import image
 
+
 class imagingModal(object):
     """
     *An image and modal -- click on the image to present the modal of the larger image with download options*
@@ -30,7 +31,7 @@ class imagingModal(object):
     - ``stampWidth`` -- 180
     - ``modalImageWidth`` -- 400
     - ``downloadLink`` -- False
-    
+
     """
 
     def __init__(
@@ -71,7 +72,7 @@ class imagingModal(object):
         **Return**
 
         - ``imageModal``
-        
+
         """
         self.log.debug('starting the ``get`` method')
 
@@ -93,7 +94,7 @@ class imagingModal(object):
         **Return**
 
         - ``thisImage`` -- the image created
-        
+
         """
         self.log.debug('starting the ``create_image`` method')
 
@@ -134,7 +135,7 @@ class imagingModal(object):
         **Return**
 
         - ``imageModal`` -- the image modal
-        
+
         """
         self.log.debug('starting the ``create_modal`` method')
 
@@ -154,6 +155,7 @@ class imagingModal(object):
         # GENERATE THE DOWNLOAD BUTTON FOR THE MODAL FOOTER
         fileUrl = self.imagePath
 
+        from khufu import popover
         thisPopover = popover(
             tooltip=True,
             placement="bottom",  # [ top | bottom | left | right ]
