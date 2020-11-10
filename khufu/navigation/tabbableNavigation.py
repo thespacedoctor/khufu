@@ -3,6 +3,7 @@ from builtins import str
 from . import *
 import khufu
 
+
 def tabbableNavigation(
         contentDictionary={},  # { name : content }
         fadeIn=True,
@@ -20,12 +21,11 @@ def tabbableNavigation(
     - ``fadeIn`` -- make tabs fade in
     - ``direction`` -- the position of the tabs [ above | below | left | right ]
     - ``uniqueNavigationId`` -- a unique id for this navigation block if more than one on page
-    
+
 
     **Return**
 
     - ``tabbableNavigation`` -- the tabbableNavigation """
-    
 
     if fadeIn is True:
         fadeIn = 'fade'
@@ -55,7 +55,7 @@ def tabbableNavigation(
 
     if uniqueNavigationId is False:
         uniqueNavigationId = ""
-    elif isinstance(uniqueNavigationId, int):
+    elif isinstance(uniqueNavigationId, int) and not isinstance(uniqueNavigationId, bool):
         uniqueNavigationId = """id%(uniqueNavigationId)s""" % locals()
 
     for k, v in list(contentDictionary.items()):

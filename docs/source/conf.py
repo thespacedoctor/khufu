@@ -29,7 +29,11 @@ moduleDirectory = os.path.dirname(os.path.realpath(__file__))
 # GET PACKAGE __version__ INTO locals()
 exec(open(moduleDirectory + "/../../khufu/__version__.py").read())
 
+sys.path.insert(0, os.path.abspath('../../khufu/khufu'))
+
+
 autosummary_generate = True
+autosummary_imported_members = True
 autodoc_member_order = 'bysource'
 add_module_names = False
 todo_include_todos = True
@@ -117,7 +121,8 @@ markdown_parser_config = {
         'mdx_include',
         'pymdownx.mark',
         'pymdownx.betterem',
-        'pymdownx.caret'
+        'pymdownx.caret',
+        'legacy_attrs'
     ],
     'extension_configs': {
         'toc': {
@@ -346,9 +351,17 @@ def linkcode_resolve(domain, info):
         return None
     if not info['module']:
         return None
+
     filename = info['module'].replace('.', '/')
-    if info['fullname']:
+    if info['fullname'] and "." not in info['fullname']:
         filename += "/" + info['fullname'] + ".py"
+    else:
+        if "/" in filename:
+            filename = ("/").join(filename.split("/")[0:-1]) + "/"
+        else:
+            filename = ""
+        filename += ("/").join(info['fullname'].split(
+            ".")[0:-1]) + ".py" + "#" + info['fullname'].split(".")[-1]
     return link_resolver_url + "/" + filename
 
 
@@ -395,6 +408,10 @@ def docstring(app, what, name, obj, options, lines):
     # HR
     regex = re.compile(r'\n---')
     md = regex.sub(r"\n\n----------\n\n", md)
+
+    # FIX LINKS
+    regex = re.compile(r'\[(.*?)\]\(\/?(\_autosummary\/)?(\S*?)(\.html)?\)')
+    md = regex.sub(r'[\1](\3.html)', md)
 
     rst = md
     rst = m2r.convert(md)
