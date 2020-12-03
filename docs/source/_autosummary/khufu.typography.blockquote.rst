@@ -1,4 +1,4 @@
-blockquote (*function*)
+﻿blockquote (*function*)
 ========================================
 
 .. currentmodule:: khufu.typography

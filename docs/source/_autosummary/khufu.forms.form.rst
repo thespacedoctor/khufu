@@ -1,4 +1,4 @@
-form (*function*)
+﻿form (*function*)
 =============================
 
 .. currentmodule:: khufu.forms

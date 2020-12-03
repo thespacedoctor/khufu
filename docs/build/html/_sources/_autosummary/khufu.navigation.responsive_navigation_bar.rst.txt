@@ -1,4 +1,4 @@
-responsive_navigation_bar (*function*)
+﻿responsive_navigation_bar (*function*)
 =======================================================
 
 .. currentmodule:: khufu.navigation

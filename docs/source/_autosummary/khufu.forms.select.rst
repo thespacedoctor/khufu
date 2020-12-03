@@ -1,4 +1,4 @@
-select (*function*)
+﻿select (*function*)
 ===============================
 
 .. currentmodule:: khufu.forms

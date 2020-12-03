@@ -1,4 +1,4 @@
-code (*function*)
+﻿code (*function*)
 ============================
 
 .. currentmodule:: khufu.code

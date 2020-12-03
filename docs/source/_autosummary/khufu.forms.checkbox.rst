@@ -1,4 +1,4 @@
-checkbox (*function*)
+﻿checkbox (*function*)
 =================================
 
 .. currentmodule:: khufu.forms

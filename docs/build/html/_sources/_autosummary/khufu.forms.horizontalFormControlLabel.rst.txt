@@ -1,4 +1,4 @@
-horizontalFormControlLabel (*function*)
+﻿horizontalFormControlLabel (*function*)
 ===================================================
 
 .. currentmodule:: khufu.forms

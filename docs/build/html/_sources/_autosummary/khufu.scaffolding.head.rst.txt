@@ -1,4 +1,4 @@
-head (*function*)
+﻿head (*function*)
 ===================================
 
 .. currentmodule:: khufu.scaffolding

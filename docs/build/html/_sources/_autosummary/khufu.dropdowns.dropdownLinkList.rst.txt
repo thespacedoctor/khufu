@@ -1,4 +1,4 @@
-dropdownLinkList (*function*)
+﻿dropdownLinkList (*function*)
 =============================================
 
 .. currentmodule:: khufu.dropdowns

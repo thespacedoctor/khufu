@@ -1,4 +1,4 @@
-pagination (*function*)
+﻿pagination (*function*)
 ========================================
 
 .. currentmodule:: khufu.navigation

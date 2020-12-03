@@ -1,4 +1,4 @@
-textarea (*function*)
+﻿textarea (*function*)
 =================================
 
 .. currentmodule:: khufu.forms

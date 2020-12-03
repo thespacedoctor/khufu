@@ -1,4 +1,4 @@
-thead (*function*)
+﻿thead (*function*)
 ===============================
 
 .. currentmodule:: khufu.tables

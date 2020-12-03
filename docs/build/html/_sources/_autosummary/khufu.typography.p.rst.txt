@@ -1,4 +1,4 @@
-p (*function*)
+﻿p (*function*)
 ===============================
 
 .. currentmodule:: khufu.typography

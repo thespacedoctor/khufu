@@ -1,4 +1,4 @@
-navBar (*function*)
+﻿navBar (*function*)
 ====================================
 
 .. currentmodule:: khufu.navigation

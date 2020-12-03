@@ -1,4 +1,4 @@
-ul (*function*)
+﻿ul (*function*)
 ================================
 
 .. currentmodule:: khufu.typography

@@ -1,4 +1,4 @@
-unescape_html (*function*)
+﻿unescape_html (*function*)
 ========================================
 
 .. currentmodule:: khufu.helpers

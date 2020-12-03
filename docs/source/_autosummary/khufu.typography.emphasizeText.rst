@@ -1,4 +1,4 @@
-emphasizeText (*function*)
+﻿emphasizeText (*function*)
 ===========================================
 
 .. currentmodule:: khufu.typography

@@ -1,4 +1,4 @@
-row_adjustable (*function*)
+﻿row_adjustable (*function*)
 =============================================
 
 .. currentmodule:: khufu.scaffolding

@@ -1,4 +1,4 @@
-address (*function*)
+﻿address (*function*)
 =====================================
 
 .. currentmodule:: khufu.typography

@@ -1,4 +1,4 @@
-hide_from_device (*function*)
+﻿hide_from_device (*function*)
 ===========================================
 
 .. currentmodule:: khufu.helpers

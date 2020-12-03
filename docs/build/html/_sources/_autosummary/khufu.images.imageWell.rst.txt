@@ -1,4 +1,4 @@
-imageWell *(class)*
+﻿imageWell *(class)*
 ================================
 
 .. currentmodule:: khufu.images
