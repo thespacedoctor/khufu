@@ -1,4 +1,4 @@
-login_page *(class)*
+﻿login_page *(class)*
 ======================================
 
 .. currentmodule:: khufu.scaffolding

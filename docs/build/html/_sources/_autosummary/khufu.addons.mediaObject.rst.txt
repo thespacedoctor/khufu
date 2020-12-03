@@ -1,4 +1,4 @@
-mediaObject (*function*)
+﻿mediaObject (*function*)
 =====================================
 
 .. currentmodule:: khufu.addons

@@ -1,4 +1,4 @@
-login_form *(class)*
+﻿login_form *(class)*
 ================================
 
 .. currentmodule:: khufu.forms

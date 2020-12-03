@@ -1,4 +1,4 @@
-abbr (*function*)
+﻿abbr (*function*)
 ==================================
 
 .. currentmodule:: khufu.typography

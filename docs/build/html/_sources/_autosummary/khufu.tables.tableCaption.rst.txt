@@ -1,4 +1,4 @@
-tableCaption (*function*)
+﻿tableCaption (*function*)
 ======================================
 
 .. currentmodule:: khufu.tables

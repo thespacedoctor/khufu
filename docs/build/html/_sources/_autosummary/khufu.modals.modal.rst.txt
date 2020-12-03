@@ -1,4 +1,4 @@
-modal (*function*)
+﻿modal (*function*)
 ===============================
 
 .. currentmodule:: khufu.modals

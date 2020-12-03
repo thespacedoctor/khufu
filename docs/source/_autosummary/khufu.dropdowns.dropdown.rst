@@ -1,4 +1,4 @@
-dropdown (*function*)
+﻿dropdown (*function*)
 =====================================
 
 .. currentmodule:: khufu.dropdowns

@@ -1,4 +1,4 @@
-svg (*function*)
+﻿svg (*function*)
 ============================
 
 .. currentmodule:: khufu.plots

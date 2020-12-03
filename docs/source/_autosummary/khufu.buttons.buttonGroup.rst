@@ -1,4 +1,4 @@
-buttonGroup (*function*)
+﻿buttonGroup (*function*)
 ======================================
 
 .. currentmodule:: khufu.buttons

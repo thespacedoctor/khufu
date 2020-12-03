@@ -1,4 +1,4 @@
-is_navStyle_active (*function*)
+﻿is_navStyle_active (*function*)
 ================================================
 
 .. currentmodule:: khufu.navigation

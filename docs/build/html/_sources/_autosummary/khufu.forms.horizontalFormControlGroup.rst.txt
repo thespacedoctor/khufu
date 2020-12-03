@@ -1,4 +1,4 @@
-horizontalFormControlGroup (*function*)
+﻿horizontalFormControlGroup (*function*)
 ===================================================
 
 .. currentmodule:: khufu.forms

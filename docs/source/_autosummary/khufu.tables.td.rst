@@ -1,4 +1,4 @@
-td (*function*)
+﻿td (*function*)
 ============================
 
 .. currentmodule:: khufu.tables

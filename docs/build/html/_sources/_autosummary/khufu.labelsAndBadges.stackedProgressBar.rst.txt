@@ -1,4 +1,4 @@
-stackedProgressBar (*function*)
+﻿stackedProgressBar (*function*)
 =====================================================
 
 .. currentmodule:: khufu.labelsAndBadges

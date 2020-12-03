@@ -1,4 +1,4 @@
-formInput (*function*)
+﻿formInput (*function*)
 ==================================
 
 .. currentmodule:: khufu.forms

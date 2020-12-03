@@ -1,4 +1,4 @@
-htmlDocument (*function*)
+﻿htmlDocument (*function*)
 ===========================================
 
 .. currentmodule:: khufu.scaffolding

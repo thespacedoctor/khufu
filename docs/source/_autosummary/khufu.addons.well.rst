@@ -1,4 +1,4 @@
-well (*function*)
+﻿well (*function*)
 ==============================
 
 .. currentmodule:: khufu.addons

@@ -1,4 +1,4 @@
-controlRow (*function*)
+﻿controlRow (*function*)
 ===================================
 
 .. currentmodule:: khufu.forms

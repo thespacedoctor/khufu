@@ -1,4 +1,4 @@
-searchbox (*function*)
+﻿searchbox (*function*)
 =======================================
 
 .. currentmodule:: khufu.navigation

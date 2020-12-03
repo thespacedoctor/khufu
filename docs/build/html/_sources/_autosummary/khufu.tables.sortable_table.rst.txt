@@ -1,4 +1,4 @@
-sortable_table *(class)*
+﻿sortable_table *(class)*
 =====================================
 
 .. currentmodule:: khufu.tables

@@ -1,4 +1,4 @@
-searchForm (*function*)
+﻿searchForm (*function*)
 ===================================
 
 .. currentmodule:: khufu.forms

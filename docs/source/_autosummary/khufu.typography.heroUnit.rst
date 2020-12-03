@@ -1,4 +1,4 @@
-heroUnit (*function*)
+﻿heroUnit (*function*)
 ======================================
 
 .. currentmodule:: khufu.typography

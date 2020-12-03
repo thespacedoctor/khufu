@@ -1,4 +1,4 @@
-thumbnail_div (*function*)
+﻿thumbnail_div (*function*)
 =======================================
 
 .. currentmodule:: khufu.images

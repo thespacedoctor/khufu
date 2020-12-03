@@ -1,4 +1,4 @@
-closeIcon (*function*)
+﻿closeIcon (*function*)
 ===================================
 
 .. currentmodule:: khufu.addons

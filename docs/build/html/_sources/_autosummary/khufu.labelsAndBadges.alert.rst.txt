@@ -1,4 +1,4 @@
-alert (*function*)
+﻿alert (*function*)
 ========================================
 
 .. currentmodule:: khufu.labelsAndBadges

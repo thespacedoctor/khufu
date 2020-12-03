@@ -1,4 +1,4 @@
-popover (*function*)
+﻿popover (*function*)
 =================================
 
 .. currentmodule:: khufu.addons

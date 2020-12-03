@@ -1,4 +1,4 @@
-modalForm *(class)*
+﻿modalForm *(class)*
 ================================
 
 .. currentmodule:: khufu.modals

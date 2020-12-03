@@ -1,4 +1,4 @@
-grid_row (*function*)
+﻿grid_row (*function*)
 =======================================
 
 .. currentmodule:: khufu.scaffolding

@@ -1,4 +1,4 @@
-progressBar (*function*)
+﻿progressBar (*function*)
 ==============================================
 
 .. currentmodule:: khufu.labelsAndBadges

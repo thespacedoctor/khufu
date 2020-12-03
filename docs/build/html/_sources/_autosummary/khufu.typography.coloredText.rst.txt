@@ -1,4 +1,4 @@
-coloredText (*function*)
+﻿coloredText (*function*)
 =========================================
 
 .. currentmodule:: khufu.typography

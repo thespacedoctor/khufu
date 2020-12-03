@@ -1,4 +1,4 @@
-imagingModal *(class)*
+﻿imagingModal *(class)*
 ===================================
 
 .. currentmodule:: khufu.images

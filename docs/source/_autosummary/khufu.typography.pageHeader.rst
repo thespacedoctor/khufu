@@ -1,4 +1,4 @@
-pageHeader (*function*)
+﻿pageHeader (*function*)
 ========================================
 
 .. currentmodule:: khufu.typography

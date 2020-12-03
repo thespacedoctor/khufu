@@ -1,4 +1,4 @@
-default_fields (*function*)
+﻿default_fields (*function*)
 ======================================
 
 .. currentmodule:: khufu.urls

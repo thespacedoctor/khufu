@@ -1,4 +1,4 @@
-nav_list (*function*)
+﻿nav_list (*function*)
 ======================================
 
 .. currentmodule:: khufu.navigation
