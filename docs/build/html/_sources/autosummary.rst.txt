@@ -27,7 +27,6 @@ Functions
    khufu.addons.well
    khufu.buttons.button
    khufu.buttons.buttonGroup
-   khufu.code.code
    khufu.commonutils.getpackagepath
    khufu.dropdowns.dropdown
    khufu.dropdowns.dropdownLinkList
