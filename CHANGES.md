@@ -1,6 +1,11 @@
 
 ## Release Notes
 
+
+**v1.3.3 - May 10, 2022**
+
+* **FIXED** doc fixes
+
 **v1.3.2 - December 3, 2020**
 
 * **fixed** image wells not getting imported correctly
