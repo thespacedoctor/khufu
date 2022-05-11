@@ -16,6 +16,8 @@ import os
 import math
 from ..__init__ import *
 from .imagingModal import imagingModal
+from ..addons.well import well
+
 
 class imageWell(object):
     """
@@ -27,7 +29,7 @@ class imageWell(object):
     - ``title`` -- Title of Image Well
     - ``description`` -- Description of the content of the image well
     - ``imageDisplay`` -- [ rounded | circle | polaroid | False ]
-    
+
     """
 
     def __init__(
@@ -59,7 +61,7 @@ class imageWell(object):
         **Return**
 
         - ``imageWellRow`` -- the html text
-        
+
         """
         self.log.debug('starting the ``get`` method')
 
@@ -141,12 +143,12 @@ class imageWell(object):
         - ``imageTitle`` -- text to tag the image with
         - ``modalHeaderContent`` -- the heading for the modal
         - ``modalFooterContent`` -- the footer (usually buttons)
-        
+
 
         **Return**
 
         - None
-        
+
         """
         self.log.debug('starting the ``appendImage`` method')
 
